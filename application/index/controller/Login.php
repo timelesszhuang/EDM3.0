@@ -9,6 +9,7 @@
 namespace app\index\controller;
 
 
+use app\common\EmailUtil;
 use app\index\model\common;
 use think\Controller;
 use think\Db;
