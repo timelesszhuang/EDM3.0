@@ -1,0 +1,47 @@
+<div class="page-header page-header-title">
+    <h4>取消授权企业</h4>
+</div>
+<div class="clearfix"></div>
+<div class="bottom-data-div">
+    <table id="cancel_corp_datagrid" width="100%">
+    </table>
+</div>
+<script>
+    $(function () {
+        var classid = 'cancel_corp';
+        var datagrid_id = classid + '_datagrid';
+        //修改配置信息
+        var modal_id = 'index_menulist';
+        var urljson = '<?php echo Url("authcorp/cancelcorp_index_json")?>';
+        load_ads_datagrid(datagrid_id, urljson);
+    });
+
+    /**
+     * 加载datagrid 信息
+     */
+    function load_ads_datagrid(datagrid_id, urljson) {
+        $('#' + datagrid_id).datagrid({
+            url: urljson,
+            idField: 'id',
+            pagination: true,
+            pageSize: 10,
+            rownumbers: true,
+            fitColumns: true,
+            frozenColumns: [[
+                {
+                    field: 'ck',
+                    checkbox: true
+                }
+            ]],
+            columns: [[
+                {field: 'id', title: 'ID', width: 5, align: 'center', hidden: true},
+                {field: 'corp_name', title: '公司名称', width: 10},
+                {field: 'email', title: '邮箱', width: 10},
+                {field: 'mobile', title: '手机号码', width: 10},
+                {field: 'pre_corp_id', title: '编号', width: 5},
+                {field: 'pre_corpid', title: ' CORPID', align: 'center', width: 5},
+                {field: 'canceltime', title: '取消时间', align: 'center', width: 5},
+            ]]
+        });
+    }
+</script>
