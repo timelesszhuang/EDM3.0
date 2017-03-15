@@ -35,7 +35,6 @@ class EmailUtil
         $transport = \Swift_SmtpTransport::newInstance('smtp.qiye.163.com', '25')
             ->setUsername($sendUser)
             ->setPassword($sendpwd);
-
         $mailer = \Swift_Mailer::newInstance($transport);
         $message = \Swift_Message::newInstance()
             ->setSubject($subject)//创建邮件信息的主题，即发送标题      注意：Swift_Message::newInstance() 后面没有分号
