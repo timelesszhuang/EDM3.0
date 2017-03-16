@@ -18,7 +18,7 @@ use think\Request;
  */
 class Base extends Controller
 {
-    
+    protected $Rrequest;
     const error = 'failed';
     const success = 'success';
 
@@ -31,6 +31,7 @@ class Base extends Controller
     public function _initialize()
     {
         parent::_initialize();
+        $this->request=Request::instance();
         //需要判断是不是已经登陆了
         $action = array();
         //调用钩子方法 判断是不是已经登录
