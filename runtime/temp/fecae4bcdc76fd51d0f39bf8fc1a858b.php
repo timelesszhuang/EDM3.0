@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/template/index.html";i:1489719960;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/template/index.html";i:1489733167;}*/ ?>
 <?php
 $page_id="template";
 ?>
@@ -58,9 +58,8 @@ $page_id="template";
             singleSelect: true,
             columns: [[
                 {field: 'id', title: 'ID', align: 'center', hidden: true},
-                {field: 'link_title', title: '名称', width: 5, align: 'left'},
-                {field: 'redirect_url', title: '链接', width: 7},
-                {field: 'read_num', title: '阅读次数', width: 3},
+                {field: 'title', title: '标题', width: 5, align: 'left'},
+                {field: 'detail', title: '描述', width: 7},
                 {field: 'create_time', title: '创建时间', width: 4, align: 'center'},
                 {
                     field: 'action', title: '操作', width: 6, align: 'center', formatter: function (index,item) {

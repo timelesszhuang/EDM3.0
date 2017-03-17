@@ -53,7 +53,6 @@ class Base extends Controller
         $this->assign('datagrid_id', Request::instance()->param('datagrid_id'));
         $this->assign([
             "token"=>$this->buildToken(),
-            "id"=>$this->request->post("id")
         ]);
     }
 

@@ -7,7 +7,7 @@ $page_id="template";
             <ul class="nav query-ul">
                 <li class="pull-left">
                     <input type="text" class="form-control input-sm" id="<?=$page_id?>_query"
-                           style="width: 200px" placeholder="输入模板名称进行查询">
+                           style="width: 200px" placeholder="输入配置名称进行查询">
                 </li>
                 <li class="pull-left">
                     <button type="button" class="btn btn-default btn-sm" id="<?=$page_id?>_search">
@@ -20,7 +20,7 @@ $page_id="template";
         <div class="col-lg-7">
             <button type="button" class="btn btn-primary btn-sm" id="<?=$page_id?>_add_template">
                 <span class="glyphicon glyphicon-plus-sign"></span>
-                添加模板
+                添加配置
             </button>
         </div>
     </div>
@@ -35,11 +35,12 @@ $page_id="template";
     var obj=(function(){
         return {
             "datagrid_id":"{$page_id}_user_datagrid",
-            "save_link":"{:URL('index/template/save')}",
+            "save_link":"{:URL('index/Sendconfig/save')}",
             "modal_id":"index_menulist",
-            "urljson":"{:URL('index/template/getData')}",
-            "add_link":"{:URL('index/template/add')}",
-            "del_template_url":"{:URL('index/template/del')}"
+            "urljson":"{:URL('index/Sendconfig/getData')}",
+            "add_link":"{:URL('index/Sendconfig/add')}",
+            "del_template_url":"{:URL('index/Sendconfig/del')}",
+            "province":"{:URL('index/Sendconfig/getProvince')}"
         }
     })();
     load_user_datagrid(obj.datagrid_id,obj.urljson);
