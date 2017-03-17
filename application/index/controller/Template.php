@@ -25,6 +25,7 @@ class Template extends Base
      * 添加页面
      * @return \think\response\View
      */
+
     public function add()
     {
         $this->get_assign();
