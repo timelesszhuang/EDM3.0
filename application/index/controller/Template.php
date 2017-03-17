@@ -18,6 +18,7 @@ class Template extends Base
     {
         return view();
     }
+
     public function add()
     {
 
