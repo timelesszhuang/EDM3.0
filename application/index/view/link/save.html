@@ -1,6 +1,6 @@
 <!----该文件是打开窗体之后的页面-->
 <?php
-$page_id="link_add";
+$page_id="link_save";
 ?>
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -13,16 +13,17 @@ $page_id="link_add";
 <div class="modal-body">
     <form class="form-horizontal" id="{$page_id}_toaction" onsubmit="return false">
         <input type="hidden" name="token" value="{$token}">
+        <input type="hidden" name="id" value="{$id}">
         <div class="form-group">
             <label for="" class="control-label col-sm-3">名称：</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" name="link_title">
+                <input type="text" class="form-control" name="link_title" value="{$data.link_title}">
             </div>
         </div>
         <div class="form-group">
             <label for="" class="control-label col-sm-3">链接：</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" name="redirect_url">
+                <input type="text" class="form-control" name="redirect_url" value="{$data.redirect_url}">
             </div>
         </div>
 
@@ -37,7 +38,7 @@ $page_id="link_add";
 <script>
     $("#{$page_id}_add_producttype_btn").click(function () {
         var obj = {
-            add_email_template_url: "{:URL('index/Link/addData')}"
+            add_email_template_url: "{:URL('index/Link/saveData')}"
         };
         var data = $("#{$page_id}_toaction").serialize();
         submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_producttype_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());

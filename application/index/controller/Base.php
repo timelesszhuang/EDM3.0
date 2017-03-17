@@ -51,7 +51,10 @@ class Base extends Controller
     {
         $this->assign('modal_id', Request::instance()->param('modal_id'));
         $this->assign('datagrid_id', Request::instance()->param('datagrid_id'));
-        $this->assign("token", $this->buildToken());
+        $this->assign([
+            "token"=>$this->buildToken(),
+            "id"=>$this->request->post("id")
+        ]);
     }
 
     /**
@@ -109,6 +112,19 @@ class Base extends Controller
             "msg" => $msg,
             "title" => $title
         ]));
+    }
+
+    /**
+     * 获取
+     * @return array
+     */
+    public function getRequest()
+    {
+        $page=$this->request->post("page");
+        $rows=$this->request->post("rows");
+        $query=$this->request->post("query");
+        $limit=($page-1)*$rows;
+        return [$limit,$rows,$query];
     }
 
 }
