@@ -35,11 +35,11 @@ $page_id="link";
     var obj=(function(){
         return {
             "datagrid_id":"{$page_id}_user_datagrid",
-            "save_link":"__MODULE__/DealerType/save_data",
+//            "save_link":"__MODULE__/DealerType/save_data",
             "modal_id":"index_menulist",
-            "urljson":"__MODULE__/DealerType/get_data",
+            "urljson":"{:URL('index/getData')}",
             "add_link":"{:URL('index/Link/add')}",
-            "del_template_url":"__MODULE__/DealerType/del_data"
+//            "del_template_url":"__MODULE__/DealerType/del_data"
         }
     })();
     load_user_datagrid(obj.datagrid_id,obj.urljson);
@@ -74,19 +74,18 @@ $page_id="link";
     $("#{$page_id}_add_template").click(function () {
         add_record_modal(obj.datagrid_id, obj.add_link,obj.modal_id);
     });
-    $("body").undelegate(".{$page_id}_edit", "click");
-    //点击编辑事件
-    $("body").delegate(".{$page_id}_edit", "click", function () {
-        edit_record_modal($(this).attr("_id"),obj.save_link, obj.datagrid_id, obj.modal_id);
-    });
-    $("body").undelegate(".{$page_id}_del","click");
-    $("body").delegate(".{$page_id}_del","click",function(){
-        delete_single_record($(this).attr("_id"),obj.del_template_url,obj.datagrid_id);//自动刷新
-    })
+//    $("body").undelegate(".{$page_id}_edit", "click");
+//    //点击编辑事件
+//    $("body").delegate(".{$page_id}_edit", "click", function () {
+//        edit_record_modal($(this).attr("_id"),obj.save_link, obj.datagrid_id, obj.modal_id);
+//    });
+//    $("body").undelegate(".{$page_id}_del","click");
+//    $("body").delegate(".{$page_id}_del","click",function(){
+//        delete_single_record($(this).attr("_id"),obj.del_template_url,obj.datagrid_id);//自动刷新
+//    })
     $("#{$page_id}_search").click(function(){
         $('#' + obj.datagrid_id).datagrid("load",{
             query:$("#{$page_id}_query").val()
         })
-
     });
 </script>

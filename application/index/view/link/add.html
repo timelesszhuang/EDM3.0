@@ -12,15 +12,20 @@ $page_id="link_add";
 </div>
 <div class="modal-body">
     <form class="form-horizontal" id="{$page_id}_toaction" onsubmit="return false">
-            <div class="form-group">
-                <label for="" class="control-label col-sm-3">名称：</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control">
-                </div>
+        <input type="hidden" name="token" value="{$token}">
+        <div class="form-group">
+            <label for="" class="control-label col-sm-3">名称：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="link_title">
             </div>
-        <div class="gorm-group">
-
         </div>
+        <div class="form-group">
+            <label for="" class="control-label col-sm-3">链接：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="redirect_url">
+            </div>
+        </div>
+
     </form>
     <input type="hidden" value="{$modal_id}" name='{$page_id}_add_producttype_modal_id'>
     <input type="hidden" value="{$datagrid_id}" name='{$page_id}_datagrid_id'>
@@ -32,7 +37,7 @@ $page_id="link_add";
 <script>
     $("#{$page_id}_add_producttype_btn").click(function () {
         var obj = {
-            add_email_template_url: "__MODULE__/DealerType/add_fordata"
+            add_email_template_url: "{:URL('index/Link/addData')}"
         };
         var data = $("#{$page_id}_toaction").serialize();
         submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_producttype_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());
