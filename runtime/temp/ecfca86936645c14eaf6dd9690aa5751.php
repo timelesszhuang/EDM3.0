@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"/home/wwwroot/edm5.0/public/../application/index/view/index/index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/header.html";i:1489643205;s:71:"/home/wwwroot/edm5.0/public/../application/index/view/index/navbar.html";i:1489720091;s:75:"/home/wwwroot/edm5.0/public/../application/index/view/index/load_index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/footer.html";i:1489715273;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"/home/wwwroot/edm5.0/public/../application/index/view/index/index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/header.html";i:1489643205;s:71:"/home/wwwroot/edm5.0/public/../application/index/view/index/navbar.html";i:1489736482;s:75:"/home/wwwroot/edm5.0/public/../application/index/view/index/load_index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/footer.html";i:1489715273;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,8 +60,8 @@
                         </a>
                     </li>
                     <li class='dropdown menulist'>
-                        <a href="javascript:void(0);" r_href="<?php echo url('authcorp/cancel_corp_index'); ?>" title="取消授权企业信息">
-                            <span class="glyphicon glyphicon-th">取消授权企业</span>
+                        <a href="javascript:void(0);" r_href="<?php echo URL('index/sendconfig/index'); ?>" title="取消授权企业信息">
+                            <span class="glyphicon glyphicon-th">邮件配置</span>
                         </a>
                     </li>
                     <li class='dropdown menulist'>

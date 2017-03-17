@@ -54,4 +54,21 @@ return [
     'builder'         => '',
     // Query类
     'query'           => '\\think\\db\\Query',
+    'db_config2' =>
+        [
+            // 数据库类型
+            'type'            => 'mysql',
+            // 服务器地址
+            'hostname'        => 'rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com',
+            // 数据库名
+            'database'        => 'edm',
+            // 用户名
+            'username'        => 'edm',
+            // 密码
+            'password'        => 'LiuRui123$%^',
+            // 端口
+            'hostport'        => '',
+            // 数据库编码默认采用utf8
+            'charset'         => 'utf8',
+        ],
 ];
