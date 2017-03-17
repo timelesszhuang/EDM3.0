@@ -34,21 +34,19 @@ class Sendconfig extends Base
 
     public function addData()
     {
-        $rule=[
-            ["title","require|unique:sendconfig","请填写标题"],
-            ["province_id","require","请选择省份"],
-            ["province_name","require","请选择省份"],
-            ["brand_id","require","请选择品牌"],
-            ["brand_name","require","请选择品牌"],
-            ["template_id","require","请选择模板"]
+        $rule = [
+            ["title", "require|unique:sendconfig", "请填写标题"],
+            ["province_id", "require", "请选择省份"],
+            ["province_name", "require", "请选择省份"],
+            ["brand_id", "require", "请选择品牌"],
+            ["brand_name", "require", "请选择品牌"],
+            ["template_id", "require", "请选择模板"]
         ];
-        $validate=new Validate($rule);
-        $data=$this->request->post();
-        if(!$validate->check($data)){
+        $validate = new Validate($rule);
+        $data = $this->request->post();
+        if (!$validate->check($data)) {
             $this->msg("");
         }
-
-
     }
 
     /**
@@ -57,10 +55,10 @@ class Sendconfig extends Base
      */
     public function getProvince()
     {
-        $sendconfig=new \app\index\model\SendConfig();
-        $arr=[];
-        foreach($sendconfig->province() as $k=>$v){
-            $arr[]=["id"=>$v,"text"=>$k];
+        $sendconfig = new \app\index\model\SendConfig();
+        $arr = [];
+        foreach ($sendconfig->province() as $k => $v) {
+            $arr[] = ["id" => $v, "text" => $k];
         }
         return $arr;
     }
@@ -71,8 +69,8 @@ class Sendconfig extends Base
      */
     public function getBrand()
     {
-        $db2=\think\Config::get("database.db_config2");
-        $data=Db::connect($db2)->name("mx_brand")->field("id,name as text")->select();
+        $db2 = \think\Config::get("database.db_config2");
+        $data = Db::connect($db2)->name("mx_brand")->field("id,name as text")->select();
         return $data;
     }
 
@@ -82,7 +80,7 @@ class Sendconfig extends Base
      */
     public function getTemplate()
     {
-        $template=new \app\index\model\Template();
+        $template = new \app\index\model\Template();
         return $template->field("id,title as text")->select();
     }
 }
