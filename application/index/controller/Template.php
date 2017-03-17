@@ -20,7 +20,7 @@ class Template extends Base
     }
     public function add()
     {
-        
+
     }
 
 }
