@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"/home/wwwroot/edm5.0/public/../application/index/view/link/index.html";i:1489719460;}*/ ?>
 <?php
 $page_id="link";
 ?>
@@ -34,12 +35,12 @@ $page_id="link";
 <script>
     var obj=(function(){
         return {
-            "datagrid_id":"{$page_id}_user_datagrid",
-            "save_link":"{:URL('index/link/save')}",
+            "datagrid_id":"<?php echo $page_id; ?>_user_datagrid",
+            "save_link":"<?php echo URL('index/link/save'); ?>",
             "modal_id":"index_menulist",
-            "urljson":"{:URL('index/link/getData')}",
-            "add_link":"{:URL('index/Link/add')}",
-            "del_template_url":"{:URL('index/Link/del')}"
+            "urljson":"<?php echo URL('index/link/getData'); ?>",
+            "add_link":"<?php echo URL('index/Link/add'); ?>",
+            "del_template_url":"<?php echo URL('index/Link/del'); ?>"
         }
     })();
     load_user_datagrid(obj.datagrid_id,obj.urljson);
@@ -63,7 +64,7 @@ $page_id="link";
                 {field: 'create_time', title: '创建时间', width: 4, align: 'center'},
                 {
                     field: 'action', title: '操作', width: 6, align: 'center', formatter: function (index,item) {
-                    return '<a href="javascript:void(0)" _id="'+item.id+'"  class="{$page_id}_edit">编辑</a>&nbsp;&nbsp;<a href="javascript:void(0)" _id="'+item.id+'" class="{$page_id}_del">删除</a>';
+                    return '<a href="javascript:void(0)" _id="'+item.id+'"  class="<?php echo $page_id; ?>_edit">编辑</a>&nbsp;&nbsp;<a href="javascript:void(0)" _id="'+item.id+'" class="<?php echo $page_id; ?>_del">删除</a>';
                 }
                 }
             ]],
@@ -72,21 +73,21 @@ $page_id="link";
     /**
      * 点击添加
      */
-    $("#{$page_id}_add_template").click(function () {
+    $("#<?php echo $page_id; ?>_add_template").click(function () {
         add_record_modal(obj.datagrid_id, obj.add_link,obj.modal_id);
     });
-    $("body").undelegate(".{$page_id}_edit", "click");
+    $("body").undelegate(".<?php echo $page_id; ?>_edit", "click");
     //点击编辑事件
-    $("body").delegate(".{$page_id}_edit", "click", function () {
+    $("body").delegate(".<?php echo $page_id; ?>_edit", "click", function () {
         edit_record_modal($(this).attr("_id"),obj.save_link, obj.datagrid_id, obj.modal_id);
     });
-    $("body").undelegate(".{$page_id}_del","click");
-    $("body").delegate(".{$page_id}_del","click",function(){
+    $("body").undelegate(".<?php echo $page_id; ?>_del","click");
+    $("body").delegate(".<?php echo $page_id; ?>_del","click",function(){
         delete_single_record($(this).attr("_id"),obj.del_template_url,obj.datagrid_id);//自动刷新
     })
-    $("#{$page_id}_search").click(function(){
+    $("#<?php echo $page_id; ?>_search").click(function(){
         $('#' + obj.datagrid_id).datagrid("load",{
-            query:$("#{$page_id}_query").val()
+            query:$("#<?php echo $page_id; ?>_query").val()
         })
     });
 </script>

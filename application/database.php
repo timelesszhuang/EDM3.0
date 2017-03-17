@@ -45,7 +45,7 @@ return [
     // 数据集返回类型
     'resultset_type'  => 'array',
     // 自动写入时间戳字段
-    'auto_timestamp'  => false,
+    'auto_timestamp'  => true,
     // 时间字段取出后的默认时间格式
     'datetime_format' => 'Y-m-d H:i:s',
     // 是否需要进行SQL性能分析
@@ -54,4 +54,21 @@ return [
     'builder'         => '',
     // Query类
     'query'           => '\\think\\db\\Query',
+    'db_config2' =>
+        [
+            // 数据库类型
+            'type'            => 'mysql',
+            // 服务器地址
+            'hostname'        => 'rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com',
+            // 数据库名
+            'database'        => 'edm',
+            // 用户名
+            'username'        => 'edm',
+            // 密码
+            'password'        => 'LiuRui123$%^',
+            // 端口
+            'hostport'        => '',
+            // 数据库编码默认采用utf8
+            'charset'         => 'utf8',
+        ],
 ];
