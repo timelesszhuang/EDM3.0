@@ -15767,3 +15767,3975 @@
 >>>>>>> 8f59437ee47406879d02e53c89b7050e1d5d0cc6
 
 ---------------------------------------------------------------
+[ 2017-03-17T17:06:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html
+[ log ] www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html [运行时间：0.024039s][吞吐率：41.60req/s] [内存消耗：2,526.48kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/login/index/alert/%E8%AF%B7%E5%85%88%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'msg' => '登录成功。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001081s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/edm5.0/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/index/index.html [ array (
+  0 => 'msg',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:06:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/emailsend_count_order.html
+[ log ] www.edm5.com/index/index/emailsend_count_order.html [运行时间：0.017632s][吞吐率：56.72req/s] [内存消耗：2,276.41kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'emailsend_count_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000478s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:06:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_allcount_html.html
+[ log ] www.edm5.com/index/index/load_allcount_html.html [运行时间：0.018934s][吞吐率：52.82req/s] [内存消耗：2,276.24kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_allcount_html',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'text/html, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001091s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:06:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_user_count.html
+[ log ] www.edm5.com/index/index/load_user_count.html [运行时间：0.019869s][吞吐率：50.33req/s] [内存消耗：2,276.07kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_user_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000463s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:06:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_entryemail_count.html
+[ log ] www.edm5.com/index/index/get_entryemail_count.html [运行时间：0.028958s][吞吐率：34.53req/s] [内存消耗：2,276.41kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_entryemail_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.009581s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:06:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_distinctactive_count.html
+[ log ] www.edm5.com/index/index/get_distinctactive_count.html [运行时间：0.049171s][吞吐率：20.34req/s] [内存消耗：2,276.35kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_distinctactive_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001692s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:06:51+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/index.html
+[ log ] www.edm5.com/index/sendconfig/index.html [运行时间：0.016779s][吞吐率：59.60req/s] [内存消耗：2,518.41kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000567s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->index[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:06:51+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getdata.html
+[ log ] www.edm5.com/index/sendconfig/getdata.html [运行时间：0.016618s][吞吐率：60.18req/s] [内存消耗：2,278.69kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000594s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:06:55+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.023349s][吞吐率：42.83req/s] [内存消耗：2,518.14kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000880s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:06:55+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.034366s][吞吐率：29.10req/s] [内存消耗：3,454.84kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000475s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:12:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html
+[ log ] www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html [运行时间：0.017299s][吞吐率：57.81req/s] [内存消耗：2,322.12kb] [文件加载：51]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/login/index/alert/%E8%AF%B7%E5%85%88%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'msg' => '登录成功。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000401s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/edm5.0/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/index/index.html [ array (
+  0 => 'msg',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:12:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/emailsend_count_order.html
+[ log ] www.edm5.com/index/index/emailsend_count_order.html [运行时间：0.015313s][吞吐率：65.30req/s] [内存消耗：2,276.30kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'emailsend_count_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000461s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:12:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_allcount_html.html
+[ log ] www.edm5.com/index/index/load_allcount_html.html [运行时间：0.021424s][吞吐率：46.68req/s] [内存消耗：2,276.29kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_allcount_html',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'text/html, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001810s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:12:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_entryemail_count.html
+[ log ] www.edm5.com/index/index/get_entryemail_count.html [运行时间：0.027553s][吞吐率：36.29req/s] [内存消耗：2,276.30kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_entryemail_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000432s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:12:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_distinctactive_count.html
+[ log ] www.edm5.com/index/index/get_distinctactive_count.html [运行时间：0.030430s][吞吐率：32.86req/s] [内存消耗：2,276.42kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_distinctactive_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000636s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:12:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_user_count.html
+[ log ] www.edm5.com/index/index/load_user_count.html [运行时间：0.056465s][吞吐率：17.71req/s] [内存消耗：2,276.49kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_user_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001829s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:12:51+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/index.html
+[ log ] www.edm5.com/index/sendconfig/index.html [运行时间：0.019547s][吞吐率：51.16req/s] [内存消耗：2,186.45kb] [文件加载：48]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001171s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->index[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:13:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html
+[ log ] www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html [运行时间：0.023297s][吞吐率：42.92req/s] [内存消耗：2,322.12kb] [文件加载：51]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/login/index/alert/%E8%AF%B7%E5%85%88%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'msg' => '登录成功。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000971s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/edm5.0/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/index/index.html [ array (
+  0 => 'msg',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:13:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/emailsend_count_order.html
+[ log ] www.edm5.com/index/index/emailsend_count_order.html [运行时间：0.014895s][吞吐率：67.14req/s] [内存消耗：2,276.30kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'emailsend_count_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000476s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:13:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_allcount_html.html
+[ log ] www.edm5.com/index/index/load_allcount_html.html [运行时间：0.016598s][吞吐率：60.25req/s] [内存消耗：2,276.29kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_allcount_html',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'text/html, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000518s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:13:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_user_count.html
+[ log ] www.edm5.com/index/index/load_user_count.html [运行时间：0.014875s][吞吐率：67.23req/s] [内存消耗：2,276.49kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_user_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000465s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:13:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_entryemail_count.html
+[ log ] www.edm5.com/index/index/get_entryemail_count.html [运行时间：0.021378s][吞吐率：46.78req/s] [内存消耗：2,276.30kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_entryemail_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000459s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:13:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_distinctactive_count.html
+[ log ] www.edm5.com/index/index/get_distinctactive_count.html [运行时间：0.019364s][吞吐率：51.64req/s] [内存消耗：2,276.42kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_distinctactive_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000576s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:13:09+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/index.html
+[ log ] www.edm5.com/index/sendconfig/index.html [运行时间：0.020740s][吞吐率：48.22req/s] [内存消耗：2,535.02kb] [文件加载：55]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001231s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->index[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:13:09+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getdata.html
+[ log ] www.edm5.com/index/sendconfig/getdata.html [运行时间：0.019610s][吞吐率：50.99req/s] [内存消耗：2,279.59kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000502s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:21+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html
+[ log ] www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html [运行时间：0.023150s][吞吐率：43.20req/s] [内存消耗：2,322.12kb] [文件加载：51]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/login/index/alert/%E8%AF%B7%E5%85%88%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'msg' => '登录成功。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000580s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/edm5.0/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/index/index.html [ array (
+  0 => 'msg',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:21+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/emailsend_count_order.html
+[ log ] www.edm5.com/index/index/emailsend_count_order.html [运行时间：0.043405s][吞吐率：23.04req/s] [内存消耗：2,276.30kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'emailsend_count_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000680s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:21+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_entryemail_count.html
+[ log ] www.edm5.com/index/index/get_entryemail_count.html [运行时间：0.030198s][吞吐率：33.11req/s] [内存消耗：2,276.30kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_entryemail_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.006832s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:21+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_distinctactive_count.html
+[ log ] www.edm5.com/index/index/get_distinctactive_count.html [运行时间：0.026361s][吞吐率：37.93req/s] [内存消耗：2,276.42kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_distinctactive_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000460s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:21+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_user_count.html
+[ log ] www.edm5.com/index/index/load_user_count.html [运行时间：0.042827s][吞吐率：23.35req/s] [内存消耗：2,276.49kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_user_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001592s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:21+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_allcount_html.html
+[ log ] www.edm5.com/index/index/load_allcount_html.html [运行时间：0.055381s][吞吐率：18.06req/s] [内存消耗：2,276.29kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_allcount_html',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'text/html, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.006010s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:24+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/index.html
+[ log ] www.edm5.com/index/sendconfig/index.html [运行时间：0.020610s][吞吐率：48.52req/s] [内存消耗：2,520.60kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000753s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->index[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:24+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getdata.html
+[ log ] www.edm5.com/index/sendconfig/getdata.html [运行时间：0.014849s][吞吐率：67.34req/s] [内存消耗：2,280.78kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000398s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:34+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.030970s][吞吐率：32.29req/s] [内存消耗：2,520.40kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000694s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:34+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.015137s][吞吐率：66.06req/s] [内存消耗：2,292.07kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000456s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: sendconfig[/home/wwwroot/edm5.0/application/index/controller/Sendconfig.php:47]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:19:34+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.078096s][吞吐率：12.80req/s] [内存消耗：3,145.74kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000486s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'edm.sm_mx_brand' doesn't exist[/home/wwwroot/edm5.0/thinkphp/library/think/db/connector/Mysql.php:63]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:23:53+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.027297s][吞吐率：36.63req/s] [内存消耗：2,329.26kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000785s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:23:53+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.014418s][吞吐率：69.36req/s] [内存消耗：2,292.07kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000421s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: sendconfig[/home/wwwroot/edm5.0/application/index/controller/Sendconfig.php:47]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:23:53+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.103935s][吞吐率：9.62req/s] [内存消耗：3,208.93kb] [文件加载：55]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000532s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:24:12+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.edm5.com/ [运行时间：0.018559s][吞吐率：53.88req/s] [内存消耗：2,320.84kb] [文件加载：51]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000445s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/edm5.0/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/index/index.html [ array (
+  0 => 'msg',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:24:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/emailsend_count_order.html
+[ log ] www.edm5.com/index/index/emailsend_count_order.html [运行时间：0.018399s][吞吐率：54.35req/s] [内存消耗：2,276.04kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'emailsend_count_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000410s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:24:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_user_count.html
+[ log ] www.edm5.com/index/index/load_user_count.html [运行时间：0.025518s][吞吐率：39.19req/s] [内存消耗：2,275.92kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_user_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000434s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:24:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_entryemail_count.html
+[ log ] www.edm5.com/index/index/get_entryemail_count.html [运行时间：0.030792s][吞吐率：32.48req/s] [内存消耗：2,276.07kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_entryemail_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.005858s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:24:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_allcount_html.html
+[ log ] www.edm5.com/index/index/load_allcount_html.html [运行时间：0.043093s][吞吐率：23.21req/s] [内存消耗：2,275.99kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_allcount_html',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'text/html, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.003154s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:24:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_distinctactive_count.html
+[ log ] www.edm5.com/index/index/get_distinctactive_count.html [运行时间：0.034832s][吞吐率：28.71req/s] [内存消耗：2,276.10kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_distinctactive_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.013974s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:25:08+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.edm5.com/ [运行时间：0.016622s][吞吐率：60.16req/s] [内存消耗：1,835.70kb] [文件加载：42]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => '',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:25:26+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.edm5.com/ [运行时间：0.012489s][吞吐率：80.07req/s] [内存消耗：1,835.70kb] [文件加载：42]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => '',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:25:39+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.edm5.com/ [运行时间：0.012167s][吞吐率：82.19req/s] [内存消耗：1,835.70kb] [文件加载：42]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => '',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.edm5.com/ [运行时间：0.020012s][吞吐率：49.97req/s] [内存消耗：2,320.93kb] [文件加载：51]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001050s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/edm5.0/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/index/index.html [ array (
+  0 => 'msg',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/emailsend_count_order.html
+[ log ] www.edm5.com/index/index/emailsend_count_order.html [运行时间：0.021186s][吞吐率：47.20req/s] [内存消耗：2,276.04kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'emailsend_count_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001148s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_allcount_html.html
+[ log ] www.edm5.com/index/index/load_allcount_html.html [运行时间：0.022147s][吞吐率：45.15req/s] [内存消耗：2,275.99kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_allcount_html',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'text/html, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.005537s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_user_count.html
+[ log ] www.edm5.com/index/index/load_user_count.html [运行时间：0.013998s][吞吐率：71.44req/s] [内存消耗：2,275.92kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_user_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000480s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_entryemail_count.html
+[ log ] www.edm5.com/index/index/get_entryemail_count.html [运行时间：0.020698s][吞吐率：48.31req/s] [内存消耗：2,276.07kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_entryemail_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001217s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_distinctactive_count.html
+[ log ] www.edm5.com/index/index/get_distinctactive_count.html [运行时间：0.020233s][吞吐率：49.42req/s] [内存消耗：2,276.10kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_distinctactive_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001411s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:07+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/index.html
+[ log ] www.edm5.com/index/sendconfig/index.html [运行时间：0.015531s][吞吐率：64.39req/s] [内存消耗：2,327.24kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000434s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->index[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:07+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getdata.html
+[ log ] www.edm5.com/index/sendconfig/getdata.html [运行时间：0.014797s][吞吐率：67.58req/s] [内存消耗：2,280.41kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000544s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:08+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.011372s][吞吐率：87.94req/s] [内存消耗：2,328.95kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000365s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:08+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.013291s][吞吐率：75.24req/s] [内存消耗：2,291.90kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000462s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: sendconfig[/home/wwwroot/edm5.0/application/index/controller/Sendconfig.php:47]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:09+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.224868s][吞吐率：4.45req/s] [内存消耗：3,208.75kb] [文件加载：55]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000611s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:12+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.016910s][吞吐率：59.14req/s] [内存消耗：2,328.95kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000493s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:12+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.027325s][吞吐率：36.60req/s] [内存消耗：2,291.90kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000601s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: sendconfig[/home/wwwroot/edm5.0/application/index/controller/Sendconfig.php:47]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:31:12+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.106540s][吞吐率：9.39req/s] [内存消耗：3,208.75kb] [文件加载：55]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000527s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:32:00+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.019408s][吞吐率：51.53req/s] [内存消耗：2,329.06kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000855s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:32:00+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.021214s][吞吐率：47.14req/s] [内存消耗：3,456.81kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000417s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:32:00+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.103350s][吞吐率：9.68req/s] [内存消耗：3,209.04kb] [文件加载：55]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000492s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:33:09+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.022220s][吞吐率：45.00req/s] [内存消耗：2,329.29kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000859s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:33:09+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.019567s][吞吐率：51.11req/s] [内存消耗：3,457.20kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000466s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:33:09+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.093436s][吞吐率：10.70req/s] [内存消耗：3,144.35kb] [文件加载：56]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001202s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:38:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html
+[ log ] www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html [运行时间：0.031843s][吞吐率：31.40req/s] [内存消耗：2,322.12kb] [文件加载：51]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/login/index/alert/%E8%AF%B7%E5%85%88%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'msg' => '登录成功。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001553s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/edm5.0/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/index/index.html [ array (
+  0 => 'msg',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:38:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/emailsend_count_order.html
+[ log ] www.edm5.com/index/index/emailsend_count_order.html [运行时间：0.018752s][吞吐率：53.33req/s] [内存消耗：2,276.30kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'emailsend_count_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000885s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:38:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_entryemail_count.html
+[ log ] www.edm5.com/index/index/get_entryemail_count.html [运行时间：0.028486s][吞吐率：35.10req/s] [内存消耗：2,276.30kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_entryemail_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000420s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:38:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_user_count.html
+[ log ] www.edm5.com/index/index/load_user_count.html [运行时间：0.042233s][吞吐率：23.68req/s] [内存消耗：2,276.49kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_user_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.010494s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:38:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_distinctactive_count.html
+[ log ] www.edm5.com/index/index/get_distinctactive_count.html [运行时间：0.042585s][吞吐率：23.48req/s] [内存消耗：2,276.42kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_distinctactive_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.019362s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:38:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_allcount_html.html
+[ log ] www.edm5.com/index/index/load_allcount_html.html [运行时间：0.063646s][吞吐率：15.71req/s] [内存消耗：2,276.29kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_allcount_html',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'text/html, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.013039s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:38:21+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/index.html
+[ log ] www.edm5.com/index/sendconfig/index.html [运行时间：0.022986s][吞吐率：43.50req/s] [内存消耗：2,522.77kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000817s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->index[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:38:21+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getdata.html
+[ log ] www.edm5.com/index/sendconfig/getdata.html [运行时间：0.016749s][吞吐率：59.71req/s] [内存消耗：2,282.63kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000921s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:38:24+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.021751s][吞吐率：45.98req/s] [内存消耗：2,509.29kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000810s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page_id_template[/home/wwwroot/edm5.0/runtime/temp/f5d9efd00963314470a7f7ae57e569ba.php:39]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:39:14+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.022722s][吞吐率：44.01req/s] [内存消耗：2,522.46kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000838s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:39:14+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.037433s][吞吐率：26.71req/s] [内存消耗：3,458.74kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000523s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:39:14+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/gettemplate.html
+[ log ] www.edm5.com/index/sendconfig/gettemplate.html [运行时间：0.090086s][吞吐率：11.10req/s] [内存消耗：3,482.45kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'gettemplate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.002265s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getTemplate[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031020s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.017923s ]
+[ sql ] [ SQL ] SELECT `id`,title as text FROM `edm_template` [ RunTime:0.016542s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:39:14+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.170812s][吞吐率：5.85req/s] [内存消耗：3,145.89kb] [文件加载：56]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.089984s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:11+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.021318s][吞吐率：46.91req/s] [内存消耗：2,522.52kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000444s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:11+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.099528s][吞吐率：10.05req/s] [内存消耗：3,145.89kb] [文件加载：56]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000413s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:11+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/gettemplate.html
+[ log ] www.edm5.com/index/sendconfig/gettemplate.html [运行时间：0.169777s][吞吐率：5.89req/s] [内存消耗：3,482.45kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'gettemplate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.078240s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getTemplate[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032573s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.020266s ]
+[ sql ] [ SQL ] SELECT `id`,title as text FROM `edm_template` [ RunTime:0.018406s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:11+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.198548s][吞吐率：5.04req/s] [内存消耗：3,458.74kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.164135s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:19+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/index.html
+[ log ] www.edm5.com/index/template/index.html [运行时间：0.021336s][吞吐率：46.87req/s] [内存消耗：2,534.84kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000862s ]
+[ info ] [ RUN ] app\index\controller\Template->index[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:19+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.094648s][吞吐率：10.57req/s] [内存消耗：3,498.49kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000470s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038300s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016274s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.015640s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:21+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/add.html
+[ log ] www.edm5.com/index/template/add.html [运行时间：0.024384s][吞吐率：41.01req/s] [内存消耗：2,534.69kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000982s ]
+[ info ] [ RUN ] app\index\controller\Template->add[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:26+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/adddata.html
+[ log ] www.edm5.com/index/template/adddata.html [运行时间：0.107838s][吞吐率：9.27req/s] [内存消耗：3,458.03kb] [文件加载：56]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'adddata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '79',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'd75ef7927a417b0c80c0dbcf7fd5a2a0',
+  'title' => '234543',
+  'detail' => '34534',
+  'content' => '345345',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000394s ]
+[ info ] [ RUN ] app\index\controller\Template->addData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033695s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016426s ]
+[ sql ] [ SQL ] SELECT `id` FROM `edm_template` WHERE  `title` = '234543' LIMIT 1 [ RunTime:0.016412s ]
+[ sql ] [ SQL ] INSERT INTO `edm_template` (`title` , `detail` , `content` , `update_time` , `create_time`) VALUES ('234543' , '34534' , '345345' , 1489743626 , 1489743626) [ RunTime:0.016071s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:26+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.101046s][吞吐率：9.90req/s] [内存消耗：3,498.88kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000408s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.044159s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016936s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.016649s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:29+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/index.html
+[ log ] www.edm5.com/index/sendconfig/index.html [运行时间：0.021869s][吞吐率：45.73req/s] [内存消耗：2,329.27kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000633s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->index[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:29+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getdata.html
+[ log ] www.edm5.com/index/sendconfig/getdata.html [运行时间：0.014269s][吞吐率：70.08req/s] [内存消耗：2,282.52kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000477s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.016679s][吞吐率：59.96req/s] [内存消耗：2,331.34kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000618s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.018045s][吞吐率：55.42req/s] [内存消耗：3,458.74kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000428s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.094445s][吞吐率：10.59req/s] [内存消耗：3,145.89kb] [文件加载：56]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000522s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/gettemplate.html
+[ log ] www.edm5.com/index/sendconfig/gettemplate.html [运行时间：0.159182s][吞吐率：6.28req/s] [内存消耗：3,482.59kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'gettemplate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.059194s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getTemplate[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028319s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.017063s ]
+[ sql ] [ SQL ] SELECT `id`,title as text FROM `edm_template` [ RunTime:0.017616s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:45+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/add.html
+[ log ] www.edm5.com/index/sendconfig/add.html [运行时间：0.022484s][吞吐率：44.48req/s] [内存消耗：2,522.52kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000848s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->add[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:45+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getprovince.html
+[ log ] www.edm5.com/index/sendconfig/getprovince.html [运行时间：0.018083s][吞吐率：55.30req/s] [内存消耗：3,458.74kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getprovince',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000414s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getProvince[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:45+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getbrand.html
+[ log ] www.edm5.com/index/sendconfig/getbrand.html [运行时间：0.086934s][吞吐率：11.50req/s] [内存消耗：3,145.89kb] [文件加载：56]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getbrand',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000489s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getBrand[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T17:40:45+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/gettemplate.html
+[ log ] www.edm5.com/index/sendconfig/gettemplate.html [运行时间：0.156086s][吞吐率：6.41req/s] [内存消耗：3,482.59kb] [文件加载：58]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'gettemplate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'pgv_pvi=682670080; pgv_si=s1820967936; PHPSESSID=79m2u9rmr01bc06hf8g4e5fk65',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.060363s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getTemplate[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038342s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016544s ]
+[ sql ] [ SQL ] SELECT `id`,title as text FROM `edm_template` [ RunTime:0.016212s ]
+
+---------------------------------------------------------------

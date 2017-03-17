@@ -7,6 +7,10 @@
  */
 namespace app\index\controller;
 
+use Phinx\Config;
+use think\Db;
+use think\Validate;
+
 class Sendconfig extends Base
 {
     /**
@@ -30,6 +34,20 @@ class Sendconfig extends Base
 
     public function addData()
     {
+        $rule=[
+            ["title","require|unique:sendconfig","请填写标题"],
+            ["province_id","require","请选择省份"],
+            ["province_name","require","请选择省份"],
+            ["brand_id","require","请选择品牌"],
+            ["brand_name","require","请选择品牌"],
+            ["template_id","require","请选择模板"]
+        ];
+        $validate=new Validate($rule);
+        $data=$this->request->post();
+        if(!$validate->check($data)){
+            $this->msg("");
+        }
+
 
     }
 
@@ -45,5 +63,26 @@ class Sendconfig extends Base
             $arr[]=["id"=>$v,"text"=>$k];
         }
         return $arr;
+    }
+
+    /**
+     * 获取品牌
+     * @return false|\PDOStatement|string|\think\Collection
+     */
+    public function getBrand()
+    {
+        $db2=\think\Config::get("database.db_config2");
+        $data=Db::connect($db2)->name("mx_brand")->field("id,name as text")->select();
+        return $data;
+    }
+
+    /**
+     * 获取模板信息
+     * @return false|\PDOStatement|string|\think\Collection
+     */
+    public function getTemplate()
+    {
+        $template=new \app\index\model\Template();
+        return $template->field("id,title as text")->select();
     }
 }

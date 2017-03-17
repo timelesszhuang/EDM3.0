@@ -28,14 +28,14 @@ $page_id="sendconfig_add";
 
         <div class="form-group">
             <label for="" class="control-label col-sm-3">品牌：</label>
-            <div class="col-sm-8">
-                <textarea name="content"  cols="30" rows="10" style="width:100%;height:100%;"></textarea>
+            <div class="col-sm-4">
+                <input type="text" id="{$page_id}_brand">
             </div>
         </div>
         <div class="form-group">
             <label for="" class="control-label col-sm-3">模板：</label>
-            <div class="col-sm-8">
-                <textarea name="content"  cols="30" rows="10" style="width:100%;height:100%;"></textarea>
+            <div class="col-sm-4">
+                <input type="text" id="{$page_id}_template">
             </div>
         </div>
     </form>
@@ -47,9 +47,21 @@ $page_id="sendconfig_add";
     <button type="button" class="btn btn-primary btn-sm" id="{$page_id}_add_producttype_btn">保存</button>
 </div>
 <script>
+    //省份
     $("#{$page_id}_province").combotree({
         url:obj.province,
         width:"200px",
+    });
+    //品牌
+    $("#{$page_id}_brand").combotree({
+        url:obj.brand,
+        width:"200px"
+    });
+    //模板
+    $("#{$page_id}_template").combotree({
+        url:obj.template,
+        multiple:true,
+        width:"200px"
     });
 
     $("#{$page_id}_add_producttype_btn").click(function () {

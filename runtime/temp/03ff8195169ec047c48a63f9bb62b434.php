@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html";i:1489737960;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html";i:1489743417;}*/ ?>
 <?php
 $page_id="template";
 ?>
@@ -41,7 +41,9 @@ $page_id="template";
             "urljson":"<?php echo URL('index/Sendconfig/getData'); ?>",
             "add_link":"<?php echo URL('index/Sendconfig/add'); ?>",
             "del_template_url":"<?php echo URL('index/Sendconfig/del'); ?>",
-            "province":"<?php echo URL('index/Sendconfig/getProvince'); ?>"
+            "province":"<?php echo URL('index/Sendconfig/getProvince'); ?>",
+             brand:"<?php echo URL('index/Sendconfig/getBrand'); ?>",
+            template:"<?php echo URL('index/Sendconfig/getTemplate'); ?>"
         }
     })();
     load_user_datagrid(obj.datagrid_id,obj.urljson);

@@ -61,14 +61,16 @@ return [
             // 服务器地址
             'hostname'        => 'rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com',
             // 数据库名
-            'database'        => 'edm',
+            'database'        => 'salesmenbeta2',
             // 用户名
-            'username'        => 'edm',
+            'username'        => 'salesmen',
             // 密码
-            'password'        => 'LiuRui123$%^',
+            'password'        => 'qiangbi123',
             // 端口
             'hostport'        => '',
             // 数据库编码默认采用utf8
             'charset'         => 'utf8',
+            // 数据库表前缀
+            'prefix'          => 'sm_',
         ],
 ];
