@@ -7,6 +7,10 @@
  */
 namespace app\index\controller;
 
+use Phinx\Config;
+use think\Db;
+use think\Validate;
+
 class Sendconfig extends Base
 {
     /**
@@ -28,9 +32,29 @@ class Sendconfig extends Base
         return view();
     }
 
+    /**
+     * 添加配置信息
+     */
     public function addData()
     {
-
+        $rule = [
+            ["title", "require|unique:SendConfig", "请填写标题"],
+            ["province_id", "require", "请选择省份"],
+            ["province_name", "require", "请选择省份"],
+            ["brand_id", "require", "请选择品牌"],
+            ["brand_name", "require", "请选择品牌"],
+            ["template_id", "require", "请选择模板"]
+        ];
+        $validate = new Validate($rule);
+        $data = $this->request->post();
+        if (!$validate->check($data)) {
+            $this->msg($validate->getError(),"添加配置",self::error);
+        }
+        $sendconfig=new \app\index\model\SendConfig();
+        if(!$sendconfig->save($data)){
+            $this->msg("添加配置失败","添加配置",self::error);
+        }
+        $this->msg("添加成功","添加配置");
     }
 
     /**
@@ -39,11 +63,32 @@ class Sendconfig extends Base
      */
     public function getProvince()
     {
-        $sendconfig=new \app\index\model\SendConfig();
-        $arr=[];
-        foreach($sendconfig->province() as $k=>$v){
-            $arr[]=["id"=>$v,"text"=>$k];
+        $sendconfig = new \app\index\model\SendConfig();
+        $arr = [];
+        foreach ($sendconfig->province() as $k => $v) {
+            $arr[] = ["id" => $v, "text" => $k];
         }
         return $arr;
+    }
+
+    /**
+     * 获取品牌
+     * @return false|\PDOStatement|string|\think\Collection
+     */
+    public function getBrand()
+    {
+        $db2 = \think\Config::get("database.db_config2");
+        $data = Db::connect($db2)->name("mx_brand")->field("id,name as text")->select();
+        return $data;
+    }
+
+    /**
+     * 获取模板信息
+     * @return false|\PDOStatement|string|\think\Collection
+     */
+    public function getTemplate()
+    {
+        $template = new \app\index\model\Template();
+        return $template->field("id,title as text")->select();
     }
 }

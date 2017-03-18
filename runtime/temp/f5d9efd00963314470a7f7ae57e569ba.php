@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489738553;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489800597;}*/ ?>
 <!----该文件是打开窗体之后的页面-->
 <?php
 $page_id="sendconfig_add";
@@ -29,14 +29,14 @@ $page_id="sendconfig_add";
 
         <div class="form-group">
             <label for="" class="control-label col-sm-3">品牌：</label>
-            <div class="col-sm-8">
-                <textarea name="content"  cols="30" rows="10" style="width:100%;height:100%;"></textarea>
+            <div class="col-sm-4">
+                <input type="text" id="<?php echo $page_id; ?>_brand">
             </div>
         </div>
         <div class="form-group">
             <label for="" class="control-label col-sm-3">模板：</label>
-            <div class="col-sm-8">
-                <textarea name="content"  cols="30" rows="10" style="width:100%;height:100%;"></textarea>
+            <div class="col-sm-4">
+                <input type="text" id="<?php echo $page_id; ?>_template">
             </div>
         </div>
     </form>
@@ -48,16 +48,48 @@ $page_id="sendconfig_add";
     <button type="button" class="btn btn-primary btn-sm" id="<?php echo $page_id; ?>_add_producttype_btn">保存</button>
 </div>
 <script>
+    //省份
     $("#<?php echo $page_id; ?>_province").combotree({
         url:obj.province,
         width:"200px",
+    });
+    //品牌
+    $("#<?php echo $page_id; ?>_brand").combotree({
+        url:obj.brand,
+        width:"200px"
+    });
+    //模板
+    $("#<?php echo $page_id; ?>_template").combotree({
+        url:obj.template,
+        multiple:true,
+        width:"200px"
     });
 
     $("#<?php echo $page_id; ?>_add_producttype_btn").click(function () {
         var obj = {
             add_email_template_url: "<?php echo URL('index/Sendconfig/addData'); ?>"
         };
-        var data = $("#<?php echo $page_id; ?>_toaction").serialize();
+        var data = $("#<?php echo $page_id; ?>_toaction").serializeArray();
+        data.push({
+            name: "province_id",
+            value: $("#<?php echo $page_id; ?>_province").combotree("getValue"),
+        });
+        data.push({
+            name: "province_name",
+            value: $("#<?php echo $page_id; ?>_province").combotree("getText"),
+        });
+        data.push({
+            name:"brand_id",
+            value: $("#<?php echo $page_id; ?>_brand").combotree("getValue"),
+        });
+        data.push({
+            name:"brand_name",
+            value: $("#<?php echo $page_id; ?>_brand").combotree("getText"),
+        });
+        data.push({
+            name:"template_id",
+            value: $("#<?php echo $page_id; ?>_template").combotree("getValues"),
+        });
         submit_form(obj.add_email_template_url, data, $("input[name='<?php echo $page_id; ?>_add_producttype_modal_id']").val(), $("input[name='<?php echo $page_id; ?>_datagrid_id']").val());
     });
 </script>
