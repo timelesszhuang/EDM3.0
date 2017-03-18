@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489800597;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489802151;}*/ ?>
 <!----该文件是打开窗体之后的页面-->
 <?php
 $page_id="sendconfig_add";
@@ -89,6 +89,10 @@ $page_id="sendconfig_add";
         data.push({
             name:"template_id",
             value: $("#<?php echo $page_id; ?>_template").combotree("getValues"),
+        });
+        data.push({
+            name:"template_name",
+            value: $("#<?php echo $page_id; ?>_template").combotree("getText"),
         });
         submit_form(obj.add_email_template_url, data, $("input[name='<?php echo $page_id; ?>_add_producttype_modal_id']").val(), $("input[name='<?php echo $page_id; ?>_datagrid_id']").val());
     });

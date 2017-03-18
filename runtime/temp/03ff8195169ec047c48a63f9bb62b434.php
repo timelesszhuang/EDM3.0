@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html";i:1489747081;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html";i:1489803384;}*/ ?>
 <?php
 $page_id="template";
 ?>
@@ -61,12 +61,14 @@ $page_id="template";
             singleSelect: true,
             columns: [[
                 {field: 'id', title: 'ID', align: 'center', hidden: true},
-                {field: 'title', title: '标题', width: 5, align: 'left'},
-                {field: 'detail', title: '描述', width: 7},
+                {field: 'title', title: '标题', width: 7, align: 'left'},
+                {field: 'province_name', title: '省份', width: 5},
+                {field: 'brand_name', title: '品牌', width: 5},
+                {field: 'template_name', title: '模板', width: 5},
                 {field: 'create_time', title: '创建时间', width: 4, align: 'center'},
                 {
                     field: 'action', title: '操作', width: 6, align: 'center', formatter: function (index,item) {
-                    return '<a href="javascript:void(0)" _id="'+item.id+'"  class="<?php echo $page_id; ?>_edit">编辑</a>&nbsp;&nbsp;<a href="javascript:void(0)" _id="'+item.id+'" class="<?php echo $page_id; ?>_del">删除</a>';
+                    return '<a href="javascript:void(0)" _id="'+item.id+'"  class="<?php echo $page_id; ?>_edit">编辑</a>';
                 }
                 }
             ]],
