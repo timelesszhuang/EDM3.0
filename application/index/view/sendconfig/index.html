@@ -71,21 +71,25 @@ $page_id="template";
             ]],
         });
     }
+
     /**
      * 点击添加
      */
     $("#{$page_id}_add_template").click(function () {
         add_record_modal(obj.datagrid_id, obj.add_link,obj.modal_id);
     });
+
     $("body").undelegate(".{$page_id}_edit", "click");
     //点击编辑事件
     $("body").delegate(".{$page_id}_edit", "click", function () {
         edit_record_modal($(this).attr("_id"),obj.save_link, obj.datagrid_id, obj.modal_id);
     });
+
     $("body").undelegate(".{$page_id}_del","click");
     $("body").delegate(".{$page_id}_del","click",function(){
         delete_single_record($(this).attr("_id"),obj.del_template_url,obj.datagrid_id);//自动刷新
-    })
+    });
+
     $("#{$page_id}_search").click(function(){
         $('#' + obj.datagrid_id).datagrid("load",{
             query:$("#{$page_id}_query").val()
