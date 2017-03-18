@@ -89,6 +89,10 @@ $page_id="sendconfig_add";
             name:"template_id",
             value: $("#{$page_id}_template").combotree("getValues"),
         });
+        data.push({
+            name:"template_name",
+            value: $("#{$page_id}_template").combotree("getText"),
+        });
         submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_producttype_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());
     });
 </script>

@@ -48,13 +48,72 @@ class Sendconfig extends Base
         $validate = new Validate($rule);
         $data = $this->request->post();
         if (!$validate->check($data)) {
-            $this->msg($validate->getError(),"添加配置",self::error);
+            $this->msg($validate->getError(), "添加配置", self::error);
         }
-        $sendconfig=new \app\index\model\SendConfig();
-        if(!$sendconfig->save($data)){
-            $this->msg("添加配置失败","添加配置",self::error);
+        $sendconfig = new \app\index\model\SendConfig();
+        if (!$sendconfig->save($data)) {
+            $this->msg("添加配置失败", "添加配置", self::error);
         }
-        $this->msg("添加成功","添加配置");
+        $this->msg("添加成功", "添加配置");
+    }
+
+    /**
+     * 获取数据
+     * @return false|\PDOStatement|string|\think\Collection
+     */
+    public function getData()
+    {
+        $sendconfig = new \app\index\model\SendConfig();
+        list($limit, $rows, $query) = $this->getRequest();
+        $where = [];
+        if (!empty($query)) {
+            $where["title"] = ["like", "%$query%"];
+        }
+        return $sendconfig->where($where)->order("id desc")->limit($limit, $rows)->select();
+    }
+
+    /**
+     * 修改页面
+     * @return \think\response\View
+     */
+    public function save()
+    {
+        $this->get_assign();
+        $id = $this->request->post("id");
+        $sendconfig = \app\index\model\SendConfig::get($id);
+        if ($sendconfig) {
+            $this->assign([
+                "data" => $sendconfig->toArray()
+            ]);
+        }
+        return view();
+    }
+
+    /**
+     * 修改操作
+     */
+    public function saveData()
+    {
+        $rule = [
+            ["title", "require|unique:SendConfig", "请填写标题"],
+            ["province_id", "require", "请选择省份"],
+            ["province_name", "require", "请选择省份"],
+            ["brand_id", "require", "请选择品牌"],
+            ["brand_name", "require", "请选择品牌"],
+            ["template_id", "require", "请选择模板"]
+        ];
+        $validate = new Validate($rule);
+        $data = $this->request->post();
+        if (!$validate->check($data)) {
+            $this->msg($validate->getError(), "添加配置", self::error);
+        }
+        $sendconfig = new \app\index\model\SendConfig();
+        $id=$data["id"];
+        unset($data["id"]);
+        if(!$sendconfig->save($data,["id"=>$id])){
+            $this->msg("修改失败","修改配置",self::error);
+        }
+        $this->msg("修改成功","修改配置");
     }
 
     /**
