@@ -32,10 +32,13 @@ class Sendconfig extends Base
         return view();
     }
 
+    /**
+     * 添加配置信息
+     */
     public function addData()
     {
         $rule = [
-            ["title", "require|unique:sendconfig", "请填写标题"],
+            ["title", "require|unique:SendConfig", "请填写标题"],
             ["province_id", "require", "请选择省份"],
             ["province_name", "require", "请选择省份"],
             ["brand_id", "require", "请选择品牌"],
@@ -45,8 +48,13 @@ class Sendconfig extends Base
         $validate = new Validate($rule);
         $data = $this->request->post();
         if (!$validate->check($data)) {
-            $this->msg("");
+            $this->msg($validate->getError(),"添加配置",self::error);
         }
+        $sendconfig=new \app\index\model\SendConfig();
+        if(!$sendconfig->save($data)){
+            $this->msg("添加配置失败","添加配置",self::error);
+        }
+        $this->msg("添加成功","添加配置");
     }
 
     /**

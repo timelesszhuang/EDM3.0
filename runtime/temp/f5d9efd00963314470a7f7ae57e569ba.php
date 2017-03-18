@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489743642;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489800597;}*/ ?>
 <!----该文件是打开窗体之后的页面-->
 <?php
 $page_id="sendconfig_add";
@@ -69,7 +69,27 @@ $page_id="sendconfig_add";
         var obj = {
             add_email_template_url: "<?php echo URL('index/Sendconfig/addData'); ?>"
         };
-        var data = $("#<?php echo $page_id; ?>_toaction").serialize();
+        var data = $("#<?php echo $page_id; ?>_toaction").serializeArray();
+        data.push({
+            name: "province_id",
+            value: $("#<?php echo $page_id; ?>_province").combotree("getValue"),
+        });
+        data.push({
+            name: "province_name",
+            value: $("#<?php echo $page_id; ?>_province").combotree("getText"),
+        });
+        data.push({
+            name:"brand_id",
+            value: $("#<?php echo $page_id; ?>_brand").combotree("getValue"),
+        });
+        data.push({
+            name:"brand_name",
+            value: $("#<?php echo $page_id; ?>_brand").combotree("getText"),
+        });
+        data.push({
+            name:"template_id",
+            value: $("#<?php echo $page_id; ?>_template").combotree("getValues"),
+        });
         submit_form(obj.add_email_template_url, data, $("input[name='<?php echo $page_id; ?>_add_producttype_modal_id']").val(), $("input[name='<?php echo $page_id; ?>_datagrid_id']").val());
     });
 </script>
