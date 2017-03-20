@@ -14,14 +14,17 @@ use think\Request;
 
 class Sendemail extends Controller
 {
-    public function run()
+    /**
+     * 启动函数 接收参数
+     * @param $id
+     */
+    public function run($id)
     {
-        $mongodb = new \app\index\model\Mongodb();
-        $list = $mongodb->getPerstepEmail('shandong', 6, 0, 500);
-        echo $mongodb->getCount('shandong', 6);
-        print_r($list);
-        exit;
-        $id = Request::instance()->get("id");
+//        $mongodb = new \app\index\model\Mongodb();
+//        $list = $mongodb->getPerstepEmail('shandong', 6, 0, 500);
+//        echo $mongodb->getCount('shandong', 6);
+//        print_r($list);
+//        exit;
         if (empty($id)) {
             exit("请传入id参数");
         }
@@ -32,6 +35,13 @@ class Sendemail extends Controller
             exit("无此配置项");
         }
         $confgData = $sendconfig->toArray();
+        $this->begin($confgData);
+    }
+
+    public function begin($confgData)
+    {
+
+
     }
 
     /**
