@@ -17,7 +17,7 @@ class Blacklist extends Base
      * 域名黑名单 首页
      * @return mixed
      */
-    public function domain_index()
+    public function domainIndex()
     {
         return view();
     }
@@ -32,16 +32,6 @@ class Blacklist extends Base
         return view();
     }
 
-    /**
-     * 保存域名数据
-     * @access public
-     */
-    public function saveDomain()
-    {
-        $this->get_assign();
-        return view();
-    }
-
 
     /**
      * 添加域名
@@ -50,16 +40,16 @@ class Blacklist extends Base
     public function execAddDomainData()
     {
         $rule = [
-            ["link_title", "require", "请输入名称"],
-            ["link_title", "unique:link", "名称不能重复"],
-            ["redirect_url", "require", "请输入链接"]
+            ["domain", "require", "请输入域名"],
+            ["domain", "unique:blacklist", "域名不能重复"],
+            ["reason", "require", "请输入拉黑原因"]
         ];
         $validate = new Validate($rule);
         $data = $this->request->post();
         if (!$validate->check($data)) {
             $this->msg($validate->getError(), "添加链接", self::error);
         }
-        $link = new \app\index\model\Link();
+        $link = new \app\index\model\Blacklist();
         if (!$link->save($data)) {
             $this->msg("添加失败", "添加链接", self::error);
         }
@@ -78,35 +68,36 @@ class Blacklist extends Base
             $where["domain"] = ["like", "%" . $query . "%"];
         }
         $link = new \app\index\model\Blacklist();
-        return $link->where($where)->order("id desc")->limit($limit, $rows)->select();
+        $data = $link->where($where)->order("id desc")->limit($limit, $rows)->select();
+        return $data;
     }
+
 
     /**
      * 修改也没展示
      * @return \think\response\View
      */
-    public function save()
+    public function saveDomain()
     {
         $this->get_assign();
         $id = $this->request->post("id");
-        $link = \app\index\model\Link::get($id);
-        if ($link) {
+        $bl = \app\index\model\Blacklist::get($id);
+        if ($bl) {
             $this->assign([
-                "data" => $link->toArray()
+                "data" => $bl->toArray()
             ]);
         }
         return view();
     }
 
     /**
-     * 修改数据
+     * 修改黑名单中的数据
+     * @access public
      */
-    public function saveData()
+    public function execSaveDoamin()
     {
         $rule = [
-            ["link_title", "require", "请输入名称"],
-            ["link_title", "unique:link", "名称不能重复"],
-            ["redirect_url", "require", "请输入链接"]
+            ["reason", "require", "请输入拉黑原因"]
         ];
         $validate = new Validate($rule);
         $data = $this->request->post();
@@ -114,9 +105,10 @@ class Blacklist extends Base
             $this->msg($validate->getError(), "修改链接", self::error);
         }
         $id = $data["id"];
-        $link = new \app\index\model\Link();
+        $bl = new \app\index\model\Blacklist();
         unset($data["id"]);
-        if (!$link->save($data, ["id" => $id])) {
+        unset($data['domain']);
+        if (!$bl->save($data, ["id" => $id])) {
             $this->msg("修改失败", "修改链接", self::error);
         }
         $this->msg("修改成功", "修改链接");
@@ -125,10 +117,10 @@ class Blacklist extends Base
     /**
      * 删除链接
      */
-    public function del()
+    public function delDomain()
     {
         $id = $this->request->post("id");
-        if (!\app\index\model\Link::destroy($id)) {
+        if (!\app\index\model\Blacklist::destroy($id)) {
             $this->msg("删除失败", "删除链接", self::error);
         }
         $this->msg("删除成功", "删除链接");

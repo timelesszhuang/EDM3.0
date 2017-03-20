@@ -53,12 +53,13 @@ class Mongodb extends Model
             if (isset($doc['mx'])) {
                 $per['qiye_mailaddress'] = 'admin@' . $doc['domain_name'];
             }
+            $per['domain'] = $doc['domain_name'];
             $per['person_mailaddress'] = $doc['contact_email'];
             $per['wwwtitle'] = $doc['wwwtitle'];
             $per['object_id'] = (string)$doc['_id'];
             $info[] = $per;
         }
-        return  $info;
+        return $info;
     }
 
     /**
