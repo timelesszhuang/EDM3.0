@@ -9,10 +9,15 @@
 namespace app\index\controller;
 
 use app\index\model\SendConfig;
+use think\Config;
 use think\Controller;
 use think\Request;
 use app\index\model\Account;
 use app\index\model\Template;
+use app\common\EmailUtil;
+use app\index\model\SendRecord;
+use think\Url;
+
 class Sendemail extends Controller
 {
     /**
@@ -36,29 +41,27 @@ class Sendemail extends Controller
             exit("无此配置项");
         }
         $confgData = $sendconfig->toArray();
-        //获取模板信息
-        if(empty($confgData["template_id"])){
-            exit("请先配置模板");
-        }
-        $template=Template::get($confgData["template_id"]);
-        if(!$template){
-            exit("没有模板数据");
-        }
-        $templateData=$template->toArray();
-        $this->begin($confgData,$templateData);
+        $this->begin($confgData);
     }
 
-    public function begin($confgData,$templateData)
+    public function begin($confgData)
     {
-        $account_arr=$this->getAccount();
-        dump($account_arr["data"]);die;
+        //实例化email类
+        $emailUtil = new EmailUtil();
+        //获取账号信息
+        $account_arr = $this->getAccount();
+        //获取mongodb实例
         $mongodb = new \app\index\model\Mongodb();
         //账号起始
         $start_account = $confgData["send_account_id"];
         //邮箱发送起始
         $email_offset = $confgData["send_record_page"];
-//        var_dump($confgData);
-//        die;
+
+        //获取模板信息
+        if (empty($confgData["template_id"])) {
+            exit("请先配置模板");
+        }
+        $template_arr = $this->getTemplate($confgData["template_id"]);
         //总记录数
         $count = $mongodb->getCount($confgData["province_id"], $confgData["brand_id"]);
         //如果配置项是空 修改默认配置项
@@ -70,18 +73,90 @@ class Sendemail extends Controller
             if ($start_account >= $account_arr["count"]) {
                 $start_account = 0;
             }
+            if ($email_offset >= $count) {
+//                $this->send_self(["", $account_send_info["account_name"], $account_send_info["account_password"], $account_send_info["host"], $template_info['title'] . "数据已经发送完毕,无法再次发送,请重新修改配置", $template_info["content"], "强比科技"]);
+                exit("数据已经发送完毕,无法再次发送,请重新修改配置");
+            }
             //500条数据
             $data = $mongodb->getPerstepEmail($confgData["province_id"], $confgData["brand_id"], $email_offset, 500);
             foreach ($data as $dk => $dv) {
-                dump($dv);die;
-
+                $toUser = $dv["person_mailaddress"];
+                //添加发送记录
+//                $record_add_id = $this->save_to_record($confgData["template_id"], $confgData["template_name"], $toUser, $confgData["id"], $confgData["title"], $confgData["province_id"], $dv["object_id"]);
+                //模板信息数组
+                $temp_info = $template_arr[array_rand($template_arr)];
+                $sendUser = $account_arr["data"][$start_account]["account"];
+                $sendpwd = $account_arr["data"][$start_account]["pwd"];
+                $subject = $temp_info["title"];
+                $sendName = "强比企业邮箱";
+                $sendBody = $temp_info["content"];
+                var_dump($this->replace_content($toUser, $subject, $sendBody, 111));die;
+                $emailUtil->send($sendUser, $sendpwd, $subject, $toUser, $sendName, $sendBody);
+                //账号和邮箱step++
+                $start_account++;
+                $email_offset++;
             }
-
-
         }
-
-
     }
+
+    /**
+     * 添加发送记录
+     * @param $record
+     */
+    public function save_to_record($template_id, $template_name, $toUser, $configId, $configTitle, $province, $object_id)
+    {
+        $model = new SendRecord();
+        $model->template_id = $template_id;
+        $model->template_name = $template_name;
+        $model->email = $toUser;
+        $model->config_id = $configId;
+        $model->config_title = $configTitle;
+        $model->province = $province;
+        $model->object_id = $object_id;
+        return $model->save();
+    }
+
+
+
+    /**
+     * 替换内容
+     * @param $data
+     * @param $template_info
+     * @param $record_add_id
+     * @return string
+     */
+    public function replace_content($registrant_name, $title, $content, $record_add_id)
+    {
+        //随机字符串
+        $rand_abc = chr(rand(97, 122)) . chr(rand(65, 90)) . chr(rand(97, 122)) . chr(rand(65, 90));
+        if (empty($registrant_name)) {
+            $registrant_name = "您好";
+        }
+        //标题
+        $title = str_replace("{{name}}", $registrant_name, $title) . "(" . $rand_abc . ")";
+        //内容
+        $content = str_replace("{{name}}", $registrant_name, $content);
+        //替换链接id
+        $content = str_replace("{{id}}", $record_add_id, $content);
+        //图片链接地址
+        $domain=Config::get("emailDomain.domain");
+        $url=$domain.Url::build("EmailUtil/makeDetectImg","id=$record_add_id");
+        return [
+            $title, $content, $url
+        ];
+    }
+
+    /**
+     * 获取所有模板信息
+     * @param $id
+     * @return array
+     */
+    public function getTemplate($id)
+    {
+        $temp = Template::all($id);
+        return collection($temp)->toArray();
+    }
+
 
     /**
      * 获取账号相关数据
@@ -89,16 +164,15 @@ class Sendemail extends Controller
      */
     public function getAccount()
     {
-        $account = new Account();
-        $count=$account->count();
-        if(empty($count)){
+        $count = Account::count();
+        if (empty($count)) {
             exit("请先添加账号");
         }
-        $acc=Account::column("account,pwd");
-        var_dump($acc[]);die;
+        $acc = Account::all();
+        $data = collection($acc)->toArray();
         return [
-            "count"=>$count,
-            "data"=>$acc->toArray()
+            "count" => $count,
+            "data" => $data
         ];
     }
 
