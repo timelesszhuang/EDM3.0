@@ -20,6 +20,11 @@ class Sendemail extends Controller
      */
     public function run($id)
     {
+//        $mongodb = new \app\index\model\Mongodb();
+//        $list = $mongodb->getPerstepEmail('shandong', 6, 0, 500);
+//        echo $mongodb->getCount('shandong', 6);
+//        print_r($list);
+//        exit;
         if (empty($id)) {
             exit("请传入id参数");
         }

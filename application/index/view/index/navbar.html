@@ -38,20 +38,21 @@
                     </li>
                     <li class='dropdown menulist'>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false" title="黑名单">黑名
+                           aria-expanded="false" title="黑名单">黑名单
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu ">
                             <li>
                                 <a href="javascript:void(0);" r_href="{:URL('index/blacklist/domain_index')}"
-                                   title="域名黑名单">域名黑名单
+                                   title="域名黑名单">
+                                    <i class="fa fa-black-tie" aria-hidden="true"></i> 域名黑名单
                                 </a>
                             </li>
                             <li role="separator" class="divider"></li>
                             <li>
                                 <a href="javascript:void(0);" r_href="{:URL('index/blacklist/email_index')}"
                                    title="邮件黑名单">
-                                    <span class="glyphicon glyphicon-th">邮件黑名单</span>
+                                    <i class="fa fa-black-tie" aria-hidden="true"></i> 邮件黑名单
                                 </a>
                             </li>
                         </ul>
@@ -87,6 +88,9 @@
         $('.menulist a').click(function () {
             var href = $(this).attr('r_href');
             var type = $(this).attr('type');
+            if (is_null_or_empty(href)) {
+                return;
+            }
             if (!type) {
                 page_menu(href);
             } else {
