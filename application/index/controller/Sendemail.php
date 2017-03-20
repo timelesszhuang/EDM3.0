@@ -94,9 +94,11 @@ class Sendemail extends Controller
         if(empty($count)){
             exit("请先添加账号");
         }
+        $acc=Account::column("account,pwd");
+        var_dump($acc[]);die;
         return [
             "count"=>$count,
-            "data"=>Account::all()
+            "data"=>$acc->toArray()
         ];
     }
 

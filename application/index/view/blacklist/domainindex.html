@@ -35,11 +35,11 @@ $page_id="blacklist";
     var obj = (function () {
         return {
             "datagrid_id": "{$page_id}_datagrid",
-            "save_link": "{:URL('index/Blacklist/saveDomain')}",
+            "save_bl": "{:URL('index/Blacklist/saveDomain')}",
             "modal_id": "index_menulist",
             "urljson": "{:URL('index/Blacklist/getDomainData')}",
-            "add_link": "{:URL('index/Blacklist/addDomain')}",
-            "del_template_url": "{:URL('index/Blacklist/delDomain')}"
+            "add_bl": "{:URL('index/Blacklist/addDomain')}",
+            "del_bl": "{:URL('index/Blacklist/delDomain')}"
         }
     })();
     load_domain_datagrid(obj.datagrid_id, obj.urljson);
@@ -60,7 +60,7 @@ $page_id="blacklist";
                 {field: 'id', title: 'ID', align: 'center', hidden: true},
                 {field: 'domain', title: '域名', width: 5, align: 'left'},
                 {field: 'reason', title: '拉黑原因', width: 7},
-                {field: 'addtime', title: '拉黑时间', width: 3},
+                {field: 'create_time', title: '拉黑时间', width: 3},
                 {
                     field: 'action', title: '操作', width: 6, align: 'center', formatter: function (index, item) {
                     return '<a href="javascript:void(0)" _id="' + item.id + '"  class="{$page_id}_edit">编辑</a>&nbsp;&nbsp;<a href="javascript:void(0)" _id="' + item.id + '" class="{$page_id}_del">删除</a>';
@@ -73,16 +73,16 @@ $page_id="blacklist";
      * 点击添加
      */
     $("#{$page_id}_add_template").click(function () {
-        add_record_modal(obj.datagrid_id, obj.add_link, obj.modal_id);
+        add_record_modal(obj.datagrid_id, obj.add_bl, obj.modal_id);
     });
     $("body").undelegate(".{$page_id}_edit", "click");
     //点击编辑事件
     $("body").delegate(".{$page_id}_edit", "click", function () {
-        edit_record_modal($(this).attr("_id"), obj.save_link, obj.datagrid_id, obj.modal_id);
+        edit_record_modal($(this).attr("_id"), obj.save_bl, obj.datagrid_id, obj.modal_id);
     });
     $("body").undelegate(".{$page_id}_del", "click");
     $("body").delegate(".{$page_id}_del", "click", function () {
-        delete_single_record($(this).attr("_id"), obj.del_template_url, obj.datagrid_id);//自动刷新
+        delete_single_record($(this).attr("_id"), obj.del_bl, obj.datagrid_id);//自动刷新
     })
     $("#{$page_id}_search").click(function () {
         $('#' + obj.datagrid_id).datagrid("load", {
