@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"/home/wwwroot/edm5.0/public/../application/index/view/index/index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/header.html";i:1489643205;s:71:"/home/wwwroot/edm5.0/public/../application/index/view/index/navbar.html";i:1489975932;s:75:"/home/wwwroot/edm5.0/public/../application/index/view/index/load_index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/footer.html";i:1489715273;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"/home/wwwroot/edm5.0/public/../application/index/view/index/index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/header.html";i:1489643205;s:71:"/home/wwwroot/edm5.0/public/../application/index/view/index/navbar.html";i:1489980520;s:75:"/home/wwwroot/edm5.0/public/../application/index/view/index/load_index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/footer.html";i:1489715273;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,20 +72,21 @@
                     </li>
                     <li class='dropdown menulist'>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false" title="黑名单">黑名
+                           aria-expanded="false" title="黑名单">黑名单
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu ">
                             <li>
                                 <a href="javascript:void(0);" r_href="<?php echo URL('index/blacklist/domain_index'); ?>"
-                                   title="域名黑名单">域名黑名单
+                                   title="域名黑名单">
+                                    <i class="fa fa-black-tie" aria-hidden="true"></i> 域名黑名单
                                 </a>
                             </li>
                             <li role="separator" class="divider"></li>
                             <li>
                                 <a href="javascript:void(0);" r_href="<?php echo URL('index/blacklist/email_index'); ?>"
                                    title="邮件黑名单">
-                                    <span class="glyphicon glyphicon-th">邮件黑名单</span>
+                                    <i class="fa fa-black-tie" aria-hidden="true"></i> 邮件黑名单
                                 </a>
                             </li>
                         </ul>
@@ -121,6 +122,9 @@
         $('.menulist a').click(function () {
             var href = $(this).attr('r_href');
             var type = $(this).attr('type');
+            if (is_null_or_empty(href)) {
+                return;
+            }
             if (!type) {
                 page_menu(href);
             } else {
