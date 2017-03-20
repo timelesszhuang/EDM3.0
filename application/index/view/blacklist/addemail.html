@@ -7,26 +7,20 @@ $page_id="bl_domain_add";
         <span aria-hidden="true">×</span>
     </button>
     <h4 class="modal-title">
-        <i class="fa fa-location-arrow"></i> 添加域名黑名单
+        <i class="fa fa-location-arrow"></i> 添加邮件黑名单
     </h4>
 </div>
 <div class="modal-body">
     <form class="form-horizontal" id="{$page_id}_toaction" onsubmit="return false">
         <input type="hidden" name="token" value="{$token}">
         <div class="form-group">
-            <label for="" class="control-label col-sm-3">域名：</label>
+            <label for="" class="control-label col-sm-3">邮箱：</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" name="domain">
+                <input type="text" class="form-control" name="email">
             </div>
         </div>
         <div class="form-group">
-            <label for="" class="control-label col-sm-3">原因：</label>
-            <div class="col-sm-4">
-                <input type="text" class="form-control" name="reason">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="" class="control-label col-sm-3">域名详情：</label>
+            <label for="" class="control-label col-sm-3">拉黑原因：</label>
             <div class="col-sm-4">
                 <input type="text" class="form-control" name="detail">
             </div>
@@ -42,7 +36,7 @@ $page_id="bl_domain_add";
 <script>
     $("#{$page_id}_add_producttype_btn").click(function () {
         var obj = {
-            add_email_template_url: "{:URL('index/Blacklist/execAddDomainData')}"
+            add_email_template_url: "{:URL('index/Blacklist/execAddEmail')}"
         };
         var data = $("#{$page_id}_toaction").serialize();
         submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());
