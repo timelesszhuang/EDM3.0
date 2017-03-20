@@ -14,10 +14,10 @@ use think\Validate;
 class Blacklist extends Base
 {
     /**
-     * 首页展示
+     * 域名黑名单 首页
      * @return mixed
      */
-    public function index()
+    public function domain_index()
     {
         return view();
     }
@@ -26,17 +26,28 @@ class Blacklist extends Base
      *添加链接页面
      * @return \think\response\View
      */
-    public function add()
+    public function addDomain()
     {
         $this->get_assign();
         return view();
     }
 
     /**
-     * 链接添加 数据
+     * 保存域名数据
+     * @access public
+     */
+    public function saveDomain()
+    {
+        $this->get_assign();
+        return view();
+    }
+
+
+    /**
+     * 添加域名
      * @return array
      */
-    public function addData()
+    public function execAddDomainData()
     {
         $rule = [
             ["link_title", "require", "请输入名称"],
@@ -59,14 +70,14 @@ class Blacklist extends Base
      * 获取json数据
      * @return false|\PDOStatement|string|\think\Collection
      */
-    public function getData()
+    public function getDomainData()
     {
         list($limit, $rows, $query) = $this->getRequest();
         $where = [];
         if ($query) {
-            $where["link_title"] = ["like", "%" . $query . "%"];
+            $where["domain"] = ["like", "%" . $query . "%"];
         }
-        $link = new \app\index\model\Link();
+        $link = new \app\index\model\Blacklist();
         return $link->where($where)->order("id desc")->limit($limit, $rows)->select();
     }
 

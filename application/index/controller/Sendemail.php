@@ -16,18 +16,22 @@ class Sendemail extends Controller
 {
     public function run()
     {
+        $mongodb = new \app\index\model\Mongodb();
+        $list = $mongodb->getPerstepEmail('shandong', 6, 0, 500);
+        echo $mongodb->getCount('shandong', 6);
+        print_r($list);
+        exit;
         $id = Request::instance()->get("id");
         if (empty($id)) {
             exit("请传入id参数");
         }
         $this->open_ob_start();
         //根据id查询配置项
-        $sendconfig=SendConfig::get($id);
-        if(!$sendconfig){
+        $sendconfig = SendConfig::get($id);
+        if (!$sendconfig) {
             exit("无此配置项");
         }
-        $confgData=$sendconfig->toArray();
-
+        $confgData = $sendconfig->toArray();
     }
 
     /**
