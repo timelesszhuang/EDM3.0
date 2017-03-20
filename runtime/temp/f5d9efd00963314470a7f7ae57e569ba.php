@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489809273;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489989653;}*/ ?>
 <!----该文件是打开窗体之后的页面-->
 <?php
 $page_id="sendconfig_add";
@@ -58,6 +58,7 @@ $page_id="sendconfig_add";
         url:obj.brand,
         width:"200px"
     });
+    $("#<?php echo $page_id; ?>_brand").combotree("setValue","all");
     //模板
     $("#<?php echo $page_id; ?>_template").combotree({
         url:obj.template,
