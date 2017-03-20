@@ -14,19 +14,28 @@ use think\Request;
 
 class Sendemail extends Controller
 {
-    public function run()
+    /**
+     * 启动函数 接收参数
+     * @param $id
+     */
+    public function run($id)
     {
-        $id = Request::instance()->get("id");
         if (empty($id)) {
             exit("请传入id参数");
         }
         $this->open_ob_start();
         //根据id查询配置项
-        $sendconfig=SendConfig::get($id);
-        if(!$sendconfig){
+        $sendconfig = SendConfig::get($id);
+        if (!$sendconfig) {
             exit("无此配置项");
         }
-        $confgData=$sendconfig->toArray();
+        $confgData = $sendconfig->toArray();
+        $this->begin($confgData);
+    }
+
+    public function begin($confgData)
+    {
+
 
     }
 

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"/home/wwwroot/edm5.0/public/../application/index/view/link/add.html";i:1489715273;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"/home/wwwroot/edm5.0/public/../application/index/view/link/add.html";i:1489741222;}*/ ?>
 <!----该文件是打开窗体之后的页面-->
 <?php
 $page_id="link_add";
