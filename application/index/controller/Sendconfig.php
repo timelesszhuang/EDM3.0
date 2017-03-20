@@ -138,6 +138,7 @@ class Sendconfig extends Base
     {
         $db2 = \think\Config::get("database.db_config2");
         $data = Db::connect($db2)->name("mx_brand")->field("id,name as text")->select();
+        $data[]=["id"=>0,"text"=>"未分类品牌"];
         return $data;
     }
 

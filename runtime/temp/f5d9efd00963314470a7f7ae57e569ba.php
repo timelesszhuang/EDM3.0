@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489802151;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1489809273;}*/ ?>
 <!----该文件是打开窗体之后的页面-->
 <?php
 $page_id="sendconfig_add";
@@ -29,8 +29,8 @@ $page_id="sendconfig_add";
 
         <div class="form-group">
             <label for="" class="control-label col-sm-3">品牌：</label>
-            <div class="col-sm-4">
-                <input type="text" id="<?php echo $page_id; ?>_brand">
+            <div class="col-sm-7">
+                <input type="text" id="<?php echo $page_id; ?>_brand">&nbsp;默认不选就是取省下全部
             </div>
         </div>
         <div class="form-group">
