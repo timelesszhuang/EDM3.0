@@ -255,4 +255,7 @@ return [
         // 验证成功后是否重置
         'reset' => true
     ],
+    'emailDomain'=>[
+        "domain"=>"edm.salesman.cc"
+    ]
 ];
