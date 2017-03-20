@@ -7,7 +7,7 @@ $page_id="link_save";
         <span aria-hidden="true">×</span>
     </button>
     <h4 class="modal-title">
-        <i class="fa fa-location-arrow"></i> 添加链接
+        <i class="fa fa-location-arrow"></i> 修改域名黑名单
     </h4>
 </div>
 <div class="modal-body">
@@ -15,24 +15,17 @@ $page_id="link_save";
         <input type="hidden" name="token" value="{$token}">
         <input type="hidden" name="id" value="{$data.id}">
         <div class="form-group">
-            <label for="" class="control-label col-sm-3">域名：</label>
+            <label for="" class="control-label col-sm-3">邮箱：</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" name="domain" value="{$data.domain}" readonly="true">
+                <input type="text" class="form-control" name="domain" value="{$data.email}" readonly="true">
             </div>
         </div>
         <div class="form-group">
-            <label for="" class="control-label col-sm-3">原因：</label>
-            <div class="col-sm-4">
-                <input type="text" class="form-control" name="reason" value="{$data.reason}">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="" class="control-label col-sm-3">域名详情：</label>
+            <label for="" class="control-label col-sm-3">拉黑原因：</label>
             <div class="col-sm-4">
                 <input type="text" class="form-control" name="detail" value="{$data.detail}">
             </div>
         </div>
-
     </form>
     <input type="hidden" value="{$modal_id}" name='{$page_id}_add_modal_id'>
     <input type="hidden" value="{$datagrid_id}" name='{$page_id}_datagrid_id'>
@@ -44,7 +37,7 @@ $page_id="link_save";
 <script>
     $("#{$page_id}_add_btn").click(function () {
         var obj = {
-            add_email_template_url: "{:URL('index/Blacklist/execSaveDoamin')}"
+            add_email_template_url: "{:URL('index/Blacklist/execEditEmail')}"
         };
         var data = $("#{$page_id}_toaction").serialize();
         submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());
