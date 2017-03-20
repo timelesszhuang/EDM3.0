@@ -125,4 +125,14 @@ class Blacklist extends Base
         }
         $this->msg("删除成功", "删除链接");
     }
+
+    /**
+     * 邮件首页
+     * @access public
+     */
+    public function emailIndex()
+    {
+        return view();
+    }
+
 }

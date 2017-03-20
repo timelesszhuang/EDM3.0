@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:82:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/index/index.html";i:1489719425;s:84:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/public/header.html";i:1489719425;s:83:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/index/navbar.html";i:1489980063;s:87:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/index/load_index.html";i:1489719425;s:84:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/public/footer.html";i:1489719425;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:82:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/index/index.html";i:1489719425;s:84:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/public/header.html";i:1489719425;s:83:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/index/navbar.html";i:1489981352;s:87:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/index/load_index.html";i:1489719425;s:84:"/usr/local/apache2/htdocs/EDM3.0/public/../application/index/view/public/footer.html";i:1489719425;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,20 +66,25 @@
                         </a>
                     </li>
                     <li class='dropdown menulist'>
+                        <a href="javascript:void(0);" r_href="<?php echo URL('index/account/index'); ?>" title="邮件账号">
+                            <span class="glyphicon glyphicon-th">邮件账号</span>
+                        </a>
+                    </li>
+                    <li class='dropdown menulist'>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false" title="黑名单">黑名单
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu ">
                             <li>
-                                <a href="javascript:void(0);" r_href="<?php echo URL('index/blacklist/domain_index'); ?>"
+                                <a href="javascript:void(0);" r_href="<?php echo URL('index/blacklist/domainIndex'); ?>"
                                    title="域名黑名单">
                                     <i class="fa fa-black-tie" aria-hidden="true"></i> 域名黑名单
                                 </a>
                             </li>
                             <li role="separator" class="divider"></li>
                             <li>
-                                <a href="javascript:void(0);" r_href="<?php echo URL('index/blacklist/email_index'); ?>"
+                                <a href="javascript:void(0);" r_href="<?php echo URL('index/blacklist/emailIndex'); ?>"
                                    title="邮件黑名单">
                                     <i class="fa fa-black-tie" aria-hidden="true"></i> 邮件黑名单
                                 </a>

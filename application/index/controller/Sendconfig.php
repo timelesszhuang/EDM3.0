@@ -41,14 +41,16 @@ class Sendconfig extends Base
             ["title", "require|unique:SendConfig", "请填写标题"],
             ["province_id", "require", "请选择省份"],
             ["province_name", "require", "请选择省份"],
-            ["brand_id", "require", "请选择品牌"],
-            ["brand_name", "require", "请选择品牌"],
             ["template_id", "require", "请选择模板"]
         ];
         $validate = new Validate($rule);
         $data = $this->request->post();
         if (!$validate->check($data)) {
             $this->msg($validate->getError(), "添加配置", self::error);
+        }
+        //all需要删除掉 因为全部使用null代替
+        if ($data["brand_id"] == "all") {
+            unset($data["brand_id"]);
         }
         $sendconfig = new \app\index\model\SendConfig();
         if (!$sendconfig->save($data)) {
@@ -98,8 +100,6 @@ class Sendconfig extends Base
             ["title", "require|unique:SendConfig", "请填写标题"],
             ["province_id", "require", "请选择省份"],
             ["province_name", "require", "请选择省份"],
-            ["brand_id", "require", "请选择品牌"],
-            ["brand_name", "require", "请选择品牌"],
             ["template_id", "require", "请选择模板"]
         ];
         $validate = new Validate($rule);
@@ -108,12 +108,12 @@ class Sendconfig extends Base
             $this->msg($validate->getError(), "添加配置", self::error);
         }
         $sendconfig = new \app\index\model\SendConfig();
-        $id=$data["id"];
+        $id = $data["id"];
         unset($data["id"]);
-        if(!$sendconfig->save($data,["id"=>$id])){
-            $this->msg("修改失败","修改配置",self::error);
+        if (!$sendconfig->save($data, ["id" => $id])) {
+            $this->msg("修改失败", "修改配置", self::error);
         }
-        $this->msg("修改成功","修改配置");
+        $this->msg("修改成功", "修改配置");
     }
 
     /**
@@ -138,7 +138,8 @@ class Sendconfig extends Base
     {
         $db2 = \think\Config::get("database.db_config2");
         $data = Db::connect($db2)->name("mx_brand")->field("id,name as text")->select();
-        $data[]=["id"=>0,"text"=>"未分类品牌"];
+        array_unshift($data, ["id" => 'all', "text" => "全部（带mx不带mx）"]);
+        array_unshift($data, ["id" => 0, "text" => "未分类品牌"]);
         return $data;
     }
 
