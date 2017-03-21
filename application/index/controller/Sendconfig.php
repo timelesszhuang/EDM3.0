@@ -125,7 +125,7 @@ class Sendconfig extends Base
         $sendconfig = new \app\index\model\SendConfig();
         $arr = [];
         foreach ($sendconfig->province() as $k => $v) {
-            $arr[] = ["id" => $k, "text" => $v];
+            $arr[] = ["id" => $v, "text" => $k];
         }
         return $arr;
     }
