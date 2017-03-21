@@ -11,7 +11,7 @@ use app\index\model\SendRecord;
 use think\Controller;
 use think\Request;
 
-class UnsubscribeEmail extends Controller
+class Unsubscribeemail extends Controller
 {
 
     /**
@@ -52,5 +52,26 @@ class UnsubscribeEmail extends Controller
         $domain = Config::get("emailDomain.domain");
         $url = $domain . Url::build("UnsubscribeEmail/unsubscribeEmail", "id=$recordId&email=$email&registrant_name=$md5_str");
         return "<a href='" . $url . "' target='_blank'>退订邮件</a>";
+    }
+
+    /**
+     * 导入账号
+     */
+    public function importAccount()
+    {
+        $data=[];
+        for ($i = 0; $i < 200; $i++) {
+            $account="aa";
+            $suffix="@rishin.com.cn";
+            if($i>0){
+                $account=$account.$i;
+            }
+            $info=[
+                "account"=>$account.$suffix,
+                "pwd"=>"Qiangbi135"
+            ];
+            $data[]=$info;
+        }
+//        var_dump((new\app\index\model\Account)->saveAll($data));
     }
 }

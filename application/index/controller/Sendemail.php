@@ -14,7 +14,7 @@ use think\Controller;
 use think\Request;
 use app\index\model\Account;
 use app\index\model\Template;
-use app\common\EmailUtil;
+use app\common\controller\EmailUtil;
 use app\index\model\SendRecord;
 use think\Url;
 use app\index\controller\UnsubscribeEmail;
@@ -52,7 +52,6 @@ class Sendemail extends Controller
         $start_account = $confgData["send_account_id"];
         //邮箱发送起始
         $email_offset = $confgData["send_record_page"];
-
         //获取模板信息
         if (empty($confgData["template_id"])) {
             exit("请先配置模板");
@@ -70,7 +69,6 @@ class Sendemail extends Controller
                 $start_account = 0;
             }
             if ($email_offset >= $count) {
-//                $this->send_self(["", $account_send_info["account_name"], $account_send_info["account_password"], $account_send_info["host"], $template_info['title'] . "数据已经发送完毕,无法再次发送,请重新修改配置", $template_info["content"], "强比科技"]);
                 exit("数据已经发送完毕,无法再次发送,请重新修改配置");
             }
             //500条数据
@@ -78,7 +76,9 @@ class Sendemail extends Controller
             foreach ($data as $dk => $dv) {
                 $toUser = $dv["person_mailaddress"];
                 //添加发送记录
+//                var_dump($confgData);die;
                 $recordId = $this->saveRecord($confgData["template_id"], $confgData["template_name"], $toUser, $confgData["id"], $confgData["title"], $confgData["province_id"], $dv["object_id"]);
+//                var_dump($recordId);die;
                 //模板信息数组
                 $tempInfo = $template_arr[array_rand($template_arr)];
                 $sendUser = $account_arr["data"][$start_account]["account"];
@@ -87,7 +87,8 @@ class Sendemail extends Controller
                 $sendName = "强比企业邮箱";
                 $sendBody = $tempInfo["content"];
                 //替换发送内容
-                $sendInfo = $this->replaceContent($toUser, $subject, $sendBody, 111);
+                $sendInfo = $this->replaceContent($toUser, $subject, $sendBody, $recordId);
+                var_dump($sendInfo);die;
                 //加密md5串
                 $md5_str = md5($toUser."registrant_name");
                 //在最后添加图片和退订
@@ -115,7 +116,7 @@ class Sendemail extends Controller
     {
         $model = new SendRecord();
         $model->template_id = $template_id;
-        $model->template_name = $template_name;
+        $model->template_title = $template_name;
         $model->email = $toUser;
         $model->config_id = $configId;
         $model->config_title = $configTitle;
@@ -139,16 +140,17 @@ class Sendemail extends Controller
             $registrant_name = "您好";
         }
         //标题
-        $title = str_replace("{{name}}", $registrant_name, $title) . "(" . $rand_abc . ")";
+        $rtitle = str_replace("{{name}}", $registrant_name, $title) . "(" . $rand_abc . ")";
         //内容
-        $content = str_replace("{{name}}", $registrant_name, $content);
+        $rcontent = str_replace("{{name}}", $registrant_name, $content);
         //替换链接id
-        $content = str_replace("{{id}}", $record_add_id, $content);
+        $rcontent = str_replace("{{id}}", $record_add_id, $rcontent);
         //图片链接地址
         $domain = Config::get("emailDomain.domain");
         $url = $domain . Url::build("EmailUtil/makeDetectImg", "id=$record_add_id");
+        var_dump($rtitle);die;
         return [
-            $title, $content, $url
+            $rtitle, $rcontent, $url
         ];
     }
 
@@ -159,7 +161,7 @@ class Sendemail extends Controller
      */
     public function getTemplate($id)
     {
-        $temp = Template::all($id);
+        $temp = Template::all(trim($id,","));
         return collection($temp)->toArray();
     }
 
