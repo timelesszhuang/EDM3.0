@@ -7,7 +7,7 @@ $page_id="blacklist";
             <ul class="nav query-ul">
                 <li class="pull-left">
                     <input type="text" class="form-control input-sm" id="<?=$page_id?>_query"
-                           style="width: 200px" placeholder="输入域名进行查询">
+                           style="width: 200px" placeholder="输入邮箱进行查询">
                 </li>
                 <li class="pull-left">
                     <button type="button" class="btn btn-default btn-sm" id="<?=$page_id?>_search">
@@ -20,7 +20,7 @@ $page_id="blacklist";
         <div class="col-lg-7">
             <button type="button" class="btn btn-primary btn-sm" id="<?=$page_id?>_add_template">
                 <span class="glyphicon glyphicon-plus-sign"></span>
-                添加域名黑名单
+                添加邮件黑名单
             </button>
         </div>
     </div>
@@ -35,11 +35,11 @@ $page_id="blacklist";
     var obj = (function () {
         return {
             "datagrid_id": "{$page_id}_datagrid",
-            "save_bl": "{:URL('index/Blacklist/saveDomain')}",
+            "save_bl": "{:URL('index/Blacklist/saveEmail')}",
             "modal_id": "index_menulist",
-            "urljson": "{:URL('index/Blacklist/getDomainData')}",
-            "add_bl": "{:URL('index/Blacklist/addDomain')}",
-            "del_bl": "{:URL('index/Blacklist/delDomain')}"
+            "urljson": "{:URL('index/Blacklist/getEmailData')}",
+            "add_bl": "{:URL('index/Blacklist/addEmail')}",
+            "del_bl": "{:URL('index/Blacklist/delEmail')}"
         }
     })();
     load_domain_datagrid(obj.datagrid_id, obj.urljson);
@@ -58,8 +58,8 @@ $page_id="blacklist";
             singleSelect: true,
             columns: [[
                 {field: 'id', title: 'ID', align: 'center', hidden: true},
-                {field: 'domain', title: '域名', width: 5, align: 'left'},
-                {field: 'reason', title: '拉黑原因', width: 7},
+                {field: 'email', title: '域名', width: 5, align: 'left'},
+                {field: 'detail', title: '拉黑原因', width: 7},
                 {field: 'create_time', title: '拉黑时间', width: 3},
                 {
                     field: 'action', title: '操作', width: 6, align: 'center', formatter: function (index, item) {

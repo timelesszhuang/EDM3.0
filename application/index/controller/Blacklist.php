@@ -125,4 +125,118 @@ class Blacklist extends Base
         }
         $this->msg("删除成功", "删除链接");
     }
+
+    /**
+     * 邮件首页
+     * @access public
+     */
+    public function emailIndex()
+    {
+        return view();
+    }
+
+    /**
+     * 获取邮件黑名单列表
+     * @access public
+     */
+    public function getEmailData()
+    {
+        list($limit, $rows, $query) = $this->getRequest();
+        $where = [];
+        if ($query) {
+            $where["email"] = ["like", "%" . $query . "%"];
+        }
+        $data = (new \app\index\model\UnsendMail())->where($where)->order("id desc")->limit($limit, $rows)->select();
+        return $data;
+    }
+
+
+    /**
+     * 添加删除 email
+     * @access public
+     */
+    public function addEmail()
+    {
+        $this->get_assign();
+        return view();
+    }
+
+    /**
+     * 添加删除 email
+     * @access public
+     */
+    public function execAddEmail()
+    {
+        $rule = [
+            ["email", "require", "请输入邮箱地址"],
+            ["email", "unique:unsend_mail", "邮箱地址不能重复"],
+            ["email", "email", '邮箱格式不正确，请重新输入。'],
+        ];
+        $validate = new Validate($rule);
+        $data = $this->request->post();
+        if (!$validate->check($data)) {
+            $this->msg($validate->getError(), "添加链接", self::error);
+        }
+        $data['type'] = '20';
+        $unsendMail = new \app\index\model\UnsendMail();
+        if (!$unsendMail->save($data)) {
+            $this->msg("添加失败", "添加链接", self::error);
+        }
+        $this->msg("添加成功", "添加链接");
+    }
+
+    /**
+     * 添加删除 email
+     * @access public
+     */
+    public function saveEmail()
+    {
+        $this->get_assign();
+        $id = $this->request->post("id");
+        $unsendEmail = \app\index\model\UnsendMail::get($id);
+        if ($unsendEmail) {
+            $this->assign([
+                "data" => $unsendEmail->toArray()
+            ]);
+        }
+        return view();
+    }
+
+    /**
+     * 添加删除 email
+     * @access public
+     */
+    public function execEditEmail()
+    {
+        $rule = [
+            ["detail", "require", "请输入拉黑原因"]
+        ];
+        $validate = new Validate($rule);
+        $data = $this->request->post();
+        if (!$validate->check($data)) {
+            $this->msg($validate->getError(), "修改链接", self::error);
+        }
+        $id = $data["id"];
+        $unsendEmail = new \app\index\model\UnsendMail();
+        unset($data["id"]);
+        unset($data['email']);
+        if (!$unsendEmail->save($data, ["id" => $id])) {
+            $this->msg("修改失败", "修改链接", self::error);
+        }
+        $this->msg("修改成功", "修改链接");
+    }
+
+    /**
+     * 删除邮件地址
+     * @access public
+     */
+    public function delEmail()
+    {
+        $id = $this->request->post("id");
+        if (!\app\index\model\UnsendMail::destroy($id)) {
+            $this->msg("删除失败", "删除链接", self::error);
+        }
+        $this->msg("删除成功", "删除链接");
+    }
+
 }

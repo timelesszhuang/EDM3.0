@@ -17,6 +17,7 @@ use app\index\model\Template;
 use app\common\EmailUtil;
 use app\index\model\SendRecord;
 use think\Url;
+use app\index\controller\UnsubscribeEmail;
 
 class Sendemail extends Controller
 {
@@ -26,15 +27,10 @@ class Sendemail extends Controller
      */
     public function run($id)
     {
-//        $mongodb = new \app\index\model\Mongodb();
-//        $list = $mongodb->getPerstepEmail('shandong', 6, 0, 500);
-//        echo $mongodb->getCount('shandong', 6);
-//        print_r($list);
-//        exit;
         if (empty($id)) {
             exit("请传入id参数");
         }
-        $this->open_ob_start();
+        $this->openObStart();
         //根据id查询配置项
         $sendconfig = SendConfig::get($id);
         if (!$sendconfig) {
@@ -82,16 +78,21 @@ class Sendemail extends Controller
             foreach ($data as $dk => $dv) {
                 $toUser = $dv["person_mailaddress"];
                 //添加发送记录
-//                $record_add_id = $this->save_to_record($confgData["template_id"], $confgData["template_name"], $toUser, $confgData["id"], $confgData["title"], $confgData["province_id"], $dv["object_id"]);
+                $recordId = $this->saveRecord($confgData["template_id"], $confgData["template_name"], $toUser, $confgData["id"], $confgData["title"], $confgData["province_id"], $dv["object_id"]);
                 //模板信息数组
-                $temp_info = $template_arr[array_rand($template_arr)];
+                $tempInfo = $template_arr[array_rand($template_arr)];
                 $sendUser = $account_arr["data"][$start_account]["account"];
                 $sendpwd = $account_arr["data"][$start_account]["pwd"];
-                $subject = $temp_info["title"];
+                $subject = $tempInfo["title"];
                 $sendName = "强比企业邮箱";
-                $sendBody = $temp_info["content"];
-                var_dump($this->replace_content($toUser, $subject, $sendBody, 111));die;
-                $emailUtil->send($sendUser, $sendpwd, $subject, $toUser, $sendName, $sendBody);
+                $sendBody = $tempInfo["content"];
+                //替换发送内容
+                $sendInfo = $this->replaceContent($toUser, $subject, $sendBody, 111);
+                //加密md5串
+                $md5_str = md5($toUser."registrant_name");
+                //在最后添加图片和退订
+                $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" .(new UnsubscribeEmail)->unsubscribeEmail($recordId,$toUser,$md5_str);
+                $emailUtil->send($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendName, $sendInfo[1]);
                 //账号和邮箱step++
                 $start_account++;
                 $email_offset++;
@@ -101,9 +102,16 @@ class Sendemail extends Controller
 
     /**
      * 添加发送记录
-     * @param $record
+     * @param $template_id
+     * @param $template_name
+     * @param $toUser
+     * @param $configId
+     * @param $configTitle
+     * @param $province
+     * @param $object_id
+     * @return false|int
      */
-    public function save_to_record($template_id, $template_name, $toUser, $configId, $configTitle, $province, $object_id)
+    public function saveRecord($template_id, $template_name, $toUser, $configId, $configTitle, $province, $object_id)
     {
         $model = new SendRecord();
         $model->template_id = $template_id;
@@ -116,8 +124,6 @@ class Sendemail extends Controller
         return $model->save();
     }
 
-
-
     /**
      * 替换内容
      * @param $data
@@ -125,7 +131,7 @@ class Sendemail extends Controller
      * @param $record_add_id
      * @return string
      */
-    public function replace_content($registrant_name, $title, $content, $record_add_id)
+    public function replaceContent($registrant_name, $title, $content, $record_add_id)
     {
         //随机字符串
         $rand_abc = chr(rand(97, 122)) . chr(rand(65, 90)) . chr(rand(97, 122)) . chr(rand(65, 90));
@@ -139,8 +145,8 @@ class Sendemail extends Controller
         //替换链接id
         $content = str_replace("{{id}}", $record_add_id, $content);
         //图片链接地址
-        $domain=Config::get("emailDomain.domain");
-        $url=$domain.Url::build("EmailUtil/makeDetectImg","id=$record_add_id");
+        $domain = Config::get("emailDomain.domain");
+        $url = $domain . Url::build("EmailUtil/makeDetectImg", "id=$record_add_id");
         return [
             $title, $content, $url
         ];
@@ -191,7 +197,7 @@ class Sendemail extends Controller
     /**
      * 开启缓冲区并刷新数据到前台
      */
-    public function open_ob_start()
+    public function openObStart()
     {
         ignore_user_abort(true);//在关闭连接后，继续运行php脚本
         /******** background process ********/
