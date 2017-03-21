@@ -5,7 +5,9 @@
  * Date: 17-3-14
  * Time: 下午4:55
  */
-namespace app\common;
+namespace app\common\controller;
+
+use app\index\model\Account;
 
 class EmailUtil
 {
@@ -91,5 +93,6 @@ class EmailUtil
             "status" => $sendInfo,
         ];
     }
+
 
 }
