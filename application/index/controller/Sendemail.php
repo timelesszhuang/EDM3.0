@@ -17,7 +17,7 @@ use app\index\model\Template;
 use app\common\controller\EmailUtil;
 use app\index\model\SendRecord;
 use think\Url;
-use app\index\controller\UnsubscribeEmail;
+use app\index\controller\Unsubscribeemail;
 
 class Sendemail extends Controller
 {
@@ -75,8 +75,9 @@ class Sendemail extends Controller
             $data = $mongodb->getPerstepEmail($confgData["province_id"], $confgData["brand_id"], $email_offset, 500);
             foreach ($data as $dk => $dv) {
                 $toUser = $dv["person_mailaddress"];
+                $toUser="guozhen@qiangbi.net";
                 //添加发送记录
-//                var_dump($confgData);die;
+//                var_dump($dv);die;
                 $recordId = $this->saveRecord($confgData["template_id"], $confgData["template_name"], $toUser, $confgData["id"], $confgData["title"], $confgData["province_id"], $dv["object_id"]);
 //                var_dump($recordId);die;
                 //模板信息数组
@@ -87,13 +88,14 @@ class Sendemail extends Controller
                 $sendName = "强比企业邮箱";
                 $sendBody = $tempInfo["content"];
                 //替换发送内容
-                $sendInfo = $this->replaceContent($dv["registrant_name"], $subject, $sendBody, $recordId);
-                var_dump($sendInfo);die;
+                $sendInfo = $this->replaceContent($dv["registrant_name"], $subject, $sendBody, $recordId,$dv["domain"]);
+//                var_dump($sendInfo);die;
                 //加密md5串
                 $md5_str = md5($toUser."registrant_name");
                 //在最后添加图片和退订
-                $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" .(new UnsubscribeEmail)->unsubscribeEmail($recordId,$toUser,$md5_str);
-                $emailUtil->send($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendName, $sendInfo[1]);
+                $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" .(new Unsubscribeemail)->unsubscribeEmail($recordId,$toUser,$md5_str);
+                var_dump($sendUser);die;
+                $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendName, $sendInfo[1]);die;
                 //账号和邮箱step++
                 $start_account++;
                 $email_offset++;
@@ -132,22 +134,22 @@ class Sendemail extends Controller
      * @param $record_add_id
      * @return string
      */
-    public function replaceContent($registrant_name, $title, $content, $record_add_id)
+    public function replaceContent($registrant_name, $title, $content, $recordId,$domain)
     {
         //随机字符串
-        $rand_abc = chr(rand(97, 122)) . chr(rand(65, 90)) . chr(rand(97, 122)) . chr(rand(65, 90));
+//        $rand_abc = chr(rand(97, 122)) . chr(rand(65, 90)) . chr(rand(97, 122)) . chr(rand(65, 90));
         if (empty($registrant_name)) {
             $registrant_name = "您好";
         }
         //标题
-        $rtitle = str_replace("{{name}}", $registrant_name, $title) . "(" . $rand_abc . ")";
+        $rtitle = str_replace("{{name}}", $registrant_name, $title) . "(" . $domain . ")";
         //内容
         $rcontent = str_replace("{{name}}", $registrant_name, $content);
         //替换链接id
-        $rcontent = str_replace("{{id}}", $record_add_id, $rcontent);
+        $rcontent = str_replace("{{id}}", $recordId, $rcontent);
         //图片链接地址
         $domain = Config::get("emailDomain.domain");
-        $url = $domain . Url::build("EmailUtil/makeDetectImg", "id=$record_add_id");
+        $url = $domain . Url::build("EmailUtil/makeDetectImg", "id=$recordId");
         return [
             $rtitle, $rcontent, $url
         ];
