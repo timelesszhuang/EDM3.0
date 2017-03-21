@@ -53,6 +53,7 @@ class Sendconfig extends Base
             unset($data["brand_id"]);
         }
         $sendconfig = new \app\index\model\SendConfig();
+        $data['template_id'] = ',' . $data['template_id'] . ',';
         if (!$sendconfig->save($data)) {
             $this->msg("添加配置失败", "添加配置", self::error);
         }
@@ -110,6 +111,7 @@ class Sendconfig extends Base
         $sendconfig = new \app\index\model\SendConfig();
         $id = $data["id"];
         unset($data["id"]);
+        $data['template_id'] = ',' . $data['template_id'] . ',';
         if (!$sendconfig->save($data, ["id" => $id])) {
             $this->msg("修改失败", "修改配置", self::error);
         }
@@ -138,7 +140,7 @@ class Sendconfig extends Base
     {
         $db2 = \think\Config::get("database.db_config2");
         $data = Db::connect($db2)->name("mx_brand")->field("id,name as text")->select();
-        array_unshift($data, ["id" => 'all', "text" => "全部（带mx不带mx）"]);
+        array_unshift($data, ["id" => 'all', "text" => "全部（带mx+不带mx）"]);
         array_unshift($data, ["id" => 0, "text" => "未分类品牌"]);
         return $data;
     }

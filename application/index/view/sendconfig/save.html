@@ -36,7 +36,11 @@ $page_id="sendconfig_save";
         <div class="form-group">
             <label for="" class="control-label col-sm-3">模板：</label>
             <div class="col-sm-4">
-                <input type="text" id="{$page_id}_template" value="{$data.template_id}">
+                <?php
+                $template_id=$data['template_id'];
+                $template_id=implode(',',array_filter(explode(',',$template_id)));
+                ?>
+                <input type="text" id="{$page_id}_template" value="{$template_id}">
             </div>
         </div>
     </form>
@@ -50,21 +54,21 @@ $page_id="sendconfig_save";
 <script>
     //省份
     $("#{$page_id}_province").combotree({
-        url:obj.province,
-        width:"200px",
+        url: obj.province,
+        width: "200px",
     });
 
     //品牌
     $("#{$page_id}_brand").combotree({
-        url:obj.brand,
-        width:"200px"
+        url: obj.brand,
+        width: "200px"
     });
 
     //模板
     $("#{$page_id}_template").combotree({
-        url:obj.template,
-        multiple:true,
-        width:"200px"
+        url: obj.template,
+        multiple: true,
+        width: "200px"
     });
 
     $("#{$page_id}_add_producttype_btn").click(function () {
@@ -81,19 +85,19 @@ $page_id="sendconfig_save";
             value: $("#{$page_id}_province").combotree("getText"),
         });
         data.push({
-            name:"brand_id",
+            name: "brand_id",
             value: $("#{$page_id}_brand").combotree("getValue"),
         });
         data.push({
-            name:"brand_name",
+            name: "brand_name",
             value: $("#{$page_id}_brand").combotree("getText"),
         });
         data.push({
-            name:"template_id",
+            name: "template_id",
             value: $("#{$page_id}_template").combotree("getValues"),
         });
         data.push({
-            name:"template_name",
+            name: "template_name",
             value: $("#{$page_id}_template").combotree("getText"),
         });
         submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_producttype_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());
