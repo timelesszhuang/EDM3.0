@@ -40,7 +40,8 @@ class Mongodb extends Model
                 'wwwtitle' => 1,
                 'contact_email' => 1,
                 'domain_name' => 1,
-                'mx' => 1
+                'mx' => 1,
+                'registrant_name' => 1
             ],
         ];
         $query = new \MongoDB\Driver\Query($filter, $options);
@@ -57,6 +58,7 @@ class Mongodb extends Model
             $per['person_mailaddress'] = $doc['contact_email'];
             $per['wwwtitle'] = $doc['wwwtitle'];
             $per['object_id'] = (string)$doc['_id'];
+            $per['registrant_name'] = $doc['registrant_name'];
             $info[] = $per;
         }
         return $info;
