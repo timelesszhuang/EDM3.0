@@ -10,6 +10,7 @@ namespace app\index\controller;
 use app\index\model\SendRecord;
 use think\Controller;
 use think\Request;
+use think\Config;
 
 class Unsubscribeemail extends Controller
 {
