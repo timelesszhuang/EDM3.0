@@ -20,16 +20,22 @@ $page_id="template_add";
             </div>
         </div>
         <div class="form-group">
+            <label for="" class="control-label col-sm-3">类型：</label>
+            <div class="col-sm-4">
+                <input type="text" id="{$page_id}_type" value="">
+                <input type="hidden" name="type" value="">
+            </div>
+        </div>
+        <div class="form-group">
             <label for="" class="control-label col-sm-3">描述：</label>
             <div class="col-sm-4">
                 <input type="text" class="form-control" name="detail">
             </div>
         </div>
-
         <div class="form-group">
             <label for="" class="control-label col-sm-3">内容：</label>
             <div class="col-sm-8">
-                <textarea name="content"  cols="30" rows="10" style="width:100%;height:100%;"></textarea>
+                <textarea name="content" cols="30" rows="10" style="width:100%;height:100%;"></textarea>
             </div>
         </div>
     </form>
@@ -41,9 +47,8 @@ $page_id="template_add";
     <button type="button" class="btn btn-primary btn-sm" id="{$page_id}_add_producttype_btn">保存</button>
 </div>
 <script>
-
     KindEditor.create('textarea[name="content"]', {
-        height:'400px',
+        height: '400px',
         allowFileManager: true,
         uploadJson: '{:URL("Home/Upfile/upload_img")}',
         fileManagerJson: '{:URL("Home/Upfile/file_manager_json")}',
@@ -53,10 +58,17 @@ $page_id="template_add";
             //这个函数作用是同步KindEditor的值到textarea文本框。
         }
     });
+    //模板
+    $("#{$page_id}_type").combotree({
+        url: obj.type_url,
+        width: "200px"
+    });
     $("#{$page_id}_add_producttype_btn").click(function () {
         var obj = {
             add_email_template_url: "{:URL('index/template/addData')}"
         };
+        var type = $('#{$page_id}_type').combotree('getValue');
+        $('input[name="type"]').val(type);
         var data = $("#{$page_id}_toaction").serialize();
         submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_producttype_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());
     });
