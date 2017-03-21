@@ -87,7 +87,7 @@ class Sendemail extends Controller
                 $sendName = "强比企业邮箱";
                 $sendBody = $tempInfo["content"];
                 //替换发送内容
-                $sendInfo = $this->replaceContent($toUser, $subject, $sendBody, $recordId);
+                $sendInfo = $this->replaceContent($dv["registrant_name"], $subject, $sendBody, $recordId);
                 var_dump($sendInfo);die;
                 //加密md5串
                 $md5_str = md5($toUser."registrant_name");
@@ -148,7 +148,6 @@ class Sendemail extends Controller
         //图片链接地址
         $domain = Config::get("emailDomain.domain");
         $url = $domain . Url::build("EmailUtil/makeDetectImg", "id=$record_add_id");
-        var_dump($rtitle);die;
         return [
             $rtitle, $rcontent, $url
         ];
