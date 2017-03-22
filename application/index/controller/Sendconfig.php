@@ -39,6 +39,7 @@ class Sendconfig extends Base
     {
         $rule = [
             ["title", "require|unique:SendConfig", "请填写标题"],
+            ["fromname","require","请填写邮件昵称"],
             ["province_id", "require", "请选择省份"],
             ["province_name", "require", "请选择省份"],
             ["template_id", "require", "请选择模板"]
@@ -99,6 +100,7 @@ class Sendconfig extends Base
     {
         $rule = [
             ["title", "require|unique:SendConfig", "请填写标题"],
+            ["fromname","require","请填写邮件昵称"],
             ["province_id", "require", "请选择省份"],
             ["province_name", "require", "请选择省份"],
             ["template_id", "require", "请选择模板"]

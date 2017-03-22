@@ -8,6 +8,7 @@
  */
 namespace app\index\controller;
 
+use app\index\model\Link;
 use think\Validate;
 
 class Template extends Base
@@ -29,6 +30,10 @@ class Template extends Base
     public function add()
     {
         $this->get_assign();
+        $link_arr=(new Link())->field("link_url,link_title")->select();
+        $this->assign([
+            "data"=>$link_arr
+        ]);
         return view();
     }
 
@@ -104,9 +109,11 @@ class Template extends Base
         $this->get_assign();
         $id = $this->request->post("id");
         $template = \app\index\model\Template::get($id);
+        $link_arr=(new Link())->field("link_url,link_title")->select();
         if ($template) {
             $this->assign([
-                "data" => $template->toArray()
+                "data" => $template->toArray(),
+                "link"=>$link_arr
             ]);
         }
         return view();

@@ -32,7 +32,7 @@ class EmailUtil
      * @param $sendBody 发送内容
      * @return array
      */
-    public function swiftSend($sendUser, $sendpwd, $subject, $toUser, $sendName, $sendBody)
+    public function swiftSend($sendUser, $sendpwd, $subject, $toUser, $sendBody,$fromname)
     {
         $transport = \Swift_SmtpTransport::newInstance('smtp.qiye.163.com', '25')
             ->setUsername($sendUser)
@@ -40,19 +40,19 @@ class EmailUtil
         $mailer = \Swift_Mailer::newInstance($transport);
         $message = \Swift_Message::newInstance()
             ->setSubject($subject)//创建邮件信息的主题，即发送标题      注意：Swift_Message::newInstance() 后面没有分号
-            ->setFrom(array($sendUser => $sendName))//谁发送的   设置发送人及昵称            注意：本句话结束没有分号
+            ->setFrom(array($sendUser => $fromname))//谁发送的   设置发送人及昵称            注意：本句话结束没有分号
             ->setTo(array($toUser))//发给谁        设置接收邮件人的列表    注意：本句话结束没有分号
             ->setBody($sendBody);                                      //邮件发送的内容    注意：当一切都设置完毕了以后，最好加上分号结束
         $sendInfo = $mailer->send($message);
         if (!$sendInfo) {
-            return [
-                "status" => $sendInfo,
-                "msg" => "邮件发送错误"
-            ];
+//            return [
+//                "status" => $sendInfo,
+//                "msg" => "邮件发送错误"
+//            ];
         }
-        return [
-            "status" => $sendInfo,
-        ];
+//        return [
+//            "status" => $sendInfo,
+//        ];
     }
 
     /**
@@ -65,7 +65,7 @@ class EmailUtil
      * @param $sendBody 发送内容
      * @return array
      */
-    public function phpmailerSend($sendUser, $sendpwd, $subject, $toUser, $sendName, $sendBody)
+    public function phpmailerSend($sendUser, $sendpwd, $subject, $toUser, $sendBody,$fromname)
     {
         $mail = new \PHPMailer;
         $mail->IsSmtp(true);                         // 设置使用 SMTP
@@ -74,7 +74,7 @@ class EmailUtil
         $mail->Username = $sendUser; // SMTP 发邮件人的用户名
         $mail->Password = $sendpwd;            // SMTP 密码
         $mail->From = $sendUser;
-        $mail->FromName = $sendName;
+        $mail->FromName = $fromname;
         $mail->CharSet = "UTF-8";
         $mail->AddAddress($toUser);
         //发送到谁 写谁$mailaddress
@@ -84,14 +84,33 @@ class EmailUtil
         $mail->Body = $sendBody;              // 内容
         $sendInfo = $mail->Send();
         if (!$sendInfo) {
-            return [
-                "status" => $sendInfo,
-                "msg" => $mail->ErrorInfo
-            ];
+//            return [
+//                "status" => $sendInfo,
+//                "msg" => $mail->ErrorInfo
+//            ];
         }
-        return [
-            "status" => $sendInfo,
-        ];
+//        return [
+//            "status" => $sendInfo,
+//        ];
+    }
+
+    /**
+     * 获取ip 接口
+     */
+    public function get_ip_info($ip)
+    {
+        $curl = curl_init(); //这是curl的handle
+        //下面是设置curl参数
+        $url = "http://ip.taobao.com/service/getIpInfo.php?ip=$ip";
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+        curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 2);
+        curl_setopt($curl, CURLOPT_HEADER, 0); //don't show header
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); //相当关键，这句话是让curl_exec($ch)返回的结果可以进行赋值给其他的变量进行，json的数据操作，如果没有这句话，则curl返回的数据不可以进行人为的去操作（如json_decode等格式操作）
+        curl_setopt($curl, CURLOPT_TIMEOUT, 2);
+        //这个就是超时时间了
+        $data = curl_exec($curl);
+        return json_decode($data, true);
     }
 
 
