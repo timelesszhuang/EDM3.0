@@ -8,20 +8,10 @@
 namespace app\common\controller;
 
 use app\index\model\Account;
+use app\index\model\SendError;
 
 class EmailUtil
 {
-
-//$sendUser = 'support@qiangbi.net';
-//$sendpwd = 'qiangbi12#';
-//$subject = "主题来了";
-//$toUser = 'guozhen@qiangbi.net';
-//$sendName = "大圣";
-//$sendBody = "内容来了";
-//$send = (new \app\common\EmailUtil())->phpmailerSend($sendUser, $sendpwd, $subject, $toUser, $sendName, $sendBody);
-//var_dump($send);
-
-
     /**
      * 使用swift发送邮件
      * @param $sendUser 发送者账号
@@ -42,17 +32,11 @@ class EmailUtil
             ->setSubject($subject)//创建邮件信息的主题，即发送标题      注意：Swift_Message::newInstance() 后面没有分号
             ->setFrom(array($sendUser => $fromname))//谁发送的   设置发送人及昵称            注意：本句话结束没有分号
             ->setTo(array($toUser))//发给谁        设置接收邮件人的列表    注意：本句话结束没有分号
-            ->setBody($sendBody);                                      //邮件发送的内容    注意：当一切都设置完毕了以后，最好加上分号结束
+            ->setHtmlBody($sendBody);                                      //邮件发送的内容    注意：当一切都设置完毕了以后，最好加上分号结束
         $sendInfo = $mailer->send($message);
         if (!$sendInfo) {
-//            return [
-//                "status" => $sendInfo,
-//                "msg" => "邮件发送错误"
-//            ];
+            (new SendError())->add($sendUser, $toUser,"发送失败yii",0);
         }
-//        return [
-//            "status" => $sendInfo,
-//        ];
     }
 
     /**
@@ -84,14 +68,8 @@ class EmailUtil
         $mail->Body = $sendBody;              // 内容
         $sendInfo = $mail->Send();
         if (!$sendInfo) {
-//            return [
-//                "status" => $sendInfo,
-//                "msg" => $mail->ErrorInfo
-//            ];
+            (new SendError())->add($sendUser, $toUser,$mail->ErrorInfo,0);
         }
-//        return [
-//            "status" => $sendInfo,
-//        ];
     }
 
     /**

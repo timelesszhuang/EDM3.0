@@ -8,7 +8,10 @@
  */
 namespace app\index\controller;
 
+use app\index\model\Blacklist;
 use app\index\model\SendConfig;
+use app\index\model\SendError;
+use app\index\model\UnsendMail;
 use think\Config;
 use think\Controller;
 use think\Request;
@@ -30,16 +33,29 @@ class Sendemail extends Controller
         if (empty($id)) {
             exit("请传入id参数");
         }
-//        $this->openObStart();
+        $this->openObStart();
         //根据id查询配置项
         $sendconfig = SendConfig::get($id);
         if (!$sendconfig) {
             exit("无此配置项");
         }
         $confgData = $sendconfig->toArray();
+        //文件枷锁
+        if(file_exists("number.lock")){
+            $modify_time=filemtime("number.lock");
+            $change_time=time()-$modify_time;
+            if($change_time<200){
+                exit;
+            }
+        }
+        die;
         $this->begin($confgData);
     }
 
+    /**
+     * 开启发送
+     * @param $confgData
+     */
     public function begin($confgData)
     {
         //实例化email类
@@ -64,11 +80,12 @@ class Sendemail extends Controller
             $this->saveCount($count, $confgData["id"]);
         }
         while (1) {
-            die;
+            file_put_contents("number.lock", $email_offset);
             //如果账号发送到最后一个 开始循环
             if ($start_account >= $account_arr["count"]) {
                 $start_account = 0;
             }
+            //判断是否发送完毕
             if ($email_offset >= $count) {
                 exit("数据已经发送完毕,无法再次发送,请重新修改配置");
             }
@@ -78,24 +95,83 @@ class Sendemail extends Controller
             $toUser = "guozhen@qiangbi.net";
             //模板信息数组
             $tempInfo = $template_arr[array_rand($template_arr)];
+            //账号
             $sendUser = $account_arr["data"][$start_account]["account"];
+            //账号密码
             $sendpwd = $account_arr["data"][$start_account]["pwd"];
+            //主题
             $subject = $tempInfo["title"];
+            //内容
             $sendBody = $tempInfo["content"];
+            //匹配域名黑名单
+//            if (!empty($this->matchBlackList($toUser))) {
+//                (new SendError())->add($sendUser, $toUser, "域名黑名单", $tempInfo["id"]);
+//                $start_account++;
+//                $email_offset++;
+//                continue;
+//            }
+            //匹配邮箱黑名单
+            if (!empty($this->matchUnsendEmail($toUser))) {
+                (new SendError())->add($sendUser, $toUser, "邮箱黑名单", $tempInfo["id"]);
+                $start_account++;
+                $email_offset++;
+                continue;
+            }
             //添加发送记录
             $recordId = $this->saveRecord($tempInfo["id"], $tempInfo["title"], $toUser, $confgData["id"], $confgData["title"], $confgData["province_id"], $data[0]["object_id"], $tempInfo["type"]);
+            //账号和邮箱step++
+            $start_account++;
+            $email_offset++;
+            //修改发送记录
+            $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
             //替换发送内容
             $sendInfo = $this->replaceContent($data[0]["registrant_name"], $subject, $sendBody, $recordId, $data[0]["domain"]);
             //加密md5串
             $md5_str = md5($toUser . "registrant_name");
             //在最后添加图片和退订
             $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" . (new Unsubscribeemail)->makeUnsubscribeEmail($recordId, $toUser, $md5_str);
-            $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1],'');
-            die;
-            //账号和邮箱step++
-            $start_account++;
-            $email_offset++;
+            $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], '');
         }
+    }
+
+    /**
+     * 修改config发送配置
+     * @param $configId
+     * @param $start_account
+     * @param $email_offset
+     * @param $sendUser
+     */
+    public function editConfig($configId, $start_account, $email_offset, $sendUser)
+    {
+        $sconfig=SendConfig::get($configId);
+        $sconfig->send_record_page=$email_offset;
+        $sconfig->send_account_id=$start_account;
+        $sconfig->send_account_name=$sendUser;
+        $sconfig->save();
+    }
+
+    /**
+     * 匹配不发送邮箱
+     * @param $email
+     * @return array|false|\PDOStatement|string|\think\Model
+     */
+    public function matchUnsendEmail($email)
+    {
+        return (new UnsendMail())->where(["email" => $email])->find();
+    }
+
+    /**
+     * 域名黑名单匹配
+     * @param $email
+     * @return bool
+     */
+    public function matchBlackList($email)
+    {
+        $arr = explode("@", $email);
+        $where["domain"] = [
+            "like", "%$arr[1]%"
+        ];
+        retrun(new Blacklist())->where($where)->find();
     }
 
     /**
