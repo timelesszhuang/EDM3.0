@@ -7,7 +7,6 @@
  */
 namespace app\index\controller;
 
-use Phinx\Config;
 use think\Db;
 use think\Validate;
 
@@ -39,7 +38,7 @@ class Sendconfig extends Base
     {
         $rule = [
             ["title", "require|unique:SendConfig", "请填写标题"],
-            ["fromname","require","请填写邮件昵称"],
+            ["fromname", "require", "请填写邮件昵称"],
             ["province_id", "require", "请选择省份"],
             ["province_name", "require", "请选择省份"],
             ["template_id", "require", "请选择模板"]
@@ -100,7 +99,7 @@ class Sendconfig extends Base
     {
         $rule = [
             ["title", "require|unique:SendConfig", "请填写标题"],
-            ["fromname","require","请填写邮件昵称"],
+            ["fromname", "require", "请填写邮件昵称"],
             ["province_id", "require", "请选择省份"],
             ["province_name", "require", "请选择省份"],
             ["template_id", "require", "请选择模板"]
@@ -138,12 +137,54 @@ class Sendconfig extends Base
      * 获取品牌
      * @return false|\PDOStatement|string|\think\Collection
      */
-    public function getBrand()
+    public function getMailBrand()
     {
         $db2 = \think\Config::get("database.db_config2");
         $data = Db::connect($db2)->name("mx_brand")->field("id,name as text")->select();
         array_unshift($data, ["id" => 'all', "text" => "全部（带mx+不带mx）"]);
         array_unshift($data, ["id" => 0, "text" => "未分类品牌"]);
+        return $data;
+    }
+
+    /**
+     * 获取邮箱品牌
+     * @access public
+     */
+    public function configContactToolBrand()
+    {
+        $data = [
+            ["id" => 1, "text" => "七鱼智能客服"],
+            ["id" => 2, "text" => "53kf"],
+            ["id" => 3, "text" => "U-desk"],
+            ["id" => 4, "text" => "环信"],
+            ["id" => 5, "text" => "美洽"],
+            ["id" => 6, "text" => "智齿"],
+            ["id" => 7, "text" => "小能"],
+            ["id" => 8, "text" => "有客云"],
+            ["id" => 9, "text" => "Live800"],
+            ["id" => 10, "text" => "营销QQ"],
+            ["id" => 11, "text" => "营销QQ2"],
+            ["id" => 12, "text" => "EC企信"],
+            ["id" => 13, "text" => "乐语"],
+            ["id" => 14, "text" => "TQ洽谈通"],
+            ["id" => 15, "text" => "网站商务通"],
+            ["id" => 16, "text" => "Talk99"],
+            ["id" => 17, "text" => "逸创云客服"],
+        ];
+        return $data;
+    }
+
+    /**
+     * 配置类型
+     * @access public
+     */
+    public function configType()
+    {
+        $data = [
+            ["id" => 'email', "text" => "邮箱地址"],
+            ["id" => 'contacttool', "text" => "咨询工具"],
+            ["id" => 'website', "text" => "网站"],
+        ];
         return $data;
     }
 
