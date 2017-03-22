@@ -31,11 +31,31 @@ $page_id="sendconfig_add";
                 <input type="text" id="{$page_id}_province">
             </div>
         </div>
-
         <div class="form-group">
-            <label for="" class="control-label col-sm-3">品牌：</label>
-            <div class="col-sm-7">
-                <input type="text" id="{$page_id}_brand">&nbsp;默认不选就是取省下全部
+            <label for="" class="control-label col-sm-3">配置类型：</label>
+            <div class="col-sm-4">
+                <input type="text" id="{$page_id}_config_type">
+            </div>
+        </div>
+        <div class="form-group" id="{$page_id}config-change">
+            <div id="email-template" style="display: none;" class="display-template">
+                <label for="" class="control-label col-sm-3">邮箱品牌：</label>
+                <div class="col-sm-9">
+                    <input type="text" id="{$page_id}_brand">&nbsp;<span
+                        style="display: inline;color: red">默认不选就是取省下全部</span>
+                </div>
+            </div>
+            <div id="contacttool-template" style="display: none;" class="display-template">
+                <label for="" class="control-label col-sm-3">咨询工具品牌：</label>
+                <div class="col-sm-7">
+                    <input type="text" id="{$page_id}_contacttool_brand">&nbsp;
+                    <span style="display: inline;color: red">默认不选就是取省下全部</span>
+                </div>
+            </div>
+            <div id="website-template" style="display: none;" class="display-template">
+                <label for="" class="control-label col-sm-3">网站类型：</label>
+                <div class="col-sm-7">
+                </div>
             </div>
         </div>
         <div class="form-group">
@@ -45,6 +65,7 @@ $page_id="sendconfig_add";
             </div>
         </div>
     </form>
+    <input type="hidden" value="" name="{$page_id}_config_type">
     <input type="hidden" value="{$modal_id}" name='{$page_id}_add_producttype_modal_id'>
     <input type="hidden" value="{$datagrid_id}" name='{$page_id}_datagrid_id'>
 </div>
@@ -55,21 +76,43 @@ $page_id="sendconfig_add";
 <script>
     //省份
     $("#{$page_id}_province").combotree({
-        url:obj.province,
-        width:"200px",
+        url: obj.province,
+        width: "200px",
     });
-    //品牌
+
+    //配置类型
+    $("#{$page_id}_config_type").combotree({
+        url: obj.config_type,
+        width: "200px",
+        onSelect: function (index) {
+            id = index.id;
+            $('.display-template').css('display', 'none');
+            $('#' + id + '-template').css('display', 'block');
+        }
+    });
+
     $("#{$page_id}_brand").combotree({
-        url:obj.brand,
-        width:"200px"
+        url: obj.brand,
+        width: "200px"
     });
-    $("#{$page_id}_brand").combotree("setValue","all");
+    $("#{$page_id}_brand").combotree("setValue", "all");
+
+    $("#{$page_id}_contacttool_brand").combotree({
+        url: obj.contact_tool,
+        width: "200px"
+    });
     //模板
     $("#{$page_id}_template").combotree({
-        url:obj.template,
-        multiple:true,
-        width:"200px"
+        url: obj.template,
+        multiple: true,
+        width: "200px"
     });
+
+    $("#{$page_id}_brand").combotree({
+        url: obj.brand,
+        width: "200px"
+    });
+    $("#{$page_id}_brand").combotree("setValue", "all");
 
     $("#{$page_id}_add_producttype_btn").click(function () {
         var obj = {
@@ -85,19 +128,19 @@ $page_id="sendconfig_add";
             value: $("#{$page_id}_province").combotree("getText"),
         });
         data.push({
-            name:"brand_id",
+            name: "brand_id",
             value: $("#{$page_id}_brand").combotree("getValue"),
         });
         data.push({
-            name:"brand_name",
+            name: "brand_name",
             value: $("#{$page_id}_brand").combotree("getText"),
         });
         data.push({
-            name:"template_id",
+            name: "template_id",
             value: $("#{$page_id}_template").combotree("getValues"),
         });
         data.push({
-            name:"template_name",
+            name: "template_name",
             value: $("#{$page_id}_template").combotree("getText"),
         });
         submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_producttype_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());
