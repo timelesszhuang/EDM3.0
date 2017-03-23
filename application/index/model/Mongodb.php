@@ -19,20 +19,17 @@ class Mongodb extends Model
      * @access public
      * @param  $province 省市信息表示 要从哪一个 collection 中取数据
      * @param  $brand_id 品牌id  表示要取出哪个品牌的相关信息
+     * @param  $flag 标志 email contacttool  website
      * @param  $start 开始的id
      * @param  $step  发送截止 到的地方
      * @return mixed
      */
-    public function getPerstepEmail($province, $brand_id, $start, $step)
+    public function getPerstepEmail($province, $brand_id, $flag, $start, $step)
     {
         $options_base = ['connectTimeoutMS' => 500000, 'socketTimeoutMS' => 500000];
         $manager = new \MongoDB\Driver\Manager(Config::get('mongodb.mongodb_auth_url'), $options_base);
         $coll = Config::get('mongodb.default_db') . '.' . $province;
-        $filter = [];
-        //返回品牌相关信息
-        if ($brand_id !== null) {
-            $filter['mx.brand_id'] = intval($brand_id);
-        }
+        $filter = $this->getFilter($flag, $brand_id);
         $options = [
             "skip" => $start,
             "limit" => $step,
@@ -64,19 +61,20 @@ class Mongodb extends Model
         return $info;
     }
 
+
     /**
      * 获取每一条数据
      * @access public
+     * @param 省 $province
+     * @param 表示是取哪种类型的数据 $flag
+     * @param 品牌 $brand_id
+     * @return mixed
      */
-    public function getCount($province, $brand_id)
+    public function getCount($province, $flag, $brand_id)
     {
         $options_base = ['connectTimeoutMS' => 500000, 'socketTimeoutMS' => 500000];
         $manager = new \MongoDB\Driver\Manager(Config::get('mongodb.mongodb_auth_url'), $options_base);
-        $filter = [];
-        //返回品牌相关信息
-        if ($brand_id !== null) {
-            $filter['mx.brand_id'] = intval($brand_id);
-        }
+        $filter = $this->getFilter($flag, $brand_id);
         //查询记录总的数量
         $commands = [
             'count' => $province,
@@ -89,5 +87,32 @@ class Mongodb extends Model
         return $count;
     }
 
+
+    private function getFilter($flag, $brand_id)
+    {
+        $filter = [];
+        //返回品牌相关信息
+        if ($flag == 'email') {
+            if ($brand_id !== null) {
+                $filter['mx.brand_id'] = intval($brand_id);
+            }
+        } else if ($flag == 'contacttool') {
+            if ($brand_id !== null) {
+                $filter['contacttool.brand_id'] = intval($brand_id);
+            }
+        } else {
+            //网站数据 null  none_website have_website
+            if ($brand_id !== null) {
+                if ($brand_id == 'none_website') {
+                    //表示是 没有网站的
+                    $filter["wwwtitle"] = ['$eq' => null];
+                } else {
+                    //表示是只有网站的
+                    $filter["wwwtitle"] = ['$ne' => null];
+                }
+            }
+        }
+        return $filter;
+    }
 
 }

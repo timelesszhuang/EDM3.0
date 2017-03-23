@@ -30,6 +30,10 @@ class Sendemail extends Controller
      */
     public function run($id)
     {
+//        $mongodb = new \app\index\model\Mongodb();
+//        echo $mongodb->getCount('shandong', 'contacttool', 1);
+//        print_r($mongodb->getPerstepEmail('shandong', 'contacttool', 1, 0, 5));
+//        exit;
         if (empty($id)) {
             exit("请传入id参数");
         }
@@ -41,10 +45,10 @@ class Sendemail extends Controller
         }
         $confgData = $sendconfig->toArray();
         //文件枷锁
-        if(file_exists("number.lock")){
-            $modify_time=filemtime("number.lock");
-            $change_time=time()-$modify_time;
-            if($change_time<200){
+        if (file_exists("number.lock")) {
+            $modify_time = filemtime("number.lock");
+            $change_time = time() - $modify_time;
+            if ($change_time < 200) {
                 exit;
             }
         }
@@ -118,7 +122,7 @@ class Sendemail extends Controller
                 continue;
             }
             //匹配是否本配置下已发送
-            if(!empty($this->filterRepeatEmail($toUser,$confgData["id"]))){
+            if (!empty($this->filterRepeatEmail($toUser, $confgData["id"]))) {
                 (new SendError())->add($sendUser, $toUser, "邮箱重复", $tempInfo["id"]);
                 $start_account++;
                 $email_offset++;
@@ -137,7 +141,7 @@ class Sendemail extends Controller
             $md5_str = md5($toUser . "registrant_name");
             //在最后添加图片和退订
             $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" . (new Unsubscribeemail)->makeUnsubscribeEmail($recordId, $toUser, $md5_str);
-            $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1],$confgData["fromname"]);
+            $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], $confgData["fromname"]);
         }
     }
 
@@ -150,10 +154,10 @@ class Sendemail extends Controller
      */
     public function editConfig($configId, $start_account, $email_offset, $sendUser)
     {
-        $sconfig=SendConfig::get($configId);
-        $sconfig->send_record_page=$email_offset;
-        $sconfig->send_account_id=$start_account;
-        $sconfig->send_account_name=$sendUser;
+        $sconfig = SendConfig::get($configId);
+        $sconfig->send_record_page = $email_offset;
+        $sconfig->send_account_id = $start_account;
+        $sconfig->send_account_name = $sendUser;
         $sconfig->save();
     }
 
@@ -293,10 +297,10 @@ class Sendemail extends Controller
      * @param $config_id
      * @return array|false|\PDOStatement|string|\think\Model
      */
-    public function filterRepeatEmail($email,$config_id)
+    public function filterRepeatEmail($email, $config_id)
     {
-        $where["config_id"]=$config_id;
-        $where["email"]=$email;
+        $where["config_id"] = $config_id;
+        $where["email"] = $email;
         return (new SendRecord())->where($where)->find();
     }
 }
