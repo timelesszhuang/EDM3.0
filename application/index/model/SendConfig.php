@@ -33,7 +33,7 @@ class SendConfig extends Model
                 $sendconfig->config_type=$parentConfig->config_type;
                 $sendconfig->fromname=$parentConfig->fromname;
             }
-
+            $sendconfig->template_id=",".$sendconfig->template_id.",";
         });
     }
 
