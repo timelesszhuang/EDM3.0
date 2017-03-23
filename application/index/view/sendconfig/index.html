@@ -43,7 +43,9 @@ $page_id="template";
             brand: "{:URL('index/Sendconfig/getMailBrand')}",
             template: "{:URL('index/Sendconfig/getTemplate')}",
             config_type: "{:URL('index/Sendconfig/configType')}",
-            contact_tool:"{:URL('index/Sendconfig/configContactToolBrand')}"
+            contact_tool:"{:URL('index/Sendconfig/configContactToolBrand')}",
+            websiteType:"{:URL('index/Sendconfig/websiteType')}",
+            resendMail:"{:URL('index/Sendconfig/resend')}"
         }
     })();
     load_user_datagrid(obj.datagrid_id, obj.urljson);
@@ -68,7 +70,8 @@ $page_id="template";
                 {field: 'create_time', title: '创建时间', width: 4, align: 'center'},
                 {
                     field: 'action', title: '操作', width: 6, align: 'center', formatter: function (index, item) {
-                    return '<a href="javascript:void(0)" _id="' + item.id + '"  class="{$page_id}_edit">编辑</a>';
+                    return '<a href="javascript:void(0)" _id="' + item.id + '"  class="{$page_id}_edit">编辑</a>&nbsp;' +
+                        '&nbsp;&nbsp;<a href="javascript:void(0)" _id="' + item.id + '"  class="{$page_id}_resend">再次跟进</a>';
                 }
                 }
             ]],
@@ -97,5 +100,10 @@ $page_id="template";
         $('#' + obj.datagrid_id).datagrid("load", {
             query: $("#{$page_id}_query").val()
         })
+    });
+    //再次跟进
+    $("body").undelegate(".{$page_id}_resend","click");
+    $("body").delegate(".{$page_id}_resend","click",function(){
+        edit_record_modal($(this).attr("_id"), obj.resendMail, obj.datagrid_id, obj.modal_id);
     });
 </script>

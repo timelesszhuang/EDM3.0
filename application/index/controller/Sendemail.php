@@ -117,6 +117,13 @@ class Sendemail extends Controller
                 $email_offset++;
                 continue;
             }
+            //匹配是否本配置下已发送
+            if(!empty($this->filterRepeatEmail($toUser,$confgData["id"]))){
+                (new SendError())->add($sendUser, $toUser, "邮箱重复", $tempInfo["id"]);
+                $start_account++;
+                $email_offset++;
+                continue;
+            }
             //添加发送记录
             $recordId = $this->saveRecord($tempInfo["id"], $tempInfo["title"], $toUser, $confgData["id"], $confgData["title"], $confgData["province_id"], $data[0]["object_id"], $tempInfo["type"]);
             //账号和邮箱step++
@@ -130,7 +137,7 @@ class Sendemail extends Controller
             $md5_str = md5($toUser . "registrant_name");
             //在最后添加图片和退订
             $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" . (new Unsubscribeemail)->makeUnsubscribeEmail($recordId, $toUser, $md5_str);
-            $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], '');
+            $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1],$confgData["fromname"]);
         }
     }
 
@@ -280,9 +287,16 @@ class Sendemail extends Controller
         set_time_limit(0); //no time limit，不设置超时时间（根据实际情况使用）
     }
 
-    //根据当前发送配置过滤
-    public function filterRepeatEmail()
+    /**
+     * 根据当前发送配置过滤
+     * @param $email
+     * @param $config_id
+     * @return array|false|\PDOStatement|string|\think\Model
+     */
+    public function filterRepeatEmail($email,$config_id)
     {
-
+        $where["config_id"]=$config_id;
+        $where["email"]=$email;
+        return (new SendRecord())->where($where)->find();
     }
 }

@@ -41,7 +41,8 @@ class Sendconfig extends Base
             ["fromname", "require", "请填写邮件昵称"],
             ["province_id", "require", "请选择省份"],
             ["province_name", "require", "请选择省份"],
-            ["template_id", "require", "请选择模板"]
+            ["template_id", "require", "请选择模板"],
+            ["config_type", "require", "请选择配置类型"]
         ];
         $validate = new Validate($rule);
         $data = $this->request->post();
@@ -51,6 +52,7 @@ class Sendconfig extends Base
         //all需要删除掉 因为全部使用null代替
         if ($data["brand_id"] == "all") {
             unset($data["brand_id"]);
+            $data["brand_name"] = "全部";
         }
         $sendconfig = new \app\index\model\SendConfig();
         $data['template_id'] = ',' . $data['template_id'] . ',';
@@ -102,7 +104,8 @@ class Sendconfig extends Base
             ["fromname", "require", "请填写邮件昵称"],
             ["province_id", "require", "请选择省份"],
             ["province_name", "require", "请选择省份"],
-            ["template_id", "require", "请选择模板"]
+            ["template_id", "require", "请选择模板"],
+            ["config_type", "require", "请选择配置类型"]
         ];
         $validate = new Validate($rule);
         $data = $this->request->post();
@@ -153,6 +156,7 @@ class Sendconfig extends Base
     public function configContactToolBrand()
     {
         $data = [
+            ["id" => "all", "text" => "全部"],
             ["id" => 1, "text" => "七鱼智能客服"],
             ["id" => 2, "text" => "53kf"],
             ["id" => 3, "text" => "U-desk"],
@@ -196,5 +200,54 @@ class Sendconfig extends Base
     {
         $template = new \app\index\model\Template();
         return $template->field("id,title as text")->select();
+    }
+
+    /**
+     * 网站类型
+     * @return array
+     */
+    public function websiteType()
+    {
+        return [
+            ["id" => "all", "text" => "全部"],
+            ["id" => "none_website", "text" => "没有网站"],
+            ["id" => "have_website", "text" => "有网站"]
+        ];
+    }
+
+    /**
+     * 再次跟进
+     * @return \think\response\View
+     */
+    public function resend()
+    {
+        $id = $this->request->post("id");
+        $this->assign([
+            "id" => $id
+        ]);
+        $this->get_assign();
+        return view();
+    }
+
+    /**
+     * 再次跟进添加
+     */
+    public function resendData()
+    {
+        $rule = [
+            ["parent_id", "require", "请选择配置项"],
+            ["template_id", "require", "请选择模板"],
+            ["select_number","require","请填写选取数量"]
+        ];
+        $validate = new Validate($rule);
+        $data = $this->request->post();
+        if (!$validate->check($data)) {
+            $this->msg($validate->getError(), "再次跟进", self::error);
+        }
+        $sendconfig = new \app\index\model\SendConfig();
+        if (!$sendconfig->save($data)) {
+            $this->msg("添加失败", "修改配置", self::error);
+        }
+        $this->msg("添加成功", "修改配置");
     }
 }
