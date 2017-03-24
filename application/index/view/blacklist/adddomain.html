@@ -1,0 +1,50 @@
+<!----该文件是打开窗体之后的页面-->
+<?php
+$page_id="bl_domain_add";
+?>
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+    </button>
+    <h4 class="modal-title">
+        <i class="fa fa-location-arrow"></i> 添加域名黑名单
+    </h4>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" id="{$page_id}_toaction" onsubmit="return false">
+        <input type="hidden" name="token" value="{$token}">
+        <div class="form-group">
+            <label for="" class="control-label col-sm-3">域名：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="domain">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="" class="control-label col-sm-3">原因：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="reason">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="" class="control-label col-sm-3">域名详情：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="detail">
+            </div>
+        </div>
+    </form>
+    <input type="hidden" value="{$modal_id}" name='{$page_id}_add_modal_id'>
+    <input type="hidden" value="{$datagrid_id}" name='{$page_id}_datagrid_id'>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">关闭</button>
+    <button type="button" class="btn btn-primary btn-sm" id="{$page_id}_add_producttype_btn">保存</button>
+</div>
+<script>
+    $("#{$page_id}_add_producttype_btn").click(function () {
+        var obj = {
+            add_email_template_url: "{:URL('index/Blacklist/execAddDomainData')}"
+        };
+        var data = $("#{$page_id}_toaction").serialize();
+        submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());
+    });
+</script>

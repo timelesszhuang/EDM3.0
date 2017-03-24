@@ -1,5 +1,6 @@
 .idea
 .idea/*
+runtime
+runtime/*
 !.gitignore
-# phpstorm project files
-.idea
+

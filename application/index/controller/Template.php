@@ -8,6 +8,7 @@
  */
 namespace app\index\controller;
 
+use app\index\model\Link;
 use think\Validate;
 
 class Template extends Base
@@ -29,6 +30,10 @@ class Template extends Base
     public function add()
     {
         $this->get_assign();
+        $link_arr=(new Link())->field("link_url,link_title")->select();
+        $this->assign([
+            "data"=>$link_arr
+        ]);
         return view();
     }
 
@@ -40,7 +45,8 @@ class Template extends Base
         $rule = [
             ["title", "require|unique:template", "请填写标题|当前标题已经存在"],
             ["detail", "require", "请填写描述"],
-            ["content", "require", "请填写内容"]
+            ["content", "require", "请填写内容"],
+            ["type", 'require', '请选择模板类型']
         ];
         $validate = new Validate($rule);
         $data = $this->request->post();
@@ -66,7 +72,36 @@ class Template extends Base
             $where["title"] = ["like", "%$query%"];
         }
         $template = new \app\index\model\Template();
-        return $template->order("id desc")->where($where)->limit($limit, $rows)->select();
+        $list = $template->order("id desc")->where($where)->limit($limit, $rows)->select();
+        array_walk($list, [$this, 'formatType']);
+        return $list;
+    }
+
+    /**
+     * 格式化类型数据
+     * @access public
+     */
+    public function formatType(&$v, $k)
+    {
+        $type = \app\index\model\Template::getTemplateType();
+        $v['type'] = $type[$v['type']];
+    }
+
+    /**
+     * 获取模板的类型
+     * @access public
+     */
+    public function typeTree()
+    {
+        $type = \app\index\model\Template::getTemplateType();
+        foreach ($type as $k => $v) {
+            $arr[] = ["id" => $k, "text" => $v];
+        }
+        array_unshift($arr,[
+            "id"=>0,
+            "text"=>"请选择模板分类"
+        ]);
+        return $arr;
     }
 
     /**
@@ -78,9 +113,11 @@ class Template extends Base
         $this->get_assign();
         $id = $this->request->post("id");
         $template = \app\index\model\Template::get($id);
+        $link_arr=(new Link())->field("link_url,link_title")->select();
         if ($template) {
             $this->assign([
-                "data" => $template->toArray()
+                "data" => $template->toArray(),
+                "link"=>$link_arr
             ]);
         }
         return view();
@@ -94,7 +131,8 @@ class Template extends Base
         $rule = [
             ["title", "require|unique:template", "请填写标题|当前标题已经存在"],
             ["detail", "require", "请填写描述"],
-            ["content", "require", "请填写内容"]
+            ["content", "require", "请填写内容"],
+            ["type", "require", "请选择模板分类"],
         ];
         $validate = new Validate($rule);
         $data = $this->request->post();
@@ -116,6 +154,10 @@ class Template extends Base
     public function del()
     {
         $id = $this->request->post("id");
+        $sendconfig = new \app\index\model\SendConfig();
+        if ($sendconfig->where('template_id', 'like', "%,$id,%")->find()) {
+            $this->msg("该模板已经在配置中，请先取消配置中选择。", "删除失败。", self::error);
+        }
         if (!\app\index\model\Template::destroy($id)) {
             $this->msg("删除失败", "删除信息", self::error);
         }
