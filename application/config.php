@@ -256,7 +256,6 @@ return [
         'reset' => true
     ],
     'emailDomain'=>[
-//        "domain"=>"http://edm.salesman.cc"
-    "domain"=>"http://www.edm5.com"
+        "domain"=>"http://edm.salesman.cc"
     ]
 ];
