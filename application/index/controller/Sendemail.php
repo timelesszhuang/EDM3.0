@@ -93,7 +93,7 @@ class Sendemail extends Controller
             $toUser = $data[0]["person_mailaddress"];
 //            $send_arr=["3423929165@qq.com", "2923788170@qq.com"];
 //            $toUser = $send_arr[array_rand($send_arr)];
-            $toUser="3423929165@qq.com";
+//            $toUser="3423929165@qq.com";
             //模板信息数组
             $tempInfo = $template_arr[array_rand($template_arr)];
             //账号
