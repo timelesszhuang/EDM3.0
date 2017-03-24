@@ -105,6 +105,8 @@ class Sendemail extends Controller
             if (!empty($this->matchBlackList($toUser))) {
                 (new SendError())->add($sendUser, $toUser, "域名黑名单", $tempInfo["id"]);
                 //更改配置
+                ++$start_account;
+                ++$email_offset;
                 $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
                 continue;
             }
@@ -112,6 +114,8 @@ class Sendemail extends Controller
             if (!empty($this->matchUnsendEmail($toUser))) {
                 (new SendError())->add($sendUser, $toUser, "邮箱黑名单", $tempInfo["id"]);
                 //更改配置
+                ++$start_account;
+                ++$email_offset;
                 $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
                 continue;
             }
@@ -119,11 +123,15 @@ class Sendemail extends Controller
             if (!empty($this->filterRepeatEmail($toUser, $confgData["id"]))) {
                 (new SendError())->add($sendUser, $toUser, "邮箱重复", $tempInfo["id"]);
                 //更改配置
+                ++$start_account;
+                ++$email_offset;
                 $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
                 continue;
             }
             //添加发送记录
             $recordId = $this->saveRecord($tempInfo,$toUser,$confgData,$data);
+            ++$start_account;
+            ++$email_offset;
             //修改发送记录
             $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
             //替换发送内容
@@ -192,7 +200,7 @@ class Sendemail extends Controller
      * @param $email_offset
      * @param $sendUser
      */
-    public function editConfig($configId, &$start_account, &$email_offset, $sendUser)
+    public function editConfig($configId, $start_account, $email_offset, $sendUser)
     {
         $sconfig = SendConfig::get($configId);
         $sconfig->send_record_page = ++$email_offset;
