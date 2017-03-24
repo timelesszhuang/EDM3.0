@@ -7517,3 +7517,40 @@ ul,li{ list-style:none; padding:0; margin:0;}
 [ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
 
 ---------------------------------------------------------------
+[ 2017-03-24T15:14:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.385983s][吞吐率：2.59req/s] [内存消耗：3,836.85kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030574s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.020675s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.021727s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.020130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.018845s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.021317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.020344s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.023868s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
