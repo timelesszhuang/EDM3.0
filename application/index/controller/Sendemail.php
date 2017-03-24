@@ -118,12 +118,12 @@ class Sendemail extends Controller
                 continue;
             }
             //匹配是否本配置下已发送
-//            if (!empty($this->filterRepeatEmail($toUser, $confgData["id"]))) {
-//                (new SendError())->add($sendUser, $toUser, "邮箱重复", $tempInfo["id"]);
-//                //更改配置
-//                $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
-//                continue;
-//            }
+            if (!empty($this->filterRepeatEmail($toUser, $confgData["id"]))) {
+                (new SendError())->add($sendUser, $toUser, "邮箱重复", $tempInfo["id"]);
+                //更改配置
+                $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
+                continue;
+            }
             //添加发送记录
             $recordId = $this->saveRecord($tempInfo,$toUser,$confgData,$data);
             //修改发送记录

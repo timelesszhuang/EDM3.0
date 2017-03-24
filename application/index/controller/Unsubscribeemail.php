@@ -20,6 +20,15 @@ use think\Url;
 class Unsubscribeemail extends Controller
 {
 
+    public function getIp()
+    {
+
+        echo $_SERVER["REMOTE_ADDR"];die;
+
+    }
+
+
+
     /**
      * 用户查看邮件时的操作
      * @param $id
@@ -42,7 +51,8 @@ class Unsubscribeemail extends Controller
      */
     public function saveEmailRecord($email_id, $sendRecord)
     {
-        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER['REMOTE_ADDR'])["data"];
+        $customer_ip=EmailUtil::getClientIP();
+        $ip_arr = (new EmailUtil)->get_ip_info($customer_ip)["data"];
         //如果序列化是空的话
         if (empty($sendRecord->ip_serialize)) {
             $sendRecord->read_num++;
@@ -68,7 +78,6 @@ class Unsubscribeemail extends Controller
             $sendRecord->read_num++;
             $sendRecord->save();
         }
-
     }
 
     /**
@@ -163,7 +172,8 @@ class Unsubscribeemail extends Controller
      */
     public function saveLinkRecord($linkRecord, $link_id, $record_id, $link_title)
     {
-        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER['REMOTE_ADDR'])["data"];
+        $customer_ip=EmailUtil::getClientIP();
+        $ip_arr = (new EmailUtil)->get_ip_info($customer_ip)["data"];
         if (empty($linkRecord)) {
             $read_number = 1;
             $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
