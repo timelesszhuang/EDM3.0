@@ -89,7 +89,7 @@ class Sendemail extends Controller
                 exit("数据已经发送完毕,无法再次发送,请重新修改配置");
             }
             //1条数据
-            $data =$this->getData($mongodb,$confgData,0,10);
+            $data =$this->getData($mongodb,$confgData,$email_offset,1);
             $toUser = $data[0]["person_mailaddress"];
             //模板信息数组
             $tempInfo = $template_arr[array_rand($template_arr)];
