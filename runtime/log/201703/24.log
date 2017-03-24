@@ -7554,3 +7554,489 @@ ul,li{ list-style:none; padding:0; margin:0;}
 [ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
 
 ---------------------------------------------------------------
+[ 2017-03-24T15:15:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.381960s][吞吐率：2.62req/s] [内存消耗：3,834.76kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029687s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.017141s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.018580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.017785s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.015563s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.032663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.017057s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.032465s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:16:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.447632s][吞吐率：2.23req/s] [内存消耗：3,834.76kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029591s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.021117s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.018078s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.016886s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.020547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.021088s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.019385s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:16:11+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.382903s][吞吐率：2.61req/s] [内存消耗：3,837.18kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032594s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.019576s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.019748s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.019463s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.017674s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.020291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.019272s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.019731s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:17:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.390644s][吞吐率：2.56req/s] [内存消耗：3,835.20kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033852s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.024063s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.020646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.020705s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.022441s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.020560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.019535s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.021273s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:18:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.095941s][吞吐率：10.42req/s] [内存消耗：3,418.47kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029719s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.019700s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.023394s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:37:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.097724s][吞吐率：10.23req/s] [内存消耗：3,420.51kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031123s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.020785s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.020744s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:39:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.090443s][吞吐率：11.06req/s] [内存消耗：3,422.73kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029840s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.019830s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.019252s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:39:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.108488s][吞吐率：9.22req/s] [内存消耗：3,422.73kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037258s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.023730s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.024644s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:39:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.101328s][吞吐率：9.87req/s] [内存消耗：3,422.73kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036943s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.020425s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.021065s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:40:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.086803s][吞吐率：11.52req/s] [内存消耗：3,420.51kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030562s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.018740s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.020216s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:40:08+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.108521s][吞吐率：9.21req/s] [内存消耗：3,422.73kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034540s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.023029s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.021705s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:40:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.101107s][吞吐率：9.89req/s] [内存消耗：3,422.72kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034869s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.021583s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.021966s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:40:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.099106s][吞吐率：10.09req/s] [内存消耗：3,422.72kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033010s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.021610s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.022299s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:41:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.091985s][吞吐率：10.87req/s] [内存消耗：3,420.93kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031163s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.020131s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.021640s ]
+
+---------------------------------------------------------------
