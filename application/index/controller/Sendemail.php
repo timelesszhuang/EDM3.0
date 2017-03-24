@@ -30,14 +30,10 @@ class Sendemail extends Controller
      */
     public function run($id)
     {
-//        $mongodb = new \app\index\model\Mongodb();
-//        echo $mongodb->getCount('shandong', 'contacttool', 1);
-//        print_r($mongodb->getPerstepEmail('shandong', 'contacttool', 1, 0, 5));
-//        exit;
         if (empty($id)) {
             exit("请传入id参数");
         }
-//        $this->openObStart();
+        $this->openObStart();
         //根据id查询配置项
         $sendconfig = SendConfig::get($id);
         if (!$sendconfig) {
@@ -52,7 +48,6 @@ class Sendemail extends Controller
                 exit;
             }
         }
-        die;
         $this->begin($confgData);
     }
 
@@ -111,29 +106,26 @@ class Sendemail extends Controller
             //匹配域名黑名单
             if (!empty($this->matchBlackList($toUser))) {
                 (new SendError())->add($sendUser, $toUser, "域名黑名单", $tempInfo["id"]);
-                $start_account++;
-                $email_offset++;
+                //更改配置
+                $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
                 continue;
             }
             //匹配邮箱黑名单
             if (!empty($this->matchUnsendEmail($toUser))) {
                 (new SendError())->add($sendUser, $toUser, "邮箱黑名单", $tempInfo["id"]);
-                $start_account++;
-                $email_offset++;
+                //更改配置
+                $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
                 continue;
             }
             //匹配是否本配置下已发送
-            if (!empty($this->filterRepeatEmail($toUser, $confgData["id"]))) {
-                (new SendError())->add($sendUser, $toUser, "邮箱重复", $tempInfo["id"]);
-                $start_account++;
-                $email_offset++;
-                continue;
-            }
+//            if (!empty($this->filterRepeatEmail($toUser, $confgData["id"]))) {
+//                (new SendError())->add($sendUser, $toUser, "邮箱重复", $tempInfo["id"]);
+//                //更改配置
+//                $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
+//                continue;
+//            }
             //添加发送记录
             $recordId = $this->saveRecord($tempInfo,$toUser,$confgData,$data);
-            //账号和邮箱step++
-            $start_account++;
-            $email_offset++;
             //修改发送记录
             $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
             //替换发送内容
@@ -200,8 +192,8 @@ class Sendemail extends Controller
     public function editConfig($configId, $start_account, $email_offset, $sendUser)
     {
         $sconfig = SendConfig::get($configId);
-        $sconfig->send_record_page = $email_offset;
-        $sconfig->send_account_id = $start_account;
+        $sconfig->send_record_page = ++$email_offset;
+        $sconfig->send_account_id = ++$start_account;
         $sconfig->send_account_name = $sendUser;
         $sconfig->save();
     }
@@ -224,9 +216,7 @@ class Sendemail extends Controller
     public function matchBlackList($email)
     {
         $arr = explode("@", $email);
-        $where["domain"] = [
-            "like", "%$arr[1]%"
-        ];
+        $where["domain"] =$arr[1];
         return (new Blacklist())->where($where)->find();
     }
 
