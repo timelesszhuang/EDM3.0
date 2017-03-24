@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"/home/wwwroot/edm5.0/public/../application/index/view/index/index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/header.html";i:1489643205;s:71:"/home/wwwroot/edm5.0/public/../application/index/view/index/navbar.html";i:1490256527;s:75:"/home/wwwroot/edm5.0/public/../application/index/view/index/load_index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/footer.html";i:1489715273;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"/home/wwwroot/edm5.0/public/../application/index/view/index/index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/header.html";i:1489643205;s:71:"/home/wwwroot/edm5.0/public/../application/index/view/index/navbar.html";i:1490337757;s:75:"/home/wwwroot/edm5.0/public/../application/index/view/index/load_index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/footer.html";i:1489715273;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>

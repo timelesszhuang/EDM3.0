@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html";i:1490321798;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html";i:1490337757;}*/ ?>
 <?php
 $page_id="template";
 ?>

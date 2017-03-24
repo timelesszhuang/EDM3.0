@@ -4241,3 +4241,3279 @@ ul,li{ list-style:none; padding:0; margin:0;}
 [ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.018774s ]
 
 ---------------------------------------------------------------
+[ 2017-03-24T14:57:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html
+[ log ] www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html [运行时间：0.030675s][吞吐率：32.60req/s] [内存消耗：2,534.50kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/login/index/alert/%E8%AF%B7%E5%85%88%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/index/msg/登录成功。_html' => '',
+  'msg' => '登录成功。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001827s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/edm5.0/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/index/index.html [ array (
+  0 => 'msg',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_allcount_html.html
+[ log ] www.edm5.com/index/index/load_allcount_html.html [运行时间：0.019596s][吞吐率：51.03req/s] [内存消耗：2,282.84kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_allcount_html',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'text/html, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/load_allcount_html_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000439s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/emailsend_count_order.html
+[ log ] www.edm5.com/index/index/emailsend_count_order.html [运行时间：0.054909s][吞吐率：18.21req/s] [内存消耗：2,283.17kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'emailsend_count_order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/emailsend_count_order_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000480s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_entryemail_count.html
+[ log ] www.edm5.com/index/index/get_entryemail_count.html [运行时间：0.051488s][吞吐率：19.42req/s] [内存消耗：2,283.15kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_entryemail_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/get_entryemail_count_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000939s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/load_user_count.html
+[ log ] www.edm5.com/index/index/load_user_count.html [运行时间：0.052640s][吞吐率：19.00req/s] [内存消耗：2,283.17kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'load_user_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/load_user_count_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.010829s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/get_distinctactive_count.html
+[ log ] www.edm5.com/index/index/get_distinctactive_count.html [运行时间：0.031189s][吞吐率：32.06req/s] [内存消耗：2,282.80kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'get_distinctactive_count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/get_distinctactive_count_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.014212s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:24+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/index.html
+[ log ] www.edm5.com/index/link/index.html [运行时间：0.012403s][吞吐率：80.63req/s] [内存消耗：2,348.72kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000385s ]
+[ info ] [ RUN ] app\index\controller\Link->index[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/link/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:24+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/getdata.html
+[ log ] www.edm5.com/index/link/getdata.html [运行时间：0.101501s][吞吐率：9.85req/s] [内存消耗：3,516.85kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000638s ]
+[ info ] [ RUN ] app\index\controller\Link->getData[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033204s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.022023s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_link` ORDER BY id desc LIMIT 0,10 [ RunTime:0.021112s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:26+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/index.html
+[ log ] www.edm5.com/index/template/index.html [运行时间：0.016391s][吞吐率：61.01req/s] [内存消耗：2,551.30kb] [文件加载：55]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000392s ]
+[ info ] [ RUN ] app\index\controller\Template->index[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:26+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.098733s][吞吐率：10.13req/s] [内存消耗：3,532.95kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001249s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031670s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.018419s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.022784s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/save.html
+[ log ] www.edm5.com/index/template/save.html [运行时间：0.145706s][吞吐率：6.86req/s] [内存消耗：3,876.86kb] [文件加载：64]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '69',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/save_html' => '',
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+  'id' => '8',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000385s ]
+[ info ] [ RUN ] app\index\controller\Template->save[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/save.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+  3 => 'data',
+  4 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039542s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.020153s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.021740s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.024207s ]
+[ sql ] [ SQL ] SELECT `link_url`,`link_title` FROM `edm_link` [ RunTime:0.019714s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T14:57:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/typetree.html
+[ log ] www.edm5.com/index/template/typetree.html [运行时间：0.017887s][吞吐率：55.91req/s] [内存消耗：2,627.05kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'typetree',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/typetree_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000531s ]
+[ info ] [ RUN ] app\index\controller\Template->typeTree[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:58:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.408736s][吞吐率：2.45req/s] [内存消耗：3,834.64kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034465s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.020504s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.020854s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.020796s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.019132s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.021048s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.019830s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.020612s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T14:59:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.416717s][吞吐率：2.40req/s] [内存消耗：3,834.99kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037247s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.023926s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.023892s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.023142s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.023833s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.024789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.024042s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.024413s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T14:59:16+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/index.html
+[ log ] www.edm5.com/index/link/index.html [运行时间：0.011656s][吞吐率：85.79req/s] [内存消耗：2,348.91kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000367s ]
+[ info ] [ RUN ] app\index\controller\Link->index[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/link/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T14:59:16+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/getdata.html
+[ log ] www.edm5.com/index/link/getdata.html [运行时间：0.089925s][吞吐率：11.12req/s] [内存消耗：3,516.88kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000472s ]
+[ info ] [ RUN ] app\index\controller\Link->getData[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029530s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.019283s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_link` ORDER BY id desc LIMIT 0,10 [ RunTime:0.017970s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T14:59:19+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/save.html
+[ log ] www.edm5.com/index/link/save.html [运行时间：0.084289s][吞吐率：11.86req/s] [内存消耗：3,796.88kb] [文件加载：63]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '65',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/save_html' => '',
+  'datagrid_id' => 'link_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000362s ]
+[ info ] [ RUN ] app\index\controller\Link->save[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/link/save.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027118s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.018289s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_link` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.017705s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:00:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.406287s][吞吐率：2.46req/s] [内存消耗：3,834.99kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041685s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.020626s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.020963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.019710s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.021033s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.020834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.023695s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.020604s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:00:54+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/savedata.html
+[ log ] www.edm5.com/index/link/savedata.html [运行时间：0.111182s][吞吐率：8.99req/s] [内存消耗：3,576.45kb] [文件加载：60]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'savedata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '172',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/savedata_html' => '',
+  'token' => '949bc65c0fb97a0f3803bce9694fd8c2',
+  'id' => '1',
+  'link_title' => '开启邮箱免费试用',
+  'redirect_url' => 'http://mail.qiyvkf.com/',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000438s ]
+[ info ] [ RUN ] app\index\controller\Link->saveData[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032045s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.020031s ]
+[ sql ] [ SQL ] SELECT `id` FROM `edm_link` WHERE  `link_title` = '开启邮箱免费试用'  AND `id` <> 1 LIMIT 1 [ RunTime:0.018880s ]
+[ sql ] [ SQL ] UPDATE `edm_link`  SET `link_title`='开启邮箱免费试用',`redirect_url`='http://mail.qiyvkf.com/',`update_time`=1490338854  WHERE  `id` = 1 [ RunTime:0.019349s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:00:54+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/getdata.html
+[ log ] www.edm5.com/index/link/getdata.html [运行时间：0.091196s][吞吐率：10.97req/s] [内存消耗：3,516.88kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000428s ]
+[ info ] [ RUN ] app\index\controller\Link->getData[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031377s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.020268s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_link` ORDER BY id desc LIMIT 0,10 [ RunTime:0.019498s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:00:59+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/index.html
+[ log ] www.edm5.com/index/template/index.html [运行时间：0.011639s][吞吐率：85.92req/s] [内存消耗：2,358.02kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000376s ]
+[ info ] [ RUN ] app\index\controller\Template->index[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:00:59+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.088493s][吞吐率：11.30req/s] [内存消耗：3,532.95kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000505s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030428s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.018026s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.019048s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:01:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.394867s][吞吐率：2.53req/s] [内存消耗：3,834.99kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031833s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.020561s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.021637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.020803s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.019485s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.031678s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.022282s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.021250s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:01:02+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/save.html
+[ log ] www.edm5.com/index/template/save.html [运行时间：0.122813s][吞吐率：8.14req/s] [内存消耗：3,673.25kb] [文件加载：62]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '69',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/save_html' => '',
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+  'id' => '8',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000367s ]
+[ info ] [ RUN ] app\index\controller\Template->save[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/save.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+  3 => 'data',
+  4 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028795s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.019158s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.020067s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.019727s ]
+[ sql ] [ SQL ] SELECT `link_url`,`link_title` FROM `edm_link` [ RunTime:0.018114s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:01:02+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/typetree.html
+[ log ] www.edm5.com/index/template/typetree.html [运行时间：0.016251s][吞吐率：61.53req/s] [内存消耗：2,627.05kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'typetree',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/typetree_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000575s ]
+[ info ] [ RUN ] app\index\controller\Template->typeTree[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:01:29+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/savedata.html
+[ log ] www.edm5.com/index/template/savedata.html [运行时间：0.124357s][吞吐率：8.04req/s] [内存消耗：3,604.47kb] [文件加载：60]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'savedata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '6658',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/savedata_html' => '',
+  'token' => 'ad0a2d0b227d498051d2719a4c017dd3',
+  'id' => '8',
+  'title' => '随便起的名字',
+  'type' => '10',
+  'detail' => '方志军邮箱推广',
+  'content' => '无标题文档
+<div class="container bh">
+	<div style="margin:20px auto;">
+		<img class="img-responsive" alt="网易企业邮箱" style="height:30px;" src="http://4006360163.com/imageyj/logo12.png" />
+	</div>
+	<div style="color:#fff;font-size:14px;">
+		亲爱的用户，您好！<span class="container"><img style="width:90%;" class="img-responsive" alt="四海八荒都选网易了，您还在等什么，网易企业邮箱房志军期待您的致电18866885273 " src="http://www.4006360163.com/imageyj/fzj.jpg" /></span>
+	</div>
+	<div class="col-md-12 col-xs-12 yl">
+		网易企业邮箱持续为企业整合推出高效办公方式，打造全新的企业服务，长期为企业提供免费试用资格。
+	</div>
+	<div class="col-xs-12 t11">
+		我们用心，给您安心
+	</div>
+	<div class="col-xs-12 t2">
+		八年来，网易企业邮箱以其强大的海内外服务器以及全天候的售后服务团队，专注于为企业提供安全易用的办公解决方案。
+	</div>
+	<div class=" col-md-12 col-xs-12 yl">
+		定位于安全性和稳定的网易企业邮箱成功服务57万家大型企事业单位
+	</div>
+	<div class=" col-md-12 col-xs-12 zc">
+		<ul>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="清华大学" src="http://www.4006360163.com/imageyj/kh1.jpg" />
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="郑州市人民政府" src="http://www.4006360163.com/imageyj/kh2.jpg" />
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="国泰君安证券" src="http://www.4006360163.com/imageyj/kh3.jpg" />
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="第一财经集团" src="http://www.4006360163.com/imageyj/kh4.jpg" />
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="广州电视台" src="http://www.4006360163.com/imageyj/kh5.jpg" />
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="友邦保险" src="http://www.4006360163.com/imageyj/kh6.jpg" />
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="宅急送" src="http://www.4006360163.com/imageyj/kh7.jpg" />
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="ofo单车" src="http://www.4006360163.com/imageyj/kh8.jpg" />
+			</li>
+		</ul>
+	</div>
+	<div class="col-md-12 col-xs-12 yl">
+		<a href="http://www.edm5.com/index/unsubscribeemail/linkjump/link_id/1/record_id/{{id}}.html">开启邮箱免费试用</a>
+	</div>
+	<div class="bottom col-md-12 col-xs-12">
+		<div class="logo col-md-3 col-xs-12">
+			<img class="img-responsive" alt="山东强比信息技术有限公司" src="http://4006360163.com/imageyj/logo.png" /> 
+		</div>
+		<div class="col-md-9 col-xs-12" style="font-size:13px;color:#fff;text-align:left;padding:28px 0;">
+			(手机号/QQ号/微信号：18866885273）&nbsp;&nbsp;&nbsp;&nbsp;
+网易云企业服务一级服务商： 北京强比科技有限公司<br />
+咨询：4006360163&nbsp;&nbsp; 010-85170726 <a href="http://www.qiangbi.net">在线客服：http://www.qiangbi.net</a><br />
+微信客服：CIOatChina &nbsp;&nbsp;&nbsp;&nbsp;  企业QQ:8000163163
+		</div>
+	</div>
+</div>',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000362s ]
+[ info ] [ RUN ] app\index\controller\Template->saveData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028803s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016243s ]
+[ sql ] [ SQL ] SELECT `id` FROM `edm_template` WHERE  `title` = '随便起的名字'  AND `id` <> 8 LIMIT 1 [ RunTime:0.015739s ]
+[ sql ] [ SQL ] UPDATE `edm_template`  SET `title`='随便起的名字',`type`='10',`detail`='方志军邮箱推广',`content`='无标题文档\r\n<div class=\"container bh\">\r\n	<div style=\"margin:20px auto;\">\r\n		<img class=\"img-responsive\" alt=\"网易企业邮箱\" style=\"height:30px;\" src=\"http://4006360163.com/imageyj/logo12.png\" />\r\n	</div>\r\n	<div style=\"color:#fff;font-size:14px;\">\r\n		亲爱的用户，您好！<span class=\"container\"><img style=\"width:90%;\" class=\"img-responsive\" alt=\"四海八荒都选网易了，您还在等什么，网易企业邮箱房志军期待您的致电18866885273 \" src=\"http://www.4006360163.com/imageyj/fzj.jpg\" /></span>\r\n	</div>\r\n	<div class=\"col-md-12 col-xs-12 yl\">\r\n		网易企业邮箱持续为企业整合推出高效办公方式，打造全新的企业服务，长期为企业提供免费试用资格。\r\n	</div>\r\n	<div class=\"col-xs-12 t11\">\r\n		我们用心，给您安心\r\n	</div>\r\n	<div class=\"col-xs-12 t2\">\r\n		八年来，网易企业邮箱以其强大的海内外服务器以及全天候的售后服务团队，专注于为企业提供安全易用的办公解决方案。\r\n	</div>\r\n	<div class=\" col-md-12 col-xs-12 yl\">\r\n		定位于安全性和稳定的网易企业邮箱成功服务57万家大型企事业单位\r\n	</div>\r\n	<div class=\" col-md-12 col-xs-12 zc\">\r\n		<ul>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"清华大学\" src=\"http://www.4006360163.com/imageyj/kh1.jpg\" />\r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"郑州市人民政府\" src=\"http://www.4006360163.com/imageyj/kh2.jpg\" />\r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"国泰君安证券\" src=\"http://www.4006360163.com/imageyj/kh3.jpg\" />\r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"第一财经集团\" src=\"http://www.4006360163.com/imageyj/kh4.jpg\" />\r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"广州电视台\" src=\"http://www.4006360163.com/imageyj/kh5.jpg\" />\r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"友邦保险\" src=\"http://www.4006360163.com/imageyj/kh6.jpg\" />\r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"宅急送\" src=\"http://www.4006360163.com/imageyj/kh7.jpg\" />\r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"ofo单车\" src=\"http://www.4006360163.com/imageyj/kh8.jpg\" />\r\n			</li>\r\n		</ul>\r\n	</div>\r\n	<div class=\"col-md-12 col-xs-12 yl\">\r\n		<a href=\"http://www.edm5.com/index/unsubscribeemail/linkjump/link_id/1/record_id/{{id}}.html\">开启邮箱免费试用</a>\r\n	</div>\r\n	<div class=\"bottom col-md-12 col-xs-12\">\r\n		<div class=\"logo col-md-3 col-xs-12\">\r\n			<img class=\"img-responsive\" alt=\"山东强比信息技术有限公司\" src=\"http://4006360163.com/imageyj/logo.png\" /> \r\n		</div>\r\n		<div class=\"col-md-9 col-xs-12\" style=\"font-size:13px;color:#fff;text-align:left;padding:28px 0;\">\r\n			(手机号/QQ号/微信号：18866885273）&nbsp;&nbsp;&nbsp;&nbsp;\r\n网易云企业服务一级服务商： 北京强比科技有限公司<br />\r\n咨询：4006360163&nbsp;&nbsp; 010-85170726 <a href=\"http://www.qiangbi.net\">在线客服：http://www.qiangbi.net</a><br />\r\n微信客服：CIOatChina &nbsp;&nbsp;&nbsp;&nbsp;  企业QQ:8000163163\r\n		</div>\r\n	</div>\r\n</div>',`update_time`=1490338889  WHERE  `id` = 8 [ RunTime:0.045801s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:01:29+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.092692s][吞吐率：10.79req/s] [内存消耗：3,523.22kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000384s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028811s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016641s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.028198s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:01:33+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/save.html
+[ log ] www.edm5.com/index/template/save.html [运行时间：0.124281s][吞吐率：8.05req/s] [内存消耗：3,663.43kb] [文件加载：62]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '69',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/save_html' => '',
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+  'id' => '8',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000362s ]
+[ info ] [ RUN ] app\index\controller\Template->save[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/save.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+  3 => 'data',
+  4 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029963s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.019311s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.019358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.020006s ]
+[ sql ] [ SQL ] SELECT `link_url`,`link_title` FROM `edm_link` [ RunTime:0.018248s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:01:33+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/typetree.html
+[ log ] www.edm5.com/index/template/typetree.html [运行时间：0.016002s][吞吐率：62.49req/s] [内存消耗：2,627.05kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'typetree',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/typetree_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000522s ]
+[ info ] [ RUN ] app\index\controller\Template->typeTree[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:02:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.346977s][吞吐率：2.88req/s] [内存消耗：3,825.21kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028961s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.016058s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.017486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.015378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.014085s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.020566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.017311s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.017126s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:02:33+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/index.html
+[ log ] www.edm5.com/index/link/index.html [运行时间：0.011834s][吞吐率：84.50req/s] [内存消耗：2,348.91kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000384s ]
+[ info ] [ RUN ] app\index\controller\Link->index[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/link/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:02:34+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/getdata.html
+[ log ] www.edm5.com/index/link/getdata.html [运行时间：0.092017s][吞吐率：10.87req/s] [内存消耗：3,516.98kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000428s ]
+[ info ] [ RUN ] app\index\controller\Link->getData[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030770s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.019919s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_link` ORDER BY id desc LIMIT 0,10 [ RunTime:0.018117s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:02:47+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/del.html
+[ log ] www.edm5.com/index/link/del.html [运行时间：0.130958s][吞吐率：7.64req/s] [内存消耗：3,457.16kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/del_html' => '',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000452s ]
+[ info ] [ RUN ] app\index\controller\Link->del[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032505s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.020834s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_link` WHERE  `id` = 1 [ RunTime:0.020460s ]
+[ sql ] [ SQL ] DELETE FROM `edm_link`    WHERE  `id` = 1 [ RunTime:0.025335s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:02:47+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/getdata.html
+[ log ] www.edm5.com/index/link/getdata.html [运行时间：0.096038s][吞吐率：10.41req/s] [内存消耗：3,510.70kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000532s ]
+[ info ] [ RUN ] app\index\controller\Link->getData[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032738s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.021051s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_link` ORDER BY id desc LIMIT 0,10 [ RunTime:0.019949s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:02:49+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/add.html
+[ log ] www.edm5.com/index/link/add.html [运行时间：0.017934s][吞吐率：55.76req/s] [内存消耗：2,540.08kb] [文件加载：55]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '60',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/add_html' => '',
+  'datagrid_id' => 'link_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000389s ]
+[ info ] [ RUN ] app\index\controller\Link->add[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/link/add.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:03:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.364706s][吞吐率：2.74req/s] [内存消耗：3,825.21kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030755s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.016504s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.017753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.017533s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.017243s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.025733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016051s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.018612s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:03:06+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/adddata.html
+[ log ] www.edm5.com/index/link/adddata.html [运行时间：0.147371s][吞吐率：6.79req/s] [内存消耗：3,654.87kb] [文件加载：61]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'adddata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '167',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/adddata_html' => '',
+  'token' => '5d2dcd982a3d3ad55f702a24961dcb7c',
+  'link_title' => '开启邮箱免费试用',
+  'redirect_url' => 'http://mail.qiyvkf.com/',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000434s ]
+[ info ] [ RUN ] app\index\controller\Link->addData[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031183s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.018903s ]
+[ sql ] [ SQL ] SELECT `id` FROM `edm_link` WHERE  `link_title` = '开启邮箱免费试用' LIMIT 1 [ RunTime:0.019113s ]
+[ sql ] [ SQL ] INSERT INTO `edm_link` (`link_title` , `redirect_url` , `update_time` , `create_time`) VALUES ('开启邮箱免费试用' , 'http://mail.qiyvkf.com/' , 1490338986 , 1490338986) [ RunTime:0.020303s ]
+[ sql ] [ SQL ] UPDATE `edm_link`  SET `link_url`='http://edm.salesman.cc/index/unsubscribeemail/linkjump/link_id/2/record_id/{{id}}.html',`update_time`=1490338986  WHERE  `id` = 2 [ RunTime:0.018497s ]
+[ sql ] [ SQL ] UPDATE `edm_link`  SET `link_url`='http://edm.salesman.cc/index/unsubscribeemail/linkjump/link_id/2/record_id/{{id}}.html'  WHERE  `id` = 2 [ RunTime:0.018211s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:03:07+08:00 ] 127.0.0.1 127.0.0.1 POST /index/link/getdata.html
+[ log ] www.edm5.com/index/link/getdata.html [运行时间：0.084580s][吞吐率：11.82req/s] [内存消耗：3,516.91kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'link',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/link/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000445s ]
+[ info ] [ RUN ] app\index\controller\Link->getData[ /home/wwwroot/edm5.0/application/index/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029560s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.018112s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_link` ORDER BY id desc LIMIT 0,10 [ RunTime:0.016376s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:03:09+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/index.html
+[ log ] www.edm5.com/index/template/index.html [运行时间：0.011713s][吞吐率：85.38req/s] [内存消耗：2,358.02kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000396s ]
+[ info ] [ RUN ] app\index\controller\Template->index[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:03:09+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.099073s][吞吐率：10.09req/s] [内存消耗：3,523.22kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000483s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032725s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.021192s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.021216s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:03:11+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/save.html
+[ log ] www.edm5.com/index/template/save.html [运行时间：0.131917s][吞吐率：7.58req/s] [内存消耗：3,663.43kb] [文件加载：62]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '69',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/save_html' => '',
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+  'id' => '8',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000361s ]
+[ info ] [ RUN ] app\index\controller\Template->save[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/save.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+  3 => 'data',
+  4 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033801s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.020638s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.020818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.020623s ]
+[ sql ] [ SQL ] SELECT `link_url`,`link_title` FROM `edm_link` [ RunTime:0.018810s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:03:11+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/typetree.html
+[ log ] www.edm5.com/index/template/typetree.html [运行时间：0.013815s][吞吐率：72.38req/s] [内存消耗：2,627.05kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'typetree',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/typetree_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000526s ]
+[ info ] [ RUN ] app\index\controller\Template->typeTree[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:03:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/savedata.html
+[ log ] www.edm5.com/index/template/savedata.html [运行时间：0.130185s][吞吐率：7.68req/s] [内存消耗：3,604.74kb] [文件加载：60]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'savedata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '6672',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/savedata_html' => '',
+  'token' => 'e75d1e41002d88e9c9352c88d92243b9',
+  'id' => '8',
+  'title' => '随便起的名字',
+  'type' => '10',
+  'detail' => '方志军邮箱推广',
+  'content' => '无标题文档
+<div class="container bh">
+	<div style="margin:20px auto;">
+		<img class="img-responsive" alt="网易企业邮箱" style="height:30px;" src="http://4006360163.com/imageyj/logo12.png" /> 
+	</div>
+	<div style="color:#fff;font-size:14px;">
+		亲爱的用户，您好！<span class="container"><img style="width:90%;" class="img-responsive" alt="四海八荒都选网易了，您还在等什么，网易企业邮箱房志军期待您的致电18866885273 " src="http://www.4006360163.com/imageyj/fzj.jpg" /></span> 
+	</div>
+	<div class="col-md-12 col-xs-12 yl">
+		网易企业邮箱持续为企业整合推出高效办公方式，打造全新的企业服务，长期为企业提供免费试用资格。
+	</div>
+	<div class="col-xs-12 t11">
+		我们用心，给您安心
+	</div>
+	<div class="col-xs-12 t2">
+		八年来，网易企业邮箱以其强大的海内外服务器以及全天候的售后服务团队，专注于为企业提供安全易用的办公解决方案。
+	</div>
+	<div class=" col-md-12 col-xs-12 yl">
+		定位于安全性和稳定的网易企业邮箱成功服务57万家大型企事业单位
+	</div>
+	<div class=" col-md-12 col-xs-12 zc">
+		<ul>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="清华大学" src="http://www.4006360163.com/imageyj/kh1.jpg" /> 
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="郑州市人民政府" src="http://www.4006360163.com/imageyj/kh2.jpg" /> 
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="国泰君安证券" src="http://www.4006360163.com/imageyj/kh3.jpg" /> 
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="第一财经集团" src="http://www.4006360163.com/imageyj/kh4.jpg" /> 
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="广州电视台" src="http://www.4006360163.com/imageyj/kh5.jpg" /> 
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="友邦保险" src="http://www.4006360163.com/imageyj/kh6.jpg" /> 
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="宅急送" src="http://www.4006360163.com/imageyj/kh7.jpg" /> 
+			</li>
+			<li class="col-md-3 col-xs-6">
+				<img class="img-responsive" alt="ofo单车" src="http://www.4006360163.com/imageyj/kh8.jpg" /> 
+			</li>
+		</ul>
+	</div>
+	<div class="col-md-12 col-xs-12 yl">
+		<a href="http://edm.salesman.cc/index/unsubscribeemail/linkjump/link_id/2/record_id/{{id}}.html">开启邮箱免费试用</a> 
+	</div>
+	<div class="bottom col-md-12 col-xs-12">
+		<div class="logo col-md-3 col-xs-12">
+			<img class="img-responsive" alt="山东强比信息技术有限公司" src="http://4006360163.com/imageyj/logo.png" /> 
+		</div>
+		<div class="col-md-9 col-xs-12" style="font-size:13px;color:#fff;text-align:left;padding:28px 0;">
+			(手机号/QQ号/微信号：18866885273）&nbsp;&nbsp;&nbsp;&nbsp;
+网易云企业服务一级服务商： 北京强比科技有限公司<br />
+咨询：4006360163&nbsp;&nbsp; 010-85170726 <a href="http://www.qiangbi.net">在线客服：http://www.qiangbi.net</a><br />
+微信客服：CIOatChina &nbsp;&nbsp;&nbsp;&nbsp;  企业QQ:8000163163
+		</div>
+	</div>
+</div>',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000385s ]
+[ info ] [ RUN ] app\index\controller\Template->saveData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027805s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.021727s ]
+[ sql ] [ SQL ] SELECT `id` FROM `edm_template` WHERE  `title` = '随便起的名字'  AND `id` <> 8 LIMIT 1 [ RunTime:0.026513s ]
+[ sql ] [ SQL ] UPDATE `edm_template`  SET `title`='随便起的名字',`type`='10',`detail`='方志军邮箱推广',`content`='无标题文档\r\n<div class=\"container bh\">\r\n	<div style=\"margin:20px auto;\">\r\n		<img class=\"img-responsive\" alt=\"网易企业邮箱\" style=\"height:30px;\" src=\"http://4006360163.com/imageyj/logo12.png\" /> \r\n	</div>\r\n	<div style=\"color:#fff;font-size:14px;\">\r\n		亲爱的用户，您好！<span class=\"container\"><img style=\"width:90%;\" class=\"img-responsive\" alt=\"四海八荒都选网易了，您还在等什么，网易企业邮箱房志军期待您的致电18866885273 \" src=\"http://www.4006360163.com/imageyj/fzj.jpg\" /></span> \r\n	</div>\r\n	<div class=\"col-md-12 col-xs-12 yl\">\r\n		网易企业邮箱持续为企业整合推出高效办公方式，打造全新的企业服务，长期为企业提供免费试用资格。\r\n	</div>\r\n	<div class=\"col-xs-12 t11\">\r\n		我们用心，给您安心\r\n	</div>\r\n	<div class=\"col-xs-12 t2\">\r\n		八年来，网易企业邮箱以其强大的海内外服务器以及全天候的售后服务团队，专注于为企业提供安全易用的办公解决方案。\r\n	</div>\r\n	<div class=\" col-md-12 col-xs-12 yl\">\r\n		定位于安全性和稳定的网易企业邮箱成功服务57万家大型企事业单位\r\n	</div>\r\n	<div class=\" col-md-12 col-xs-12 zc\">\r\n		<ul>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"清华大学\" src=\"http://www.4006360163.com/imageyj/kh1.jpg\" /> \r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"郑州市人民政府\" src=\"http://www.4006360163.com/imageyj/kh2.jpg\" /> \r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"国泰君安证券\" src=\"http://www.4006360163.com/imageyj/kh3.jpg\" /> \r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"第一财经集团\" src=\"http://www.4006360163.com/imageyj/kh4.jpg\" /> \r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"广州电视台\" src=\"http://www.4006360163.com/imageyj/kh5.jpg\" /> \r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"友邦保险\" src=\"http://www.4006360163.com/imageyj/kh6.jpg\" /> \r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"宅急送\" src=\"http://www.4006360163.com/imageyj/kh7.jpg\" /> \r\n			</li>\r\n			<li class=\"col-md-3 col-xs-6\">\r\n				<img class=\"img-responsive\" alt=\"ofo单车\" src=\"http://www.4006360163.com/imageyj/kh8.jpg\" /> \r\n			</li>\r\n		</ul>\r\n	</div>\r\n	<div class=\"col-md-12 col-xs-12 yl\">\r\n		<a href=\"http://edm.salesman.cc/index/unsubscribeemail/linkjump/link_id/2/record_id/{{id}}.html\">开启邮箱免费试用</a> \r\n	</div>\r\n	<div class=\"bottom col-md-12 col-xs-12\">\r\n		<div class=\"logo col-md-3 col-xs-12\">\r\n			<img class=\"img-responsive\" alt=\"山东强比信息技术有限公司\" src=\"http://4006360163.com/imageyj/logo.png\" /> \r\n		</div>\r\n		<div class=\"col-md-9 col-xs-12\" style=\"font-size:13px;color:#fff;text-align:left;padding:28px 0;\">\r\n			(手机号/QQ号/微信号：18866885273）&nbsp;&nbsp;&nbsp;&nbsp;\r\n网易云企业服务一级服务商： 北京强比科技有限公司<br />\r\n咨询：4006360163&nbsp;&nbsp; 010-85170726 <a href=\"http://www.qiangbi.net\">在线客服：http://www.qiangbi.net</a><br />\r\n微信客服：CIOatChina &nbsp;&nbsp;&nbsp;&nbsp;  企业QQ:8000163163\r\n		</div>\r\n	</div>\r\n</div>',`update_time`=1490339010  WHERE  `id` = 8 [ RunTime:0.032262s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:03:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.080966s][吞吐率：12.35req/s] [内存消耗：3,523.23kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000426s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027077s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016781s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.017819s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:04:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.376480s][吞吐率：2.66req/s] [内存消耗：3,825.28kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029109s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.017463s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.019354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.018183s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.015813s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.033024s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.017651s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.020598s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:05:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.393603s][吞吐率：2.54req/s] [内存消耗：3,825.28kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030757s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.018896s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.019655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.018446s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.017445s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.019768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.018848s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.029685s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:05:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/index.html
+[ log ] www.edm5.com/index/template/index.html [运行时间：0.019817s][吞吐率：50.46req/s] [内存消耗：2,358.02kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.002337s ]
+[ info ] [ RUN ] app\index\controller\Template->index[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:05:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.096328s][吞吐率：10.38req/s] [内存消耗：3,523.23kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000508s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033847s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.018094s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.019127s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:05:32+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/save.html
+[ log ] www.edm5.com/index/template/save.html [运行时间：0.132444s][吞吐率：7.55req/s] [内存消耗：3,663.48kb] [文件加载：62]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '69',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/save_html' => '',
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+  'id' => '8',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000403s ]
+[ info ] [ RUN ] app\index\controller\Template->save[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/save.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+  3 => 'data',
+  4 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031559s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.021443s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.020554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.020126s ]
+[ sql ] [ SQL ] SELECT `link_url`,`link_title` FROM `edm_link` [ RunTime:0.018406s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:05:32+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/typetree.html
+[ log ] www.edm5.com/index/template/typetree.html [运行时间：0.016021s][吞吐率：62.42req/s] [内存消耗：2,627.05kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'typetree',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/typetree_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000451s ]
+[ info ] [ RUN ] app\index\controller\Template->typeTree[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:06:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.356577s][吞吐率：2.80req/s] [内存消耗：3,825.28kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025434s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.016270s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.017633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.015703s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.015511s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.031690s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016114s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.019898s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:07:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.376168s][吞吐率：2.66req/s] [内存消耗：3,825.28kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027950s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.017247s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.018516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.015681s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.017247s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.031630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.016654s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.021205s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:08:54+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/savedata.html
+[ log ] www.edm5.com/index/template/savedata.html [运行时间：0.115575s][吞吐率：8.65req/s] [内存消耗：3,631.40kb] [文件加载：60]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'savedata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '13377',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/savedata_html' => '',
+  'token' => '3bdf1b19e1ea67a051067d8e2dbd0a7b',
+  'id' => '8',
+  'title' => '随便起的名字',
+  'type' => '10',
+  'detail' => '方志军邮箱推广',
+  'content' => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="http://www.4006360163.com/imageyj/css/bootstrap.css">
+<link rel="stylesheet" href="http://www.4006360163.com/imageyj/css/bootstrap-theme.css">
+<script src="http://www.4006360163.com/imageyj/js/jquery.min.js"></script>
+<script src="http://www.4006360163.com/imageyj/js/bootstrap.js"></script>
+<title>无标题文档</title>
+<style>
+*{font-family:\'微软雅黑\';}
+body{}
+ul,li{ list-style:none; padding:0; margin:0;}
+.bh{  margin:30px auto;border: 1px solid #eef0f3;border-width: 6px;
+    border-style: dashed; padding:20px;background:#54b9cb}
+.yh{font-size:14px; color:#555; font-family:\'微软雅黑\'; line-height:40px; border-bottom:1px solid #e6e6e6; padding-bottom:10px;}
+.pp:hover{ background:#eb5055; color:#fff}
+.pp{width:980px; margin:0 auto; font-size:14px; color:#555; line-height:40px; padding:0 10px; border-radius:5px; margin-top:10px;}
+.jt{fill: currentColor; margin-top:5px;}
+.ys{ width:1000px; margin:10px auto; overflow:hidden;}
+.ys li{ width:158px; float:left;   font-size:12px; line-height:20px; color:#555; margin:10px 0px;text-align:center;  padding:0 4px;}
+.rl{ width:110px; height:110px; background:#49a5de; margin:0 auto; border-radius:100px;font-size:15px; color:#fff;line-height:110px;}
+.ys .rl:hover{ text-decoration: underline;}
+.dl{ width:980px; margin:10px auto; overflow:hidden;}
+.dl a{ width:470px; float:left; background:#49a5de; font-size:16px; line-height:40px; color:#fff; display:block; text-decoration:none; text-align:center;text-shadow: 0 1px 0 rgba(100,120,30,.5); border-radius:50px;}
+.dl a:hover{ background:#358bc0}
+.yl {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    padding: 4px 10px 3px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 44px;
+    margin: 10px 3px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #FF0000;}.rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+.rounded-list a:hover{
+    background: #eee;
+}
+
+.rounded-list a:hover:before{
+    transform: rotate(360deg);  
+}
+
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+.ts{ width:960px; margin:20px auto;}
+.aside-module {
+    margin: 0 0 20px;
+    margin: 0 0 1.25rem;
+    padding: 50px;
+    
+    position: relative;  color:#555;text-shadow: 0 1px 0 rgba(255,255,255,.5); font-size:14px; line-height:26px;
+}
+.aside-module a{ color:#555; text-decoration:none;}
+.aside-module img{ margin-top:20px;}
+.aside-module:before {
+    content: \'\';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: #eef0f3;
+    -webkit-transform: skewx(-3deg);
+    transform: skewx(-3deg);
+}
+.aside-module:after {
+    content: \'\';
+    position: absolute;
+    z-index: -1;
+    border: 1px dashed rgba(0,0,0,0.1);
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+.t11{ font-size:20px; color:#fff; line-height:60px; padding-left:20px; font-weight:bold;border-bottom: 1px solid rgba(181, 235, 245, 0.32);}
+.t2{  font-size:16px; color:#e5f5f8; line-height:50px; padding-left:20px;}
+.nk{  margin:0 auto; background:#54b9cb}
+.ybwh{  margin:20px auto; font-size:40px; text-align:center; line-height:80px; color:#fff;}
+.bottom{ width:100%; overflow:hidden;background: rgba(255, 255, 255, 0.18); }
+.logo{  float:left;
+}
+.logo img{  margin-top:40px;}
+.zc{ padding:20px 0 !important;
+    font-size: 16px;
+    line-height: 36px; overflow:hidden;
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.18);
+    margin: 20px auto;}
+	.zc1{     width: 400px; padding:20px 0;
+    font-size: 16px;
+    line-height: 36px; overflow:hidden;
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.18);
+    margin: 20px auto; padding-left:50px;}
+	.zc1 h4{ width:350px;text-align:center; font-size:16px; font-weight:normal;}
+	.zc1 input{ width:220px; line-height:28px; height:28px;}
+	.bannerBox_input{ margin-bottom:10px;}
+	.zc li{  float:left; margin:4px 0 !important }
+</style>
+</head>
+
+<body >
+<div class="container bh">
+ <div style="width:100%; margin:20px auto;"><img class="img-responsive" alt="网易企业邮箱" style="HEIGHT: 30px" src="http://4006360163.com/imageyj/logo12.png"></div>
+<div style="color:#fff; font-size:14px; line-height:28px;">亲爱的用户，您好！<span class="container" style="display:inline-block;"><img style="width:90%;" class="img-responsive" alt="四海八荒都选网易了，您还在等什么，网易企业邮箱房志军期待您的致电18866885273
+" src="http://www.4006360163.com/imageyj/fzj.jpg" /></span></div>
+
+<div class="col-md-12 col-xs-12 yl">网易企业邮箱持续为企业整合推出高效办公方式，打造全新的企业服务，长期为企业提供免费试用资格。</div>
+
+<div class="col-xs-12 t11">我们用心，给您安心</div>
+<div class="col-xs-12 t2">八年来，网易企业邮箱以其强大的海内外服务器以及全天候的售后服务团队，专注于为企业提供安全易用的办公解决方案。
+</div>
+<div class=" col-md-12 col-xs-12 yl">定位于安全性和稳定的网易企业邮箱成功服务57万家大型企事业单位</div>
+<div class=" col-md-12 col-xs-12 zc">
+	<ul>
+    <li class="col-md-3 col-xs-6"><img class="img-responsive" alt="清华大学" src="http://www.4006360163.com/imageyj/kh1.jpg" /></li>
+    <li class="col-md-3 col-xs-6"><img class="img-responsive" alt="郑州市人民政府" src="http://www.4006360163.com/imageyj/kh2.jpg" /></li>
+    <li class="col-md-3 col-xs-6"><img class="img-responsive" alt="国泰君安证券" src="http://www.4006360163.com/imageyj/kh3.jpg" /></li>
+    <li class="col-md-3 col-xs-6"><img class="img-responsive" alt="第一财经集团" src="http://www.4006360163.com/imageyj/kh4.jpg" /></li>
+    <li class="col-md-3 col-xs-6"><img class="img-responsive" alt="广州电视台" src="http://www.4006360163.com/imageyj/kh5.jpg" /></li>
+    <li class="col-md-3 col-xs-6"><img class="img-responsive" alt="友邦保险" src="http://www.4006360163.com/imageyj/kh6.jpg" /></li>
+    <li class="col-md-3 col-xs-6"><img class="img-responsive" alt="宅急送" src="http://www.4006360163.com/imageyj/kh7.jpg" /></li>
+    <li class="col-md-3 col-xs-6"><img class="img-responsive" alt="ofo单车" src="http://www.4006360163.com/imageyj/kh8.jpg" /></li>
+    </ul>
+</div>
+<div class="col-md-12 col-xs-12 yl"><a style="color:#FF0000; text-decoration:none;" href="http://edm.salesman.cc/index/unsubscribeemail/linkjump/link_id/2/record_id/{{id}}.html">开启邮箱免费试用</a></div>
+
+
+  <div class="bottom col-md-12 col-xs-12">
+    <div class="logo col-md-3 col-xs-12"><img class="img-responsive" alt="山东强比信息技术有限公司" src="http://4006360163.com/imageyj/logo.png" />
+      
+    </div>
+    <div class="col-md-9 col-xs-12" style="font-size:13px; line-height:28px; color:#fff; float:left; text-align:left; padding:28px 0;">(手机号/QQ号/微信号：18866885273）&nbsp;&nbsp;&nbsp;&nbsp;
+网易云企业服务一级服务商： 北京强比科技有限公司<br />
+
+        咨询：4006360163&nbsp;&nbsp; 010-85170726&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a style="color:#fff;" href="http://www.qiangbi.net">在线客服：http://www.qiangbi.net</a><br />
+微信客服：CIOatChina &nbsp;&nbsp;&nbsp;&nbsp;  企业QQ:8000163163
+</div>
+    
+  </div>
+
+</div>
+</body>
+</html>
+',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000666s ]
+[ info ] [ RUN ] app\index\controller\Template->saveData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033519s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.020205s ]
+[ sql ] [ SQL ] SELECT `id` FROM `edm_template` WHERE  `title` = '随便起的名字'  AND `id` <> 8 LIMIT 1 [ RunTime:0.019048s ]
+[ sql ] [ SQL ] UPDATE `edm_template`  SET `title`='随便起的名字',`type`='10',`detail`='方志军邮箱推广',`content`='<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta charset=\"utf-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<link rel=\"stylesheet\" href=\"http://www.4006360163.com/imageyj/css/bootstrap.css\">\r\n<link rel=\"stylesheet\" href=\"http://www.4006360163.com/imageyj/css/bootstrap-theme.css\">\r\n<script src=\"http://www.4006360163.com/imageyj/js/jquery.min.js\"></script>\r\n<script src=\"http://www.4006360163.com/imageyj/js/bootstrap.js\"></script>\r\n<title>无标题文档</title>\r\n<style>\r\n*{font-family:\'微软雅黑\';}\r\nbody{}\r\nul,li{ list-style:none; padding:0; margin:0;}\r\n.bh{  margin:30px auto;border: 1px solid #eef0f3;border-width: 6px;\r\n    border-style: dashed; padding:20px;background:#54b9cb}\r\n.yh{font-size:14px; color:#555; font-family:\'微软雅黑\'; line-height:40px; border-bottom:1px solid #e6e6e6; padding-bottom:10px;}\r\n.pp:hover{ background:#eb5055; color:#fff}\r\n.pp{width:980px; margin:0 auto; font-size:14px; color:#555; line-height:40px; padding:0 10px; border-radius:5px; margin-top:10px;}\r\n.jt{fill: currentColor; margin-top:5px;}\r\n.ys{ width:1000px; margin:10px auto; overflow:hidden;}\r\n.ys li{ width:158px; float:left;   font-size:12px; line-height:20px; color:#555; margin:10px 0px;text-align:center;  padding:0 4px;}\r\n.rl{ width:110px; height:110px; background:#49a5de; margin:0 auto; border-radius:100px;font-size:15px; color:#fff;line-height:110px;}\r\n.ys .rl:hover{ text-decoration: underline;}\r\n.dl{ width:980px; margin:10px auto; overflow:hidden;}\r\n.dl a{ width:470px; float:left; background:#49a5de; font-size:16px; line-height:40px; color:#fff; display:block; text-decoration:none; text-align:center;text-shadow: 0 1px 0 rgba(100,120,30,.5); border-radius:50px;}\r\n.dl a:hover{ background:#358bc0}\r\n.yl {\r\n    display: inline-block;\r\n    border: 1px solid rgba(255, 255, 255, 0.29);\r\n    padding: 4px 10px 3px;\r\n    text-align: center;\r\n    font-size: 18px;\r\n    line-height: 44px;\r\n    margin: 10px 3px;\r\n    font-weight: 800;\r\n    color: #fff;\r\n    text-shadow: 1px 1px 1px rgb(255, 255, 255);\r\n    border-radius: 5px;\r\n    background: rgba(255, 255, 255, 0.25);\r\n    color: #FF0000;}.rounded-list a{\r\n    position: relative;\r\n    display: block;\r\n    padding: .4em .4em .4em 2em;\r\n    margin: .5em 0;\r\n    background: #ddd;\r\n    color: #444;\r\n    text-decoration: none;\r\n    border-radius: .3em;\r\n    transition: all .3s ease-out;   \r\n}\r\n\r\n.rounded-list a:hover{\r\n    background: #eee;\r\n}\r\n\r\n.rounded-list a:hover:before{\r\n    transform: rotate(360deg);  \r\n}\r\n\r\n.rounded-list a:before{\r\n    content: counter(li);\r\n    counter-increment: li;\r\n    position: absolute; \r\n    left: -1.3em;\r\n    top: 50%;\r\n    margin-top: -1.3em;\r\n    background: #87ceeb;\r\n    height: 2em;\r\n    width: 2em;\r\n    line-height: 2em;\r\n    border: .3em solid #fff;\r\n    text-align: center;\r\n    font-weight: bold;\r\n    border-radius: 2em;\r\n    transition: all .3s ease-out;\r\n}\r\n.ts{ width:960px; margin:20px auto;}\r\n.aside-module {\r\n    margin: 0 0 20px;\r\n    margin: 0 0 1.25rem;\r\n    padding: 50px;\r\n    \r\n    position: relative;  color:#555;text-shadow: 0 1px 0 rgba(255,255,255,.5); font-size:14px; line-height:26px;\r\n}\r\n.aside-module a{ color:#555; text-decoration:none;}\r\n.aside-module img{ margin-top:20px;}\r\n.aside-module:before {\r\n    content: \'\';\r\n    position: absolute;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    z-index: -1;\r\n    background: #eef0f3;\r\n    -webkit-transform: skewx(-3deg);\r\n    transform: skewx(-3deg);\r\n}\r\n.aside-module:after {\r\n    content: \'\';\r\n    position: absolute;\r\n    z-index: -1;\r\n    border: 1px dashed rgba(0,0,0,0.1);\r\n    top: 10px;\r\n    bottom: 10px;\r\n    left: 10px;\r\n    right: 10px;\r\n}\r\n.t11{ font-size:20px; color:#fff; line-height:60px; padding-left:20px; font-weight:bold;border-bottom: 1px solid rgba(181, 235, 245, 0.32);}\r\n.t2{  font-size:16px; color:#e5f5f8; line-height:50px; padding-left:20px;}\r\n.nk{  margin:0 auto; background:#54b9cb}\r\n.ybwh{  margin:20px auto; font-size:40px; text-align:center; line-height:80px; color:#fff;}\r\n.bottom{ width:100%; overflow:hidden;background: rgba(255, 255, 255, 0.18); }\r\n.logo{  float:left;\r\n}\r\n.logo img{  margin-top:40px;}\r\n.zc{ padding:20px 0 !important;\r\n    font-size: 16px;\r\n    line-height: 36px; overflow:hidden;\r\n    color: #FFF;\r\n    background: rgba(255, 255, 255, 0.18);\r\n    margin: 20px auto;}\r\n	.zc1{     width: 400px; padding:20px 0;\r\n    font-size: 16px;\r\n    line-height: 36px; overflow:hidden;\r\n    color: #FFF;\r\n    background: rgba(255, 255, 255, 0.18);\r\n    margin: 20px auto; padding-left:50px;}\r\n	.zc1 h4{ width:350px;text-align:center; font-size:16px; font-weight:normal;}\r\n	.zc1 input{ width:220px; line-height:28px; height:28px;}\r\n	.bannerBox_input{ margin-bottom:10px;}\r\n	.zc li{  float:left; margin:4px 0 !important }\r\n</style>\r\n</head>\r\n\r\n<body >\r\n<div class=\"container bh\">\r\n <div style=\"width:100%; margin:20px auto;\"><img class=\"img-responsive\" alt=\"网易企业邮箱\" style=\"HEIGHT: 30px\" src=\"http://4006360163.com/imageyj/logo12.png\"></div>\r\n<div style=\"color:#fff; font-size:14px; line-height:28px;\">亲爱的用户，您好！<span class=\"container\" style=\"display:inline-block;\"><img style=\"width:90%;\" class=\"img-responsive\" alt=\"四海八荒都选网易了，您还在等什么，网易企业邮箱房志军期待您的致电18866885273\r\n\" src=\"http://www.4006360163.com/imageyj/fzj.jpg\" /></span></div>\r\n\r\n<div class=\"col-md-12 col-xs-12 yl\">网易企业邮箱持续为企业整合推出高效办公方式，打造全新的企业服务，长期为企业提供免费试用资格。</div>\r\n\r\n<div class=\"col-xs-12 t11\">我们用心，给您安心</div>\r\n<div class=\"col-xs-12 t2\">八年来，网易企业邮箱以其强大的海内外服务器以及全天候的售后服务团队，专注于为企业提供安全易用的办公解决方案。\r\n</div>\r\n<div class=\" col-md-12 col-xs-12 yl\">定位于安全性和稳定的网易企业邮箱成功服务57万家大型企事业单位</div>\r\n<div class=\" col-md-12 col-xs-12 zc\">\r\n	<ul>\r\n    <li class=\"col-md-3 col-xs-6\"><img class=\"img-responsive\" alt=\"清华大学\" src=\"http://www.4006360163.com/imageyj/kh1.jpg\" /></li>\r\n    <li class=\"col-md-3 col-xs-6\"><img class=\"img-responsive\" alt=\"郑州市人民政府\" src=\"http://www.4006360163.com/imageyj/kh2.jpg\" /></li>\r\n    <li class=\"col-md-3 col-xs-6\"><img class=\"img-responsive\" alt=\"国泰君安证券\" src=\"http://www.4006360163.com/imageyj/kh3.jpg\" /></li>\r\n    <li class=\"col-md-3 col-xs-6\"><img class=\"img-responsive\" alt=\"第一财经集团\" src=\"http://www.4006360163.com/imageyj/kh4.jpg\" /></li>\r\n    <li class=\"col-md-3 col-xs-6\"><img class=\"img-responsive\" alt=\"广州电视台\" src=\"http://www.4006360163.com/imageyj/kh5.jpg\" /></li>\r\n    <li class=\"col-md-3 col-xs-6\"><img class=\"img-responsive\" alt=\"友邦保险\" src=\"http://www.4006360163.com/imageyj/kh6.jpg\" /></li>\r\n    <li class=\"col-md-3 col-xs-6\"><img class=\"img-responsive\" alt=\"宅急送\" src=\"http://www.4006360163.com/imageyj/kh7.jpg\" /></li>\r\n    <li class=\"col-md-3 col-xs-6\"><img class=\"img-responsive\" alt=\"ofo单车\" src=\"http://www.4006360163.com/imageyj/kh8.jpg\" /></li>\r\n    </ul>\r\n</div>\r\n<div class=\"col-md-12 col-xs-12 yl\"><a style=\"color:#FF0000; text-decoration:none;\" href=\"http://edm.salesman.cc/index/unsubscribeemail/linkjump/link_id/2/record_id/{{id}}.html\">开启邮箱免费试用</a></div>\r\n\r\n\r\n  <div class=\"bottom col-md-12 col-xs-12\">\r\n    <div class=\"logo col-md-3 col-xs-12\"><img class=\"img-responsive\" alt=\"山东强比信息技术有限公司\" src=\"http://4006360163.com/imageyj/logo.png\" />\r\n      \r\n    </div>\r\n    <div class=\"col-md-9 col-xs-12\" style=\"font-size:13px; line-height:28px; color:#fff; float:left; text-align:left; padding:28px 0;\">(手机号/QQ号/微信号：18866885273）&nbsp;&nbsp;&nbsp;&nbsp;\r\n网易云企业服务一级服务商： 北京强比科技有限公司<br />\r\n\r\n        咨询：4006360163&nbsp;&nbsp; 010-85170726&nbsp;&nbsp;&nbsp;&nbsp;\r\n\r\n<a style=\"color:#fff;\" href=\"http://www.qiangbi.net\">在线客服：http://www.qiangbi.net</a><br />\r\n微信客服：CIOatChina &nbsp;&nbsp;&nbsp;&nbsp;  企业QQ:8000163163\r\n</div>\r\n    \r\n  </div>\r\n\r\n</div>\r\n</body>\r\n</html>\r\n',`update_time`=1490339334  WHERE  `id` = 8 [ RunTime:0.022033s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:08:55+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.089955s][吞吐率：11.12req/s] [内存消耗：3,533.15kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000411s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029820s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.018714s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.019991s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:03+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/index.html
+[ log ] www.edm5.com/index/sendconfig/index.html [运行时间：0.018477s][吞吐率：54.12req/s] [内存消耗：2,571.06kb] [文件加载：55]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/sendconfig/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000377s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->index[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:03+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getdata.html
+[ log ] www.edm5.com/index/sendconfig/getdata.html [运行时间：0.091734s][吞吐率：10.90req/s] [内存消耗：3,567.98kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/sendconfig/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.001041s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getData[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028703s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.020264s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` ORDER BY id desc LIMIT 0,10 [ RunTime:0.019566s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:05+08:00 ] 127.0.0.1 127.0.0.1 POST /index/account/index.html
+[ log ] www.edm5.com/index/account/index.html [运行时间：0.013468s][吞吐率：74.25req/s] [内存消耗：2,541.23kb] [文件加载：55]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/account/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000357s ]
+[ info ] [ RUN ] app\index\controller\Account->index[ /home/wwwroot/edm5.0/application/index/controller/Account.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/account/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:05+08:00 ] 127.0.0.1 127.0.0.1 POST /index/account/getdata.html
+[ log ] www.edm5.com/index/account/getdata.html [运行时间：0.083690s][吞吐率：11.95req/s] [内存消耗：3,506.32kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/account/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000544s ]
+[ info ] [ RUN ] app\index\controller\Account->getData[ /home/wwwroot/edm5.0/application/index/controller/Account.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027238s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.017575s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.014943s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:05+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/index.html
+[ log ] www.edm5.com/index/sendconfig/index.html [运行时间：0.016348s][吞吐率：61.17req/s] [内存消耗：2,375.20kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/sendconfig/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000458s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->index[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:06+08:00 ] 127.0.0.1 127.0.0.1 POST /index/sendconfig/getdata.html
+[ log ] www.edm5.com/index/sendconfig/getdata.html [运行时间：0.082307s][吞吐率：12.15req/s] [内存消耗：3,567.98kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sendconfig',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/sendconfig/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000617s ]
+[ info ] [ RUN ] app\index\controller\Sendconfig->getData[ /home/wwwroot/edm5.0/application/index/controller/Sendconfig.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025793s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.017259s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` ORDER BY id desc LIMIT 0,10 [ RunTime:0.017750s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:15+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/index.html
+[ log ] www.edm5.com/index/template/index.html [运行时间：0.011269s][吞吐率：88.74req/s] [内存消耗：2,358.02kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000356s ]
+[ info ] [ RUN ] app\index\controller\Template->index[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:15+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/getdata.html
+[ log ] www.edm5.com/index/template/getdata.html [运行时间：0.095174s][吞吐率：10.51req/s] [内存消耗：3,533.15kb] [文件加载：59]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/getdata_html' => '',
+  'page' => '1',
+  'rows' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000546s ]
+[ info ] [ RUN ] app\index\controller\Template->getData[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032717s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.020997s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` ORDER BY id desc LIMIT 0,10 [ RunTime:0.021680s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:17+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/save.html
+[ log ] www.edm5.com/index/template/save.html [运行时间：0.134220s][吞吐率：7.45req/s] [内存消耗：3,673.38kb] [文件加载：62]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '69',
+  'accept' => 'text/html, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/save_html' => '',
+  'datagrid_id' => 'template_user_datagrid',
+  'modal_id' => 'index_menulist_modal',
+  'id' => '8',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000380s ]
+[ info ] [ RUN ] app\index\controller\Template->save[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/edm5.0/public/../application/index/view/template/save.html [ array (
+  0 => 'modal_id',
+  1 => 'datagrid_id',
+  2 => 'token',
+  3 => 'data',
+  4 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032382s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.021133s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.022159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_link` [ RunTime:0.020846s ]
+[ sql ] [ SQL ] SELECT `link_url`,`link_title` FROM `edm_link` [ RunTime:0.019960s ]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:09:17+08:00 ] 127.0.0.1 127.0.0.1 POST /index/template/typetree.html
+[ log ] www.edm5.com/index/template/typetree.html [运行时间：0.017422s][吞吐率：57.40req/s] [内存消耗：2,627.05kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'template',
+    2 => 'typetree',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'referer' => 'http://www.edm5.com/index/index/index/msg/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E3%80%82.html',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.edm5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/template/typetree_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Authenticate @run [ RunTime:0.000530s ]
+[ info ] [ RUN ] app\index\controller\Template->typeTree[ /home/wwwroot/edm5.0/application/index/controller/Template.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-24T15:10:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.369330s][吞吐率：2.71req/s] [内存消耗：3,835.20kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031646s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.019228s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.019762s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.018631s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.019816s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.019980s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.021469s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.020304s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:11:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.386523s][吞吐率：2.59req/s] [内存消耗：3,837.41kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'user-agent' => 'curl/7.47.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035526s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.022079s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.022032s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.021298s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.019711s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.022339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.021473s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.022553s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
+[ 2017-03-24T15:13:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/Sendemail/run/id/1
+[ log ] www.edm5.com/index/Sendemail/run/id/1 [运行时间：0.457234s][吞吐率：2.19req/s] [内存消耗：3,946.38kb] [文件加载：69]
+[ info ] [ LANG ] /home/wwwroot/edm5.0/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Sendemail',
+    2 => 'run',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.edm5.com',
+  'cookie' => 'PHPSESSID=r4jgg5adb7ojthuekhdeh7gvg6',
+  'x-real-ip' => '127.0.0.1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/Sendemail/run/id/1' => '',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Sendemail->run[ /home/wwwroot/edm5.0/application/index/controller/Sendemail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033906s ] mysql:dbname=edm;host=rdsfjnifbfjnifbo.mysql.rds.aliyuncs.com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_send_config` [ RunTime:0.020282s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.021146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_account` [ RunTime:0.020783s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edm_account` LIMIT 1 [ RunTime:0.022285s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_account` [ RunTime:0.020766s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edm_template` [ RunTime:0.019907s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_template` WHERE  `id` = 8 [ RunTime:0.021250s ]
+[ sql ] [ SQL ] SELECT * FROM `edm_send_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.021165s ]
+[ sql ] [ SQL ] UPDATE `edm_send_config`  SET `count`=1347,`update_time`=1490339604  WHERE  `id` = 1 [ RunTime:0.019635s ]
+[ error ] [2]file_put_contents(number.lock): failed to open stream: Permission denied[/home/wwwroot/edm5.0/application/index/controller/Sendemail.php:82]
+
+---------------------------------------------------------------
