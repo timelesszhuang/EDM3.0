@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html";i:1489743417;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/index.html";i:1490321798;}*/ ?>
 <?php
 $page_id="template";
 ?>
@@ -33,20 +33,25 @@ $page_id="template";
     </table>
 </div>
 <script>
-    var obj=(function(){
+    var obj = (function () {
         return {
-            "datagrid_id":"<?php echo $page_id; ?>_user_datagrid",
-            "save_link":"<?php echo URL('index/Sendconfig/save'); ?>",
-            "modal_id":"index_menulist",
-            "urljson":"<?php echo URL('index/Sendconfig/getData'); ?>",
-            "add_link":"<?php echo URL('index/Sendconfig/add'); ?>",
-            "del_template_url":"<?php echo URL('index/Sendconfig/del'); ?>",
-            "province":"<?php echo URL('index/Sendconfig/getProvince'); ?>",
-             brand:"<?php echo URL('index/Sendconfig/getBrand'); ?>",
-            template:"<?php echo URL('index/Sendconfig/getTemplate'); ?>"
+            "datagrid_id": "<?php echo $page_id; ?>_user_datagrid",
+            "save_link": "<?php echo URL('index/Sendconfig/save'); ?>",
+            "modal_id": "index_menulist",
+            "urljson": "<?php echo URL('index/Sendconfig/getData'); ?>",
+            "add_link": "<?php echo URL('index/Sendconfig/add'); ?>",
+            "province": "<?php echo URL('index/Sendconfig/getProvince'); ?>",
+            brand: "<?php echo URL('index/Sendconfig/getMailBrand'); ?>",
+            template: "<?php echo URL('index/Sendconfig/getTemplate'); ?>",
+            config_type: "<?php echo URL('index/Sendconfig/configType'); ?>",
+            contact_tool:"<?php echo URL('index/Sendconfig/configContactToolBrand'); ?>",
+            websiteType:"<?php echo URL('index/Sendconfig/websiteType'); ?>",
+            resendMail:"<?php echo URL('index/Sendconfig/resend'); ?>",
+            template_type:"<?php echo URL('index/template/typetree'); ?>",
+            getTemplateByid:"<?php echo URL('index/Sendconfig/getTemplateByid'); ?>"
         }
     })();
-    load_user_datagrid(obj.datagrid_id,obj.urljson);
+    load_user_datagrid(obj.datagrid_id, obj.urljson);
     /**
      * 加载datagrid 信息
      */
@@ -60,36 +65,56 @@ $page_id="template";
             fitColumns: true,
             singleSelect: true,
             columns: [[
-                {field: 'id', title: 'ID', align: 'center', hidden: true},
+                {field: 'id', title: '编号', align: 'center'},
                 {field: 'title', title: '标题', width: 5, align: 'left'},
-                {field: 'detail', title: '描述', width: 7},
+                {field: 'province_name', title: '省份', width: 5},
+                {field: 'brand_name', title: '品牌', width: 5},
+                {field: 'template_name', title: '模板名', width: 7},
+                {field: 'parent_id', title: '分类', width: 7,formatter:function(index,item){
+                        if(index>0){
+                            return "编号"+index+"的再次跟进";
+                        }else{
+                            return "配置";
+                        }
+                }},
+                {field: 'count', title: '总记录数', width: 5},
                 {field: 'create_time', title: '创建时间', width: 4, align: 'center'},
                 {
-                    field: 'action', title: '操作', width: 6, align: 'center', formatter: function (index,item) {
-                    return '<a href="javascript:void(0)" _id="'+item.id+'"  class="<?php echo $page_id; ?>_edit">编辑</a>&nbsp;&nbsp;<a href="javascript:void(0)" _id="'+item.id+'" class="<?php echo $page_id; ?>_del">删除</a>';
+                    field: 'action', title: '操作', width: 6, align: 'center', formatter: function (index, item) {
+                    return '<a href="javascript:void(0)" _id="' + item.id + '"  class="<?php echo $page_id; ?>_edit">编辑</a>&nbsp;' +
+                        '&nbsp;&nbsp;<a href="javascript:void(0)" _id="' + item.id + '"  class="<?php echo $page_id; ?>_resend">再次跟进</a>';
                 }
                 }
             ]],
         });
     }
+
     /**
      * 点击添加
      */
     $("#<?php echo $page_id; ?>_add_template").click(function () {
-        add_record_modal(obj.datagrid_id, obj.add_link,obj.modal_id);
+        add_record_modal(obj.datagrid_id, obj.add_link, obj.modal_id);
     });
+
     $("body").undelegate(".<?php echo $page_id; ?>_edit", "click");
     //点击编辑事件
     $("body").delegate(".<?php echo $page_id; ?>_edit", "click", function () {
-        edit_record_modal($(this).attr("_id"),obj.save_link, obj.datagrid_id, obj.modal_id);
+        edit_record_modal($(this).attr("_id"), obj.save_link, obj.datagrid_id, obj.modal_id);
     });
-    $("body").undelegate(".<?php echo $page_id; ?>_del","click");
-    $("body").delegate(".<?php echo $page_id; ?>_del","click",function(){
-        delete_single_record($(this).attr("_id"),obj.del_template_url,obj.datagrid_id);//自动刷新
-    })
-    $("#<?php echo $page_id; ?>_search").click(function(){
-        $('#' + obj.datagrid_id).datagrid("load",{
-            query:$("#<?php echo $page_id; ?>_query").val()
+
+    $("body").undelegate(".<?php echo $page_id; ?>_send", "click");
+    $("body").delegate(".<?php echo $page_id; ?>_send", "click", function () {
+        delete_single_record($(this).attr("_id"), obj.send_url);//自动刷新
+    });
+
+    $("#<?php echo $page_id; ?>_search").click(function () {
+        $('#' + obj.datagrid_id).datagrid("load", {
+            query: $("#<?php echo $page_id; ?>_query").val()
         })
+    });
+    //再次跟进
+    $("body").undelegate(".<?php echo $page_id; ?>_resend","click");
+    $("body").delegate(".<?php echo $page_id; ?>_resend","click",function(){
+        edit_record_modal($(this).attr("_id"), obj.resendMail, obj.datagrid_id, obj.modal_id);
     });
 </script>

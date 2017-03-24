@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"/home/wwwroot/edm5.0/public/../application/index/view/index/index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/header.html";i:1489643205;s:71:"/home/wwwroot/edm5.0/public/../application/index/view/index/navbar.html";i:1489741222;s:75:"/home/wwwroot/edm5.0/public/../application/index/view/index/load_index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/footer.html";i:1489715273;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"/home/wwwroot/edm5.0/public/../application/index/view/index/index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/header.html";i:1489643205;s:71:"/home/wwwroot/edm5.0/public/../application/index/view/index/navbar.html";i:1490256527;s:75:"/home/wwwroot/edm5.0/public/../application/index/view/index/load_index.html";i:1489643205;s:72:"/home/wwwroot/edm5.0/public/../application/index/view/public/footer.html";i:1489715273;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,30 +48,48 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav">
                     <li class='dropdown menulist'>
                         <a href="javascript:void(0);" r_href="<?php echo url('index/Link/index'); ?>" title="邮件链接">
-                            <span class="glyphicon glyphicon-user"> 邮件链接</span>
+                            <span class="glyphicon glyphicon-envelope"> 邮件链接</span>
                         </a>
                     </li>
-                <li class='dropdown menulist'>
+                    <li class='dropdown menulist'>
                         <a href="javascript:void(0);" r_href="<?php echo URL('index/Template/index'); ?>" title="邮件模板">
-                            <span class="glyphicon glyphicon-user"> 邮件模板</span>
+                            <span class="glyphicon glyphicon-list-alt"> 邮件模板</span>
                         </a>
                     </li>
                     <li class='dropdown menulist'>
-                        <a href="javascript:void(0);" r_href="<?php echo URL('index/sendconfig/index'); ?>" title="取消授权企业信息">
-                            <span class="glyphicon glyphicon-th">邮件配置</span>
+                        <a href="javascript:void(0);" r_href="<?php echo URL('index/sendconfig/index'); ?>" title="邮件配置">
+                            <span class="glyphicon glyphicon-th"> 邮件配置</span>
                         </a>
                     </li>
                     <li class='dropdown menulist'>
-                        <a href="javascript:void(0);" r_href="<?php echo url('Ad/index'); ?>"
-                           title="微信广告推送">
-                            <span class="glyphicon glyphicon-th">广告消息推送</span>
+                        <a href="javascript:void(0);" r_href="<?php echo URL('index/account/index'); ?>" title="邮件账号">
+                            <span class="glyphicon glyphicon-globe"> 邮件账号</span>
                         </a>
                     </li>
                     <li class='dropdown menulist'>
-                        <a href="javascript:void(0);" r_href="<?php echo URL('EmailIndex/index'); ?>"   title="邮箱信息"><span class="glyphicon glyphicon-info-sign"> EDM</span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false" title="黑名单">黑名单
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li>
+                                <a href="javascript:void(0);" r_href="<?php echo URL('index/blacklist/domainIndex'); ?>"
+                                   title="域名黑名单">
+                                    <i class="fa fa-black-tie" aria-hidden="true"></i> 域名黑名单
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);" r_href="<?php echo URL('index/blacklist/emailIndex'); ?>"
+                                   title="邮件黑名单">
+                                    <i class="fa fa-black-tie" aria-hidden="true"></i> 邮件黑名单
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right ">
@@ -104,6 +122,9 @@
         $('.menulist a').click(function () {
             var href = $(this).attr('r_href');
             var type = $(this).attr('type');
+            if (is_null_or_empty(href)) {
+                return;
+            }
             if (!type) {
                 page_menu(href);
             } else {

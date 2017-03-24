@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"/home/wwwroot/edm5.0/public/../application/index/view/link/index.html";i:1489719460;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"/home/wwwroot/edm5.0/public/../application/index/view/link/index.html";i:1489741222;}*/ ?>
 <?php
 $page_id="link";
 ?>

@@ -1,44 +1,46 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/add.html";i:1490322105;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"/home/wwwroot/edm5.0/public/../application/index/view/sendconfig/save.html";i:1490256527;}*/ ?>
 <!----该文件是打开窗体之后的页面-->
 <?php
-$page_id="sendconfig_add";
+$page_id="sendconfig_save";
 ?>
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">×</span>
     </button>
     <h4 class="modal-title">
-        <i class="fa fa-plug"></i> 添加配置
+        <i class="fa fa-plug"></i> 修改配置
     </h4>
 </div>
 <div class="modal-body">
     <form class="form-horizontal" id="<?php echo $page_id; ?>_toaction" onsubmit="return false">
         <input type="hidden" name="token" value="<?php echo $token; ?>">
-        <input type="hidden" name="config_type" id="<?php echo $page_id; ?>config_type">
-        <input type="hidden" name="brand_id" id="<?php echo $page_id; ?>_brand_id">
-        <input type="hidden" name="brand_name" id="<?php echo $page_id; ?>_brand_name">
+        <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
+        <input type="hidden" name="config_type" id="<?php echo $page_id; ?>config_type" value="<?php echo $data['config_type']; ?>">
+        <?php if($data["brand_id"]==="0"):$data["temp_brand_id"]=$data["brand_id"];elseif(empty($data["brand_id"])): $data["temp_brand_id"]="all";else:$data['temp_brand_id']=$data["brand_id"];endif;?>
+        <input type="hidden" name="brand_id" id="<?php echo $page_id; ?>_brand_id" value="<?=$data['temp_brand_id']?>">
+        <input type="hidden" name="brand_name" id="<?php echo $page_id; ?>_brand_name" value="<?php echo $data['brand_name']; ?>">
         <div class="form-group">
             <label for="" class="control-label col-sm-3">标题：</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" name="title">
+                <input type="text" class="form-control" name="title" value="<?php echo $data['title']; ?>">
             </div>
         </div>
         <div class="form-group">
             <label for="" class="control-label col-sm-3">发送邮件昵称：</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" name="fromname">
+                <input type="text" class="form-control" name="fromname" value="<?php echo $data['fromname']; ?>">
             </div>
         </div>
         <div class="form-group">
             <label for="" class="control-label col-sm-3">省份：</label>
             <div class="col-sm-4">
-                <input type="text" id="<?php echo $page_id; ?>_province">
+                <input type="text" id="<?php echo $page_id; ?>_province" value="<?php echo $data['province_id']; ?>">
             </div>
         </div>
         <div class="form-group">
             <label for="" class="control-label col-sm-3">配置类型：</label>
             <div class="col-sm-4">
-                <input type="text" id="<?php echo $page_id; ?>_config_type">
+                <input type="text" id="<?php echo $page_id; ?>_config_type" value="<?php echo $data['config_type']; ?>">
             </div>
         </div>
         <div class="form-group" id="<?php echo $page_id; ?>config-change">
@@ -64,19 +66,16 @@ $page_id="sendconfig_add";
             </div>
         </div>
         <div class="form-group">
-            <label for="" class="control-label col-sm-3">模板分类:</label>
-            <div class="col-sm-4">
-                <input type="text" id="<?php echo $page_id; ?>_template_type">
-            </div>
-        </div>
-        <div class="form-group" style="display:none;">
             <label for="" class="control-label col-sm-3">模板：</label>
             <div class="col-sm-4">
-                <input type="text" id="<?php echo $page_id; ?>_template">
+                <?php
+                $template_id=$data['template_id'];
+                $template_id=trim(implode(',',array_filter(explode(',',$template_id))),",");
+                ?>
+                <input type="text" id="<?php echo $page_id; ?>_template" value="<?php echo $template_id; ?>">
             </div>
         </div>
     </form>
-    <input type="hidden" value="" name="<?php echo $page_id; ?>_config_type">
     <input type="hidden" value="<?php echo $modal_id; ?>" name='<?php echo $page_id; ?>_add_producttype_modal_id'>
     <input type="hidden" value="<?php echo $datagrid_id; ?>" name='<?php echo $page_id; ?>_datagrid_id'>
 </div>
@@ -91,6 +90,18 @@ $page_id="sendconfig_add";
         width: "200px",
     });
 
+    //品牌
+    $("#<?php echo $page_id; ?>_brand").combotree({
+        url: obj.brand,
+        width: "200px"
+    });
+
+    //模板
+    $("#<?php echo $page_id; ?>_template").combotree({
+        url: obj.template,
+        multiple: true,
+        width: "200px"
+    });
     //配置类型
     $("#<?php echo $page_id; ?>_config_type").combotree({
         url: obj.config_type,
@@ -113,14 +124,6 @@ $page_id="sendconfig_add";
             $("#<?php echo $page_id; ?>_brand_name").val(i.text);
         }
     });
-    //设置默认网站类型
-    $("#<?php echo $page_id; ?>_websiteType").combotree("setValue", "all");
-    $("#<?php echo $page_id; ?>_brand").combotree({
-        url: obj.brand,
-        width: "200px"
-    });
-
-    $("#<?php echo $page_id; ?>_brand").combotree("setValue", "all");
     //咨询工具
     $("#<?php echo $page_id; ?>_contacttool_brand").combotree({
         url: obj.contact_tool,
@@ -130,8 +133,6 @@ $page_id="sendconfig_add";
             $("#<?php echo $page_id; ?>_brand_name").val(i.text);
         }
     });
-    $("#<?php echo $page_id; ?>_contacttool_brand").combotree("setValue", "all");
-
 
     $("#<?php echo $page_id; ?>_brand").combotree({
         url: obj.brand,
@@ -141,24 +142,28 @@ $page_id="sendconfig_add";
             $("#<?php echo $page_id; ?>_brand_name").val(i.text);
         }
     });
-    $("#<?php echo $page_id; ?>_brand").combotree("setValue", "all");
-    //模板分类
-    $("#<?php echo $page_id; ?>_template_type").combotree({
-        url: obj.template_type,
-        width: "200px",
-        onSelect: function (i) {
-            $("#<?php echo $page_id; ?>_template").parent().parent().show();
-            //模板
-            $("#<?php echo $page_id; ?>_template").combotree({
-                url: obj.getTemplateByid+"?type_id="+i.id,
-                multiple: true,
-                width: "200px"
-            });
-        }
-    });
+
+    var config_type = "<?php echo $data['config_type']; ?>";
+    $('#' + config_type + '-template').css('display', 'block');
+    switch (config_type) {
+        case "contacttool":
+        <?php if(empty($data["brand_id"])):$data["conbrand_id"]="all";else:$data["conbrand_id"]=$data["brand_id"];endif;?>
+            $("#<?php echo $page_id; ?>_contacttool_brand").combotree("setValue", "<?php echo $data["conbrand_id"];?>");
+            break;
+        case "website":
+            <?php if(empty($data["brand_id"])):$data["webbrand_id"]="all";else:$data["webbrand_id"]=$data["brand_id"];endif;?>
+            $("#<?php echo $page_id; ?>_websiteType").combotree("setValue", "<?php echo $data["webbrand_id"];?>");
+            break;
+        case "email":
+            <?php if($data["brand_id"]==="0"):$data["emailbrand_id"]=$data["brand_id"];elseif(empty($data["brand_id"])): $data["emailbrand_id"]="all";else:$data["emailbrand_id"]=$data["brand_id"];endif;?>
+            $("#<?php echo $page_id; ?>_brand").combotree("setValue", "<?php echo $data["emailbrand_id"];?>");
+            break;
+    }
+
+    //点击添加
     $("#<?php echo $page_id; ?>_add_producttype_btn").click(function () {
         var obj = {
-            add_email_template_url: "<?php echo URL('index/Sendconfig/addData'); ?>"
+            add_email_template_url: "<?php echo URL('index/Sendconfig/saveData'); ?>"
         };
         var data = $("#<?php echo $page_id; ?>_toaction").serializeArray();
         data.push({
