@@ -89,11 +89,8 @@ class Sendemail extends Controller
                 exit("数据已经发送完毕,无法再次发送,请重新修改配置");
             }
             //1条数据
-            $data =$this->getData($mongodb,$confgData,$email_offset,1);
+            $data =$this->getData($mongodb,$confgData,0,10);
             $toUser = $data[0]["person_mailaddress"];
-//            $send_arr=["3423929165@qq.com", "2923788170@qq.com"];
-//            $toUser = $send_arr[array_rand($send_arr)];
-//            $toUser="3423929165@qq.com";
             //模板信息数组
             $tempInfo = $template_arr[array_rand($template_arr)];
             //账号
@@ -136,6 +133,11 @@ class Sendemail extends Controller
             //在最后添加图片和退订
             $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" . (new Unsubscribeemail)->makeUnsubscribeEmail($recordId, $toUser, $md5_str);
             $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], $confgData["fromname"]);
+            if(!empty($data[0]["qiye_mailaddress"])){
+                //添加发送记录
+                $recordId = $this->saveRecord($tempInfo,$data[0]["qiye_mailaddress"],$confgData,$data);
+                $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $data[0]["qiye_mailaddress"], $sendInfo[1], $confgData["fromname"]);
+            }
         }
     }
 
@@ -190,7 +192,7 @@ class Sendemail extends Controller
      * @param $email_offset
      * @param $sendUser
      */
-    public function editConfig($configId, $start_account, $email_offset, $sendUser)
+    public function editConfig($configId, &$start_account, &$email_offset, $sendUser)
     {
         $sconfig = SendConfig::get($configId);
         $sconfig->send_record_page = ++$email_offset;
