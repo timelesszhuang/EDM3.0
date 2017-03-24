@@ -203,8 +203,8 @@ class Sendemail extends Controller
     public function editConfig($configId, $start_account, $email_offset, $sendUser)
     {
         $sconfig = SendConfig::get($configId);
-        $sconfig->send_record_page = ++$email_offset;
-        $sconfig->send_account_id = ++$start_account;
+        $sconfig->send_record_page = $email_offset;
+        $sconfig->send_account_id = $start_account;
         $sconfig->send_account_name = $sendUser;
         $sconfig->save();
     }
