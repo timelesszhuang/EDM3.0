@@ -147,8 +147,11 @@ class Unsubscribeemail extends Controller
         $record_id = Request::instance()->param("record_id");
         $sendlink = new SendrecordLinkinfo();
         $link = Link::get($link_id);
+        $link->read_num=$link->read_num++;
         $linkRecord = $sendlink->where(["sendrecord_id" => $record_id])->find();
+        //添加链接点击记录
         $this->saveLinkRecord($linkRecord, $link_id, $record_id, $link->link_title);
+        $link->save();
         //页面跳转
         $this->redirect($link->redirect_url);
     }
