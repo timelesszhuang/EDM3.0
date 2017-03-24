@@ -97,6 +97,10 @@ class Template extends Base
         foreach ($type as $k => $v) {
             $arr[] = ["id" => $k, "text" => $v];
         }
+        array_unshift($arr,[
+            "id"=>0,
+            "text"=>"请选择模板分类"
+        ]);
         return $arr;
     }
 

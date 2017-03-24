@@ -203,6 +203,17 @@ class Sendconfig extends Base
     }
 
     /**
+     * 根据type_id获取模板数据
+     * @param $type_id
+     * @return false|\PDOStatement|string|\think\Collection
+     */
+    public function getTemplateByid($type_id)
+    {
+        $template = new \app\index\model\Template();
+        return $template->where(["type"=>$type_id])->field("id,title as text")->select();
+    }
+
+    /**
      * 网站类型
      * @return array
      */

@@ -45,7 +45,9 @@ $page_id="template";
             config_type: "{:URL('index/Sendconfig/configType')}",
             contact_tool:"{:URL('index/Sendconfig/configContactToolBrand')}",
             websiteType:"{:URL('index/Sendconfig/websiteType')}",
-            resendMail:"{:URL('index/Sendconfig/resend')}"
+            resendMail:"{:URL('index/Sendconfig/resend')}",
+            template_type:"{:URL('index/template/typetree')}",
+            getTemplateByid:"{:URL('index/Sendconfig/getTemplateByid')}"
         }
     })();
     load_user_datagrid(obj.datagrid_id, obj.urljson);
@@ -74,6 +76,7 @@ $page_id="template";
                             return "配置";
                         }
                 }},
+                {field: 'count', title: '总记录数', width: 5},
                 {field: 'create_time', title: '创建时间', width: 4, align: 'center'},
                 {
                     field: 'action', title: '操作', width: 6, align: 'center', formatter: function (index, item) {

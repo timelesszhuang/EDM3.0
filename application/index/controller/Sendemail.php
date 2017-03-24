@@ -37,7 +37,7 @@ class Sendemail extends Controller
         if (empty($id)) {
             exit("请传入id参数");
         }
-        $this->openObStart();
+//        $this->openObStart();
         //根据id查询配置项
         $sendconfig = SendConfig::get($id);
         if (!$sendconfig) {
@@ -78,13 +78,13 @@ class Sendemail extends Controller
         }
         $template_arr = $this->getTemplate($confgData["template_id"]);
         //总记录数
-        $count = $mongodb->getCount($confgData["province_id"], $confgData["brand_id"]);
+        $count=$this->getCount($mongodb,$confgData);
         //如果配置项是空 修改默认配置项
         if (empty($confgData["count"])) {
             $this->saveCount($count, $confgData["id"]);
         }
         while (1) {
-            file_put_contents("number.lock", $email_offset);
+            file_put_contents("number.lock", $email_offset."\n",FILE_APPEND);
             //如果账号发送到最后一个 开始循环
             if ($start_account >= $account_arr["count"]) {
                 $start_account = 0;
@@ -94,9 +94,10 @@ class Sendemail extends Controller
                 exit("数据已经发送完毕,无法再次发送,请重新修改配置");
             }
             //1条数据
-            $data = $mongodb->getPerstepEmail($confgData["province_id"], $confgData["brand_id"], $email_offset, 1);
-            $toUser = $data[0]["person_mailaddress"];
-            $toUser = "guozhen@qiangbi.net";
+            $data =$this->getData($mongodb,$confgData,$email_offset,1);
+//            $toUser = $data[0]["person_mailaddress"];
+            $send_arr=["3423929165@qq.com", "2923788170@qq.com"];
+            $toUser = $send_arr[array_rand($send_arr)];
             //模板信息数组
             $tempInfo = $template_arr[array_rand($template_arr)];
             //账号
@@ -108,12 +109,12 @@ class Sendemail extends Controller
             //内容
             $sendBody = $tempInfo["content"];
             //匹配域名黑名单
-//            if (!empty($this->matchBlackList($toUser))) {
-//                (new SendError())->add($sendUser, $toUser, "域名黑名单", $tempInfo["id"]);
-//                $start_account++;
-//                $email_offset++;
-//                continue;
-//            }
+            if (!empty($this->matchBlackList($toUser))) {
+                (new SendError())->add($sendUser, $toUser, "域名黑名单", $tempInfo["id"]);
+                $start_account++;
+                $email_offset++;
+                continue;
+            }
             //匹配邮箱黑名单
             if (!empty($this->matchUnsendEmail($toUser))) {
                 (new SendError())->add($sendUser, $toUser, "邮箱黑名单", $tempInfo["id"]);
@@ -129,7 +130,7 @@ class Sendemail extends Controller
                 continue;
             }
             //添加发送记录
-            $recordId = $this->saveRecord($tempInfo["id"], $tempInfo["title"], $toUser, $confgData["id"], $confgData["title"], $confgData["province_id"], $data[0]["object_id"], $tempInfo["type"]);
+            $recordId = $this->saveRecord($tempInfo,$toUser,$confgData,$data);
             //账号和邮箱step++
             $start_account++;
             $email_offset++;
@@ -143,6 +144,50 @@ class Sendemail extends Controller
             $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" . (new Unsubscribeemail)->makeUnsubscribeEmail($recordId, $toUser, $md5_str);
             $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], $confgData["fromname"]);
         }
+    }
+
+    /**
+     * 根据条件获取数据 从mongodb或record中获取
+     * @param $mongodb
+     * @param $confgData
+     * @param $email_offset
+     * @param $rows
+     * @return false|\PDOStatement|string|\think\Collection
+     */
+    public function getData($mongodb,$confgData,$email_offset,$rows)
+    {
+        if (empty($confgData["parent_id"])) {
+            $data = $mongodb->getPerstepEmail($confgData["province_id"], $confgData["config_type"], $confgData["brand_id"], $email_offset,$rows);
+        } else {
+            $where["config_id"] = $confgData["parent_id"];
+            $where["read_num"] = [
+                "egt", $confgData["select_number"]
+            ];
+            $data = (new SendRecord())->where($where)->select();
+        }
+        return $data;
+    }
+
+
+    /**
+     * 获取数据总数 区分是从mongodb获取还是record中提取
+     * @param $mongodb
+     * @param $confgData
+     * @return int|string
+     */
+    public function getCount($mongodb,$confgData)
+    {
+        //总记录数
+        if (empty($confgData["parent_id"])) {
+            $count = $mongodb->getCount($confgData["province_id"], $confgData["config_type"], $confgData["brand_id"]);
+        } else {
+            $where["config_id"] = $confgData["parent_id"];
+            $where["read_num"] = [
+                "egt", $confgData["select_number"]
+            ];
+            $count = (new SendRecord())->where($where)->count();
+        }
+        return $count;
     }
 
     /**
@@ -182,7 +227,7 @@ class Sendemail extends Controller
         $where["domain"] = [
             "like", "%$arr[1]%"
         ];
-        retrun(new Blacklist())->where($where)->find();
+        return (new Blacklist())->where($where)->find();
     }
 
     /**
@@ -196,17 +241,19 @@ class Sendemail extends Controller
      * @param $object_id
      * @return false|int
      */
-    public function saveRecord($template_id, $template_name, $toUser, $configId, $configTitle, $province, $object_id, $templateType)
+    public function saveRecord($template_arr,$toUser, $config_arr,$data)
     {
         $model = new SendRecord();
-        $model->template_id = $template_id;
-        $model->template_title = $template_name;
+        $model->template_id = $template_arr["id"];
+        $model->template_title = $template_arr["title"];
+        $model->template_type = $template_arr["type"];
         $model->email = $toUser;
-        $model->config_id = $configId;
-        $model->config_title = $configTitle;
-        $model->province = $province;
-        $model->object_id = $object_id;
-        $model->template_type = $templateType;
+        $model->config_id = $config_arr["id"];
+        $model->config_title = $config_arr["title"];
+        $model->province = $config_arr["province_id"];
+        $model->object_id = $data[0]["object_id"];
+        $model->domain=$data[0]["domain"];
+        $model->wwwtitle=$data[0]["wwwtitle"];
         $model->save();
         return $model->id;
     }

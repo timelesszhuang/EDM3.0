@@ -93,16 +93,16 @@ class Mongodb extends Model
         $filter = [];
         //返回品牌相关信息
         if ($flag == 'email') {
-            if ($brand_id !== null) {
+            if ($brand_id !== "") {
                 $filter['mx.brand_id'] = intval($brand_id);
             }
         } else if ($flag == 'contacttool') {
-            if ($brand_id !== null) {
+            if ($brand_id !== "") {
                 $filter['contacttool.brand_id'] = intval($brand_id);
             }
         } else {
             //网站数据 null  none_website have_website
-            if ($brand_id !== null) {
+            if ($brand_id !== "") {
                 if ($brand_id == 'none_website') {
                     //表示是 没有网站的
                     $filter["wwwtitle"] = ['$eq' => null];
