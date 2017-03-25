@@ -91,7 +91,7 @@ class Sendemail extends Controller
             //1条数据
             $data =$this->getData($mongodb,$confgData,$email_offset,1);
             $toUser = $data[0]["person_mailaddress"];
-//            $toUser="3423929165@qq.com";
+            //            $toUser="3423929165@qq.com";
             //模板信息数组
             $tempInfo = $template_arr[array_rand($template_arr)];
             //账号
