@@ -140,6 +140,7 @@ class Sendemail extends Controller
             $md5_str = md5($toUser . "registrant_name");
             //在最后添加图片和退订
             $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" . (new Unsubscribeemail)->makeUnsubscribeEmail($recordId, $toUser, $md5_str);
+            file_put_contents("sendMail.txt",["id"=>$email_offset,"sendMail"=>$toUser]);
             $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], $confgData["fromname"]);
             if(!empty($data[0]["qiye_mailaddress"])){
                 //添加发送记录
