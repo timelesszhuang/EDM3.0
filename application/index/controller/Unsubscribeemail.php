@@ -42,11 +42,11 @@ class Unsubscribeemail extends Controller
     public function saveEmailRecord($email_id, $sendRecord)
     {
         $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"])["data"];
+        file_put_contents("ip.txt",print_r($ip_arr,FILE_APPEND),true);
         //如果序列化是空的话
         if (empty($sendRecord->ip_serialize)) {
             $sendRecord->read_num++;
             $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
-            $ip = $ip_arr["ip"];
             $ipSerialize = [
                 0 => [
                     "ip_info" => $ip_info,
@@ -58,10 +58,9 @@ class Unsubscribeemail extends Controller
         } else {
             $ipSerialize = unserialize($sendRecord->ip_serialize);
             $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
-            $ip = $ip_arr["ip"];
             $ipSerialize[] = [
                 "ip_info" => $ip_info,
-                "ip" => $ip
+                "ip" => $_SERVER["REMOTE_ADDR"]
             ];
             $sendRecord->ip_serialize = serialize($ipSerialize);
             $sendRecord->read_num++;
