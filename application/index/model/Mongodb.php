@@ -70,7 +70,7 @@ class Mongodb extends Model
      * @param 品牌 $brand_id
      * @return mixed
      */
-    public function getCount($province, $flag, $brand_id)
+    public function getCount($province,$brand_id,$flag)
     {
         $options_base = ['connectTimeoutMS' => 500000, 'socketTimeoutMS' => 500000];
         $manager = new \MongoDB\Driver\Manager(Config::get('mongodb.mongodb_auth_url'), $options_base);

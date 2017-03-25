@@ -160,7 +160,7 @@ class Sendemail extends Controller
     public function getData($mongodb,$confgData,$email_offset,$rows)
     {
         if (empty($confgData["parent_id"])) {
-            $data = $mongodb->getPerstepEmail($confgData["province_id"], $confgData["config_type"], $confgData["brand_id"], $email_offset,$rows);
+            $data = $mongodb->getPerstepEmail($confgData["province_id"],$confgData["brand_id"],$confgData["config_type"],$email_offset,$rows);
         } else {
             $where["config_id"] = $confgData["parent_id"];
             $where["read_num"] = [
@@ -182,7 +182,7 @@ class Sendemail extends Controller
     {
         //总记录数
         if (empty($confgData["parent_id"])) {
-            $count = $mongodb->getCount($confgData["province_id"], $confgData["config_type"], $confgData["brand_id"]);
+            $count = $mongodb->getCount($confgData["province_id"],$confgData["brand_id"],$confgData["config_type"]);
         } else {
             $where["config_id"] = $confgData["parent_id"];
             $where["read_num"] = [
