@@ -55,7 +55,6 @@ class Sendconfig extends Base
             $data["brand_name"] = "全部";
         }
         $sendconfig = new \app\index\model\SendConfig();
-        $data['template_id'] = ',' . $data['template_id'] . ',';
         if (!$sendconfig->save($data)) {
             $this->msg("添加配置失败", "添加配置", self::error);
         }

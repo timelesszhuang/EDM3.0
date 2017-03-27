@@ -146,13 +146,16 @@ $page_id="sendconfig_add";
         url: obj.template_type,
         width: "200px",
         onSelect: function (i) {
-            $("#{$page_id}_template").parent().parent().show();
-            //模板
-            $("#{$page_id}_template").combotree({
-                url: obj.getTemplateByid+"?type_id="+i.id,
-                multiple: true,
-                width: "200px"
-            });
+            if (i.id) {
+                $("#{$page_id}_template").parent().parent().show();
+                //模板
+                $("#{$page_id}_template").combotree({
+                    url: obj.getTemplateByid + "?type_id=" + i.id,
+                    multiple: true,
+                    width: "200px"
+                });
+            }
+
         }
     });
     $("#{$page_id}_add_producttype_btn").click(function () {
