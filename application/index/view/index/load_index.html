@@ -13,9 +13,7 @@
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     {$msg}
 </div>
-<div class="alert alert-success " id="send_all_counthtml" role="alert">
 
-</div>
 <div class="row">
     <div class="col-sm-6">
         <div class="panel panel-info">
@@ -25,7 +23,6 @@
             </div>
             <div class="panel-body">
                 <div id='email_sendcount_order' style='height: 350px;padding: 2px;border:1px solid #E8E8E8;'>
-
                 </div>
             </div>
         </div>
@@ -33,37 +30,13 @@
     <div class="col-sm-6">
         <div class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;本月进入应用次数
+                <h3 class="panel-title"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;邮件发送情况
                 </h3>
             </div>
             <div class="panel-body">
                 <div id='entry_mail_log' style='height: 350px;padding: 2px;border:1px solid #E8E8E8;'>
 
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-6">
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                <h3 class="panel-title"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;用户数量
-                </h3>
-            </div>
-            <div class="panel-body" id="user_count_order" style="height: 350px;padding-top:20px;">
-
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                <h3 class="panel-title"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;用户活跃度
-                </h3>
-            </div>
-            <div class="panel-body" id="user_distinctactive_count" style="height: 350px;padding-top:20px;">
-
             </div>
         </div>
     </div>
@@ -302,5 +275,69 @@
         });
     }
 
-
+    /**
+     *邮箱推广阅读图
+     *
+     */
+    var readinfo = (function () {
+        return {
+            url: "{:URL('index/index/getReadData')}",
+            sendCountUrl: "{:URL('index/index/sendCount')}",
+            container: $("#email_sendcount_order"),
+            entry_mail_log: $("#entry_mail_log")
+        }
+    })();
+    $.ajax({
+        url: readinfo.url,
+        dataType: "json",
+        success: function (data) {
+            high({
+                id: readinfo.container,
+                data: data
+            });
+        }
+    });
+    $.ajax({
+        url: readinfo.sendCountUrl,
+        dataType: "json",
+        success: function (data) {
+            high({
+                id: readinfo.entry_mail_log,
+                data: data
+            });
+        }
+    });
+    var high = function (obj) {
+        obj.id.highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: '邮箱推广阅读图'
+            },
+            xAxis: {
+                categories: obj.data.name
+            },
+            yAxis: {
+                allowDecimals: false,
+                min: 0,
+                title: {
+                    text: '阅读数量'
+                }
+            },
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.x + '</b><br/>' +
+                        this.series.name + ': ' + this.y + '<br/>' +
+                        '总量: ' + this.point.stackTotal;
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal'
+                }
+            },
+            series: obj.data.data
+        });
+    }
 </script>
