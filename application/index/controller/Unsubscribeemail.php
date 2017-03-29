@@ -45,7 +45,7 @@ class Unsubscribeemail extends Controller
         //如果序列化是空的话
         if (empty($sendRecord->ip_serialize)) {
             $sendRecord->read_num++;
-            $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
+            $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
             $ipSerialize = [
                 0 => [
                     "ip_info" => $ip_info,
