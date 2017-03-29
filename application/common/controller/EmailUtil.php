@@ -88,21 +88,6 @@ class EmailUtil
         curl_setopt($curl, CURLOPT_TIMEOUT, 2);
         //这个就是超时时间了
         $data = curl_exec($curl);
-        file_put_contents("ip.txt",$data."\r\n",FILE_APPEND);
         return json_decode($data, true);
-    }
-
-
-    public static function getClientIP()
-    {
-        $ip='';
-        if (getenv("HTTP_CLIENT_IP"))
-            $ip = getenv("HTTP_CLIENT_IP");
-        else if(getenv("HTTP_X_FORWARDED_FOR"))
-            $ip = getenv("HTTP_X_FORWARDED_FOR");
-        else if(getenv("REMOTE_ADDR"))
-            $ip = getenv("REMOTE_ADDR");
-        else $ip = "Unknow";
-        return $ip;
     }
 }
