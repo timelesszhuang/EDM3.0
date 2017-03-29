@@ -41,7 +41,7 @@ class Unsubscribeemail extends Controller
      */
     public function saveEmailRecord($email_id, $sendRecord)
     {
-        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"])["data"];
+        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"]);
         //如果序列化是空的话
         if (empty($sendRecord->ip_serialize)) {
             $sendRecord->read_num++;
