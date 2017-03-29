@@ -162,7 +162,7 @@ class Unsubscribeemail extends Controller
      */
     public function saveLinkRecord($linkRecord, $link_id, $record_id, $link_title)
     {
-        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"])["data"];
+        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"]);
         if (empty($linkRecord)) {
             $read_number = 1;
             $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
