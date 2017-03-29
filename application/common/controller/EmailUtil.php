@@ -79,7 +79,7 @@ class EmailUtil
     {
         $curl = curl_init(); //这是curl的handle
         //下面是设置curl参数
-        $url = "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&ip=115.29.28.108";
+        $url = "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&ip=$ip";
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 2);
