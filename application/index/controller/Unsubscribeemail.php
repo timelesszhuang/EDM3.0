@@ -56,7 +56,7 @@ class Unsubscribeemail extends Controller
             $sendRecord->save();
         } else {
             $ipSerialize = unserialize($sendRecord->ip_serialize);
-            $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
+            $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
             $ipSerialize[] = [
                 "ip_info" => $ip_info,
                 "ip" => $_SERVER["REMOTE_ADDR"]
@@ -165,7 +165,7 @@ class Unsubscribeemail extends Controller
         $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"])["data"];
         if (empty($linkRecord)) {
             $read_number = 1;
-            $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
+            $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
             $ip = $ip_arr["ip"];
             $ipSerialize = [
                 0 => [
@@ -183,7 +183,7 @@ class Unsubscribeemail extends Controller
         } else {
             $recordInfo = (new SendrecordLinkinfo())->where(["sendrecord_id" => $record_id])->find();
             $ipSerialize = unserialize($recordInfo->ipinfo_serialize);
-            $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
+            $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
             $ip = $ip_arr["ip"];
             $ipSerialize[] = [
                 "ip_info" => $ip_info,
