@@ -60,6 +60,7 @@ class EmailUtil
         $mail->From = $sendUser;
         $mail->FromName = $fromname;
         $mail->CharSet = "UTF-8";
+        $mail->AddReplyTo("support@qiangbi.net","强比科技");//回复给谁
         $mail->AddAddress($toUser);
         //发送到谁 写谁$mailaddress
         $mail->WordWrap = 50;                // set word wrap to 50 characters
