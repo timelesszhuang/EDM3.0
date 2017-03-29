@@ -88,7 +88,7 @@ class EmailUtil
         curl_setopt($curl, CURLOPT_TIMEOUT, 2);
         //这个就是超时时间了
         $data = curl_exec($curl);
-        file_put_contents("ip1.txt",print_r(json_decode($data,true),true),FILE_APPEND);
+        file_put_contents("ip1.txt",print_r(json_decode($data),true),FILE_APPEND);
         return json_decode($data, true);
     }
 }
