@@ -79,7 +79,7 @@ class EmailUtil
     {
         $curl = curl_init(); //这是curl的handle
         //下面是设置curl参数
-        $url = "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=$ip";
+        $url = "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=115.29.28.108";
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 2);
@@ -88,7 +88,7 @@ class EmailUtil
         curl_setopt($curl, CURLOPT_TIMEOUT, 2);
         //这个就是超时时间了
         $data = curl_exec($curl);
-        file_put_contents("ip1.txt",print_r(json_decode($data),true),FILE_APPEND);
+        file_put_contents("ip1.txt",print_r($data,true),FILE_APPEND);
         return json_decode($data, true);
     }
 }
