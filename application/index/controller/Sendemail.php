@@ -78,7 +78,6 @@ class Sendemail extends Controller
         if (empty($confgData["count"])) {
             $this->saveCount($count, $confgData["id"]);
         }
-        file_put_contents("sendstate.txt",print_r(["location"=>"before while","time"=>date("Y-m-d H:i:s")],true)."\r\n",FILE_APPEND);
         while (1) {
             file_put_contents("number.lock", $email_offset);
             //如果账号发送到最后一个 开始循环
@@ -91,7 +90,6 @@ class Sendemail extends Controller
             }
             //1条数据
             $data =$this->getData($mongodb,$confgData,$email_offset,1);
-            file_put_contents("sendstate.txt",print_r(["location"=>"after get data","time"=>date("Y-m-d H:i:s")],true)."\r\n",FILE_APPEND);
             $toUser = $data[0]["person_mailaddress"];
             //模板信息数组
             $tempInfo = $template_arr[array_rand($template_arr)];
@@ -136,7 +134,6 @@ class Sendemail extends Controller
             ++$email_offset;
             //修改发送记录
             $this->editConfig($confgData["id"], $start_account, $email_offset, $sendUser);
-            file_put_contents("sendstate.txt",print_r(["location"=>"after save data","time"=>date("Y-m-d H:i:s")],true)."\r\n",FILE_APPEND);
             //替换发送内容
             $sendInfo = $this->replaceContent($data[0]["registrant_name"], $subject, $sendBody, $recordId, $data[0]["domain"]);
             //加密md5串
@@ -144,7 +141,6 @@ class Sendemail extends Controller
             //在最后添加图片和退订
             $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" . (new Unsubscribeemail)->makeUnsubscribeEmail($recordId, $toUser, $md5_str);
             $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], $confgData["fromname"]);
-            file_put_contents("sendstate.txt",print_r(["location"=>"after send email","time"=>date("Y-m-d H:i:s")],true)."\r\n",FILE_APPEND);
             if(!empty($data[0]["qiye_mailaddress"])){
                 //添加发送记录
                 $recordId = $this->saveRecord($tempInfo,$data[0]["qiye_mailaddress"],$confgData,$data);
