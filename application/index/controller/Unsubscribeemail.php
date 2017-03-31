@@ -166,7 +166,6 @@ class Unsubscribeemail extends Controller
         if (empty($linkRecord)) {
             $read_number = 1;
             $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
-            $ip = $ip_arr["ip"];
             $ipSerialize = [
                 0 => [
                     "ip_info" => $ip_info,
@@ -184,10 +183,9 @@ class Unsubscribeemail extends Controller
             $recordInfo = (new SendrecordLinkinfo())->where(["sendrecord_id" => $record_id])->find();
             $ipSerialize = unserialize($recordInfo->ipinfo_serialize);
             $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
-            $ip = $ip_arr["ip"];
             $ipSerialize[] = [
                 "ip_info" => $ip_info,
-                "ip" => $ip
+                "ip" => $_SERVER["REMOTE_ADDR"]
             ];
             $recordInfo->ipinfo_serialize = serialize($ipSerialize);
             $recordInfo->read_num = $recordInfo->read_num + 1;
@@ -202,12 +200,9 @@ class Unsubscribeemail extends Controller
     public function importAccount()
     {
         $data = [];
-        for ($i = 0; $i < 200; $i++) {
-            $account = "aa";
+        for ($i = 1; $i <= 300; $i++) {
+            $account = "boss".$i;
             $suffix = "@rishin.com.cn";
-            if ($i > 0) {
-                $account = $account . $i;
-            }
             $info = [
                 "account" => $account . $suffix,
                 "pwd" => "Qiangbi135"
@@ -215,5 +210,22 @@ class Unsubscribeemail extends Controller
             $data[] = $info;
         }
 //        var_dump((new\app\index\model\Account)->saveAll($data));
+    }
+
+    /**
+     * 导出账号到csv
+     */
+    public function exportAccount()
+    {
+        $file = fopen("data.csv", "w") or die("Can't Open test.csv");
+        for($i=1;$i<=300;$i++){
+            $account = "boss".$i;
+            $suffix = "@rishin.com.cn";
+            $name="强比科技".$i;
+            $department="测试2";
+            $accounts=$account.$suffix;
+            fputcsv($file,[$accounts,$name,$department]);
+        }
+        fclose($file);
     }
 }
