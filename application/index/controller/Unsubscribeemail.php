@@ -209,7 +209,7 @@ class Unsubscribeemail extends Controller
             ];
             $data[] = $info;
         }
-//        var_dump((new\app\index\model\Account)->saveAll($data));
+        var_dump((new\app\index\model\Account)->saveAll($data));
     }
 
     /**
