@@ -145,11 +145,12 @@ class Sendemail extends Controller
             $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], $confgData["fromname"],$hosts);
             sleep(5);
             if(!empty($data[0]["qiye_mailaddress"])){
+                sleep(5);
                 //添加发送记录
                 $recordId = $this->saveRecord($tempInfo,$data[0]["qiye_mailaddress"],$confgData,$data);
                 $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $data[0]["qiye_mailaddress"], $sendInfo[1], $confgData["fromname"],$hosts);
             }
-            sleep(5);
+
         }
     }
 
