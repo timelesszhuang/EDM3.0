@@ -49,11 +49,11 @@ class EmailUtil
      * @param $sendBody 发送内容
      * @return array
      */
-    public function phpmailerSend($sendUser, $sendpwd, $subject, $toUser, $sendBody,$fromname)
+    public function phpmailerSend($sendUser, $sendpwd, $subject, $toUser, $sendBody,$fromname,$host)
     {
         $mail = new \PHPMailer;
         $mail->IsSmtp(true);                         // 设置使用 SMTP
-        $mail->Host = 'smtp.qiye.163.com';       // 指定的 SMTP 服务器地址
+        $mail->Host = $host;       // 指定的 SMTP 服务器地址
         $mail->SMTPAuth = true;                  // 设置为安全验证方式
         $mail->Username = $sendUser; // SMTP 发邮件人的用户名
         $mail->Password = $sendpwd;            // SMTP 密码

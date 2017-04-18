@@ -1,0 +1,1 @@
+function change_validate(){$("#validate_img").attr("src", "http://www.ems.com.cn/ems/rand?" + Math.random());}
