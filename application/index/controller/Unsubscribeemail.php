@@ -200,12 +200,13 @@ class Unsubscribeemail extends Controller
     public function importAccount()
     {
         $data = [];
-        for ($i = 1; $i <= 300; $i++) {
-            $account = "boss".$i;
-            $suffix = "@rishin.com.cn";
+        for ($i = 1; $i < 201; $i++) {
+            $account = "admin".$i;
+            $suffix = "@frentwood.com";
             $info = [
                 "account" => $account . $suffix,
-                "pwd" => "Qiangbi135"
+                "pwd" => "Qiangbi135",
+                "hosts"=> "smtp.ym.163.com"
             ];
             $data[] = $info;
         }
@@ -226,6 +227,22 @@ class Unsubscribeemail extends Controller
             $accounts=$account.$suffix;
             fputcsv($file,[$accounts,$name,$department]);
         }
+        fclose($file);
+    }
+
+    public function import_account()
+    {
+        $file = fopen("./import.csv", "r");
+        $alldata = array();
+        $account=new \app\index\model\Account();
+        while ($data_line = fgetcsv($file)) {
+            $alldata[]=[
+                "account"=>$data_line[0],
+                "pwd"=>$data_line[1],
+                "hosts"=>$data_line[2]
+            ];
+        }
+        dump($account->saveAll($alldata));
         fclose($file);
     }
 }
