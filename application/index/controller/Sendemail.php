@@ -144,7 +144,7 @@ class Sendemail extends Controller
             $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" . (new Unsubscribeemail)->makeUnsubscribeEmail($recordId, $toUser, $md5_str);
             $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], $confgData["fromname"],$hosts);
             if(strpos($sendUser,"admin")===0){
-                sleep(30);
+                sleep(31);
             }
             if(!empty($data[0]["qiye_mailaddress"])){
                 //添加发送记录
