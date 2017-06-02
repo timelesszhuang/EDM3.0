@@ -63,7 +63,9 @@ class Account extends Base
             $where["account"] = ["like", "%$query%"];
         }
         $account = new \app\index\model\Account();
-        return $account->where($where)->order("id", "desc")->limit($limit, $rows)->select();
+        $count=$account->where($where)->count();
+        $data=$account->where($where)->order("id", "desc")->limit($limit, $rows)->select();
+        return ["total"=>$count,"rows"=>$data];
     }
 
     /**

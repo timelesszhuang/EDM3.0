@@ -41,12 +41,11 @@ class Unsubscribeemail extends Controller
      */
     public function saveEmailRecord($email_id, $sendRecord)
     {
-        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"])["data"];
-        file_put_contents("ip.txt",print_r($ip_arr,FILE_APPEND),true);
+        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"]);
         //如果序列化是空的话
         if (empty($sendRecord->ip_serialize)) {
             $sendRecord->read_num++;
-            $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
+            $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
             $ipSerialize = [
                 0 => [
                     "ip_info" => $ip_info,
@@ -57,7 +56,7 @@ class Unsubscribeemail extends Controller
             $sendRecord->save();
         } else {
             $ipSerialize = unserialize($sendRecord->ip_serialize);
-            $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
+            $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
             $ipSerialize[] = [
                 "ip_info" => $ip_info,
                 "ip" => $_SERVER["REMOTE_ADDR"]
@@ -163,11 +162,10 @@ class Unsubscribeemail extends Controller
      */
     public function saveLinkRecord($linkRecord, $link_id, $record_id, $link_title)
     {
-        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"])["data"];
+        $ip_arr = (new EmailUtil)->get_ip_info($_SERVER["REMOTE_ADDR"]);
         if (empty($linkRecord)) {
             $read_number = 1;
-            $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
-            $ip = $ip_arr["ip"];
+            $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
             $ipSerialize = [
                 0 => [
                     "ip_info" => $ip_info,
@@ -184,11 +182,10 @@ class Unsubscribeemail extends Controller
         } else {
             $recordInfo = (new SendrecordLinkinfo())->where(["sendrecord_id" => $record_id])->find();
             $ipSerialize = unserialize($recordInfo->ipinfo_serialize);
-            $ip_info = $ip_arr["area"] . "-" . $ip_arr["region"] . "-" . $ip_arr["city"] . "-" . $ip_arr["county"];
-            $ip = $ip_arr["ip"];
+            $ip_info = $ip_arr["province"] . "-" . $ip_arr["city"];
             $ipSerialize[] = [
                 "ip_info" => $ip_info,
-                "ip" => $ip
+                "ip" => $_SERVER["REMOTE_ADDR"]
             ];
             $recordInfo->ipinfo_serialize = serialize($ipSerialize);
             $recordInfo->read_num = $recordInfo->read_num + 1;
@@ -203,18 +200,49 @@ class Unsubscribeemail extends Controller
     public function importAccount()
     {
         $data = [];
-        for ($i = 0; $i < 200; $i++) {
-            $account = "aa";
-            $suffix = "@rishin.com.cn";
-            if ($i > 0) {
-                $account = $account . $i;
-            }
+        for ($i = 1; $i < 201; $i++) {
+            $account = "admin".$i;
+            $suffix = "@frentwood.com";
             $info = [
                 "account" => $account . $suffix,
-                "pwd" => "Qiangbi135"
+                "pwd" => "Qiangbi135",
+                "hosts"=> "smtp.ym.163.com"
             ];
             $data[] = $info;
         }
-//        var_dump((new\app\index\model\Account)->saveAll($data));
+        var_dump((new\app\index\model\Account)->saveAll($data));
+    }
+
+    /**
+     * 导出账号到csv
+     */
+    public function exportAccount()
+    {
+        $file = fopen("data.csv", "w") or die("Can't Open test.csv");
+        for($i=1;$i<=300;$i++){
+            $account = "boss".$i;
+            $suffix = "@rishin.com.cn";
+            $name="强比科技".$i;
+            $department="测试2";
+            $accounts=$account.$suffix;
+            fputcsv($file,[$accounts,$name,$department]);
+        }
+        fclose($file);
+    }
+
+    public function import_account()
+    {
+        $file = fopen("./import.csv", "r");
+        $alldata = array();
+        $account=new \app\index\model\Account();
+        while ($data_line = fgetcsv($file)) {
+            $alldata[]=[
+                "account"=>$data_line[0],
+                "pwd"=>$data_line[1],
+                "hosts"=>$data_line[2]
+            ];
+        }
+        dump($account->saveAll($alldata));
+        fclose($file);
     }
 }

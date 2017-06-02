@@ -43,7 +43,7 @@ class Template extends Base
     public function addData()
     {
         $rule = [
-            ["title", "require|unique:template", "请填写标题|当前标题已经存在"],
+            ["title", "require", "请填写标题"],
             ["detail", "require", "请填写描述"],
             ["content", "require", "请填写内容"],
             ["type", 'require', '请选择模板类型']
@@ -129,7 +129,7 @@ class Template extends Base
     public function saveData()
     {
         $rule = [
-            ["title", "require|unique:template", "请填写标题|当前标题已经存在"],
+            ["title", "require", "请填写标题"],
             ["detail", "require", "请填写描述"],
             ["content", "require", "请填写内容"],
             ["type", "require", "请选择模板分类"],

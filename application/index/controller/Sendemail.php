@@ -44,7 +44,7 @@ class Sendemail extends Controller
         if (file_exists("number.lock")) {
             $modify_time = filemtime("number.lock");
             $change_time = time() - $modify_time;
-            if ($change_time < 200) {
+            if ($change_time < 100) {
                 exit;
             }
         }
@@ -79,7 +79,7 @@ class Sendemail extends Controller
             $this->saveCount($count, $confgData["id"]);
         }
         while (1) {
-            file_put_contents("number.lock", $email_offset."\n",FILE_APPEND);
+            file_put_contents("number.lock", $email_offset);
             //如果账号发送到最后一个 开始循环
             if ($start_account >= $account_arr["count"]) {
                 $start_account = 0;
@@ -91,13 +91,14 @@ class Sendemail extends Controller
             //1条数据
             $data =$this->getData($mongodb,$confgData,$email_offset,1);
             $toUser = $data[0]["person_mailaddress"];
-            //            $toUser="3423929165@qq.com";
             //模板信息数组
             $tempInfo = $template_arr[array_rand($template_arr)];
             //账号
             $sendUser = $account_arr["data"][$start_account]["account"];
             //账号密码
             $sendpwd = $account_arr["data"][$start_account]["pwd"];
+            //hosts
+            $hosts = $account_arr["data"][$start_account]["hosts"];
             //主题
             $subject = $tempInfo["title"];
             //内容
@@ -141,13 +142,16 @@ class Sendemail extends Controller
             $md5_str = md5($toUser . "registrant_name");
             //在最后添加图片和退订
             $sendInfo[1] = $sendInfo[1] . "\n <img width='1' height='1' src='" . $sendInfo[2] . "'>\n" . (new Unsubscribeemail)->makeUnsubscribeEmail($recordId, $toUser, $md5_str);
-            file_put_contents("sendMail.txt",["id"=>$email_offset,"sendMail"=>$toUser]);
-            $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], $confgData["fromname"]);
+            $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $toUser, $sendInfo[1], $confgData["fromname"],$hosts);
+            if(strpos($sendUser,"admin")===0){
+                sleep(30);
+            }
             if(!empty($data[0]["qiye_mailaddress"])){
                 //添加发送记录
                 $recordId = $this->saveRecord($tempInfo,$data[0]["qiye_mailaddress"],$confgData,$data);
-                $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $data[0]["qiye_mailaddress"], $sendInfo[1], $confgData["fromname"]);
+                $emailUtil->phpmailerSend($sendUser, $sendpwd, $sendInfo[0], $data[0]["qiye_mailaddress"], $sendInfo[1], $confgData["fromname"],$hosts);
             }
+
         }
     }
 

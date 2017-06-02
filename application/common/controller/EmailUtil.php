@@ -49,17 +49,18 @@ class EmailUtil
      * @param $sendBody 发送内容
      * @return array
      */
-    public function phpmailerSend($sendUser, $sendpwd, $subject, $toUser, $sendBody,$fromname)
+    public function phpmailerSend($sendUser, $sendpwd, $subject, $toUser, $sendBody,$fromname,$host)
     {
         $mail = new \PHPMailer;
         $mail->IsSmtp(true);                         // 设置使用 SMTP
-        $mail->Host = 'smtp.qiye.163.com';       // 指定的 SMTP 服务器地址
+        $mail->Host = $host;       // 指定的 SMTP 服务器地址
         $mail->SMTPAuth = true;                  // 设置为安全验证方式
         $mail->Username = $sendUser; // SMTP 发邮件人的用户名
         $mail->Password = $sendpwd;            // SMTP 密码
         $mail->From = $sendUser;
         $mail->FromName = $fromname;
         $mail->CharSet = "UTF-8";
+        $mail->AddReplyTo("support@qiangbi.net","强比科技");//回复给谁
         $mail->AddAddress($toUser);
         //发送到谁 写谁$mailaddress
         $mail->WordWrap = 50;                // set word wrap to 50 characters
@@ -79,7 +80,7 @@ class EmailUtil
     {
         $curl = curl_init(); //这是curl的handle
         //下面是设置curl参数
-        $url = "http://ip.taobao.com/service/getIpInfo.php?ip=$ip";
+        $url = "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&ip=$ip";
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 2);
@@ -88,21 +89,7 @@ class EmailUtil
         curl_setopt($curl, CURLOPT_TIMEOUT, 2);
         //这个就是超时时间了
         $data = curl_exec($curl);
-        file_put_contents("ip.txt",$data."\r\n",FILE_APPEND);
+        file_put_contents("ip1.txt",print_r(json_decode($data,true),true),FILE_APPEND);
         return json_decode($data, true);
-    }
-
-
-    public static function getClientIP()
-    {
-        $ip='';
-        if (getenv("HTTP_CLIENT_IP"))
-            $ip = getenv("HTTP_CLIENT_IP");
-        else if(getenv("HTTP_X_FORWARDED_FOR"))
-            $ip = getenv("HTTP_X_FORWARDED_FOR");
-        else if(getenv("REMOTE_ADDR"))
-            $ip = getenv("REMOTE_ADDR");
-        else $ip = "Unknow";
-        return $ip;
     }
 }

@@ -52,7 +52,7 @@ $page_id="template_add";
         <div class="form-group">
             <label for="" class="control-label col-sm-3">内容：</label>
             <div class="col-sm-8">
-                <textarea name="content" cols="30" rows="10" style="width:100%;height:100%;"></textarea>
+                <textarea id="{$page_id}_template_content"  cols="30" rows="10" style="width:100%;height:100%;"></textarea>
             </div>
         </div>
     </form>
@@ -68,17 +68,13 @@ $page_id="template_add";
         var val=$(this).children('option:selected').val();
         $("#{$page_id}_jump_link").val(val);
     });
-    KindEditor.create('textarea[name="content"]', {
-        height: '400px',
-        allowFileManager: true,
-        uploadJson: '{:URL("Home/Upfile/upload_img")}',
-        fileManagerJson: '{:URL("Home/Upfile/file_manager_json")}',
-        afterBlur: function () {
-            this.sync();
-            //这一句的作用：当失去焦点时执行 this.sync()
-            //这个函数作用是同步KindEditor的值到textarea文本框。
-        }
-    });
+
+    var editor1=CKEDITOR.replace('{$page_id}_template_content', {
+        fullPage: true,
+        extraPlugins: 'docprops',
+        allowedContent: true,
+        height: 320
+    } );
     //模板
     $("#{$page_id}_type").combotree({
         url: obj.type_url,
@@ -90,7 +86,11 @@ $page_id="template_add";
         };
         var type = $('#{$page_id}_type').combotree('getValue');
         $('input[name="type"]').val(type);
-        var data = $("#{$page_id}_toaction").serialize();
+        var data = $("#{$page_id}_toaction").serializeArray();
+        data.push({
+            name:"content",
+            value:editor1.getData()
+        });
         submit_form(obj.add_email_template_url, data, $("input[name='{$page_id}_add_producttype_modal_id']").val(), $("input[name='{$page_id}_datagrid_id']").val());
     });
 </script>
